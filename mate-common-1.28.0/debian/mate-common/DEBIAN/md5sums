@@ -1,0 +1,14 @@
+b35d391186f64f0be240090119195080  usr/bin/mate-autogen
+415e5e26b78d576ef2d947ceae5b4799  usr/bin/mate-doc-common
+f511bd24f51f4bb80605764efbb943de  usr/share/aclocal/mate-code-coverage.m4
+812704d8e13fdd8f66b4cf7d3df36f82  usr/share/aclocal/mate-common.m4
+54a044d06e8332d3079541c7b6ad9daa  usr/share/aclocal/mate-compiler-flags.m4
+2d1b72059e71d22e8a8a5dfa5b4f8afe  usr/share/doc/mate-common/autogen.sh.example
+72bd3bb972993f306a35bca149a4c5ef  usr/share/doc/mate-common/changelog.Debian.gz
+4ed647db5a19e63ff87c2110f8e8d084  usr/share/doc/mate-common/changelog.gz
+6389a16030663a7db6d825d2a4cf75f4  usr/share/doc/mate-common/copyright
+91c4c611b6e1fd778bbea5265956e1f8  usr/share/doc/mate-common/usage.txt
+fda04a96ab223128d7cb2f2d0cd6889f  usr/share/man/man1/mate-autogen.1.gz
+a60674e091c937168cafd51760526f19  usr/share/man/man1/mate-doc-common.1.gz
+00caaa3eb12c7c8609891680dd80b649  usr/share/mate-common/data/omf.make
+8a30216416f1f5f2ef640d2a7706adb3  usr/share/mate-common/data/xmldocs.make

@@ -1,0 +1,195 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Caja Actions
+Upstream-Contact: Martin Wimpress <code@flexion.org>
+Source: https://github.com/mate-desktop/caja-actions
+
+Files: debian/*
+Copyright: 2015, Martin Wimpress <code@flexion.org>
+           2015-2023, Mike Gabriel <sunweaver@debian.org>
+           2015, Vangelis Mouhtsis <vangelis@gnugr.org>
+License: GPL-2+
+
+Files: data/*
+Copyright: 2009 - 2012, Pierre Wieser <pwieser@trychlos.org>
+License: GPL-2+
+
+Files: icons/*
+Copyright: 2009 - 2012, Pierre Wieser <pwieser@trychlos.org>
+           2005 - 2007, Frederic Ruaudel <grumz@grumz.net>
+License: GPL-2+
+
+Files: m4/*
+Copyright: 2009 - 2012, Pierre Wieser <pwieser@trychlos.org>
+           2005 - 2007, Frederic Ruaudel <grumz@grumz.net>
+           2005, Rodrigo Moya <rodrigo@rodrigo@novell.com>
+License: GPL-2+
+
+Files: po/*
+Copyright: 2009, Pierre Wieser <pwieser@trychlos.org>
+           2009, Sandeep Shedmake <sshedmak@redhat.com>
+           2009, Manoj Kumar Giri <mgiri@redhat.com>
+           2009, Mario Blättermann <mariobl@gnome.org>
+           2009, Claude Paroz <claude@2xlibre.net>
+           2009, Amanpreet Singh Alam <aman@src.gnome.org>
+           2009, Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
+           2009, Og Maciel <ogmaciel@gnome.org>
+           2009, Milo Casagrande <milo@ubuntu.com>
+           2009, Duarte Loreto <happyguy_pt@hotmail.com>
+           2009, Daniel Nylander  <po@danielnylander.se>
+           2009, Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+           2009, Stéphane Raimbault  <stephane.raimbault@gmail.com>
+           2008, Djihed Afifi <djihed@gmail.com>
+           2008, Yannig Marchegay <yannig@marchegay.org>
+           2008, Wadim Dziedzic  <wadimd@svn.gnome.org>
+           2008, Kostas Papadimas <pkst@gnome.org>
+           2008, Andre Klapper  <a9016009@gmx.de>
+           2008, Philip Withnall  <pwithnall@svn.gnome.org>
+           2008, Changwoo Ryu  <cwryu@debian.org>
+           2007, Claude Paroz  <claude@2xlibre.net>
+           2007, Ilkka Tuohela  <hile@iki.fi>
+           2007, Kjartan Maraas  <kmaraas@gnome.org>
+           2007, Jonh Wendell  <jwendell@gnome.org>
+           2007, Sílvia Miranda <silviam@svn.gnome.org>
+           2007, Adam Weinberger  <adamw@gnome.org>
+           2007, Pema Geyleg <pema.geyleg@gmail.com>
+           2007, David Lodge <dave@cirt.net>
+           2007, Djihed Afifi <djihed@gmail.com>
+           2007, Claude Paroz  <claude@2xlibre.net>
+           2007, Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
+           2007, Peter Bach  <bach.peter@gmail.com>
+           2006, Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
+           2006, Pema Geyleg  <pgeyleg@gmail.com>
+           2006, Vincent van Adrighem  <adrighem@gnome.org>
+           2006, Christophe Merlet  <redfox@redfoxcenter.org>
+           2006, Alexander Shopov  <ash@contact.bg>
+           2006, Josep Puigdemont i Casamajó  <josep.puigdemont@gmail.com>
+           2006, Takeshi AIHANA <takeshi.aihana@gmail.com>
+           2006, Vincent van Adrighem  <adrighem@gnome.org>
+           2006, Clytie Siddall <clytie@riverland.net.au>
+           2006, Jovan Naumovski  <jovan@lugola.net>
+           2006, Francisco Javier F. Serrador  <serrador@openshine.com>
+           2006, Raivis Dejus  <orvils@gmail.com>
+           2006, Nickolay V. Shmyrev  <nshmyrev@yandex.ru>
+           2006, Theppitak Karoonboonyanan  <thep@linux.thai.net>
+           2006, Frederic Ruaudel <grumz@grumz.net>
+           2006, Theppitak Karoonboonyanan  <thep@linux.thai.net>
+           2006, Amanpreet Singh Brar <apbrar@gmail.com>
+           2006, Hendrik Richter  <hendrikr@gnome.org>
+           2006, Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
+           2006, Clytie Siddall <clytie@riverland.net.au>
+           2006, Francisco Javier F. Serrador  <serrador@openshine.com>
+           2006, Benoît Dejean  <benoit@placenet.org>
+           2006, Josep Puigdemont Casamajó  <josep.puigdemont@gmail.com>
+           2006, Raphael Higino  <raphaelh@cvs.gnome.org>
+           2006, Vincent van Adrighem  <adrighem@gnome.org>
+           2006, Kjartan Maraas  <kmaraas@gnome.org>
+           2006, Runa Bhattacharjee <runa@bengalinux.org>
+           2006, Frank Arnold  <farnold@cvs.gnome.org>
+           2006, Leonid Kanter <leon@asplinux.ru>
+           2006, Kjartan Maraas  <kmaraas@gnome.org>
+           2006, Satoru SATOH <ss@gnome.gr.jp>
+           2006, Lukas Novotny  <lukasnov@cvs.gnome.org>
+           2006, Theppitak Karoonboonyanan  <thep@linux.thai.net>
+           2006, Ankit Patel  <ankit644@yahoo.com>
+           2006, Clytie Siddall <clytie@riverland.net.au>
+           2006, Vincent van Adrighem  <adrighem@gnome.org>
+           2006, Adam Weinberger  <adamw@gnome.org>
+           2006, Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+           2006, Lasse Bang Mikkelsen  <lbm@fatalerror.dk>
+           2006, Hendrik Brandt  <heb@gnome-de.org>
+           2006, Lasse Bang Mikkelsen  <lbm@fatalerror.dk>
+           2005, Yair Hershkovitz <yairhr@gmail.com>
+           2005, Žygimantas Beručka  <zygis@gnome.org>
+           2005, Funda Wang  <fundawang@linux.net.cn>
+           2005, Christian Rose  <menthos@menthos.com>
+           2005, Mario Izquierdo <mariodebian@gmail.com>
+License: GPL-2+
+
+Files: tools/*
+Copyright: 2009 - 2012, Pierre Wieser <pwieser@trychlos.org>
+License: GPL-2+
+
+Files: src/*
+Copyright: 2012 - 2015, Wolfgang Ulbrich <chat-to-me@raveit.de>
+           2009 - 2012, Pierre Wieser <pwieser@trychlos.org>
+           2005 - 2007, Frederic Ruaudel <grumz@grumz.net>
+           2005, Rodrigo Moya <rodrigo@rodrigo@novell.com>
+License: GPL-2+
+
+Files: docs/*
+Copyright: 2012 - 2015, Wolfgang Ulbrich <chat-to-me@raveit.de>
+           2005, Rodrigo Moya <rodrigo@mate-db.org>
+           2005 - 2007, Frederic Ruaudel <grumz@grumz.net>
+           2009 - 2012, Pierre Wieser <pwieser@trychlos.org>
+License: GPL-2+
+
+Files: .build.yml
+       .github/issue_template.md
+       .travis.yml
+       .tx/*
+       caja-actions-config-tool.pot
+       caja-actions.pot
+       makepot
+       docs/README
+       docs/objects-hierarchy.odg
+       AUTHORS
+       ChangeLog
+       ChangeLog-2008
+       ChangeLog-2009
+       ChangeLog-2010
+       ChangeLog-2011
+       ChangeLog-2012
+       MAINTAINERS
+       NEWS
+       README
+       README.md
+       autogen.sh
+       configure.ac
+       gtk-doc.make
+Copyright: *No copyright*
+License: GPL-2+
+
+Files: data/actions/Makefile.am
+       data/exports/Makefile.am
+       data/Makefile.am
+       docs/Makefile.am
+       icons/22x22/Makefile.am
+       icons/16x16/Makefile.am
+       icons/scalable/Makefile.am
+       icons/Makefile.am
+       icons/32x32/Makefile.am
+       icons/48x48/Makefile.am
+       m4/Makefile.am
+       Makefile.am
+       src/cact/Makefile.am
+       src/plugin-menu/Makefile.am
+       src/core/Makefile.am
+       src/test/Makefile.am
+       src/Makefile.am
+       src/plugin-tracker/Makefile.am
+       src/utils/Makefile.am
+       src/api/Makefile.am
+       src/io-desktop/Makefile.am
+       tools/Makefile.am
+Copyright: 2005 The GNOME Foundation
+           2006-2008, Frederic Ruaudel and others (see AUTHORS)
+           2009-2012, Pierre Wieser and others (see AUTHORS)
+License: GPL-2+
+Comment:
+ Due to a copy+paste error, the license headers say "MATE Foundation", but
+ in 2005, there only was the GNOME Foundation. There is no such entity as
+ the MATE Foundation, in fact.
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

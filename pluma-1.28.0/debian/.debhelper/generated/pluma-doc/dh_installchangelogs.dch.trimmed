@@ -1,0 +1,132 @@
+pluma (1.28.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 11:21:00 +0930
+
+pluma (1.26.1-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload, with permission.
+  * Backport an upstream commit to fix a FTBFS with GCC 14. (Closes: #1075392)
+
+ -- Faidon Liambotis <paravoid@debian.org>  Thu, 05 Sep 2024 18:29:59 +0300
+
+pluma (1.26.1-2) unstable; urgency=medium
+
+  * debian/pluma.install:
+    + Adjust for libexecdir being set to /usr/libexec.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 30 Dec 2023 17:28:33 +0100
+
+pluma (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+  * debian/rules:
+    + Set libexecdir to /usr/libexec (rather than /usr/lib).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 30 Dec 2023 15:36:29 +0100
+
+pluma (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Dependencies updated for MATE 1.26.
+  * debian/patches:
+    + Drop 1001_ensure-python3-execution.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 2001_fix-bin-sh-path-in-shebang.patch. Use /bin/sh in shebang fields.
+  * debian/control:
+    + Add B-D: mate-submodules-source (>= 0.0~git20210623.f3091f9).
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/rules:
+    + Unpack libegg (mate-submodules) at the beginning of dh_auto_configure.
+  * debian/copyright:
+    + Update auto-generated copyright.in reference file.
+    + Rewrite entire file.
+  * debian/{rules,pluma-doc.*}:
+    + Move GTK API documentation to pkg's doc folder.
+  * debian/pluma-doc.doc-base:
+    + Add file. Register API docs with doc-base system.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 13 Dec 2021 10:55:21 +0100
+
+pluma (1.24.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 27 Aug 2020 14:13:35 +0200
+
+pluma (1.24.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump B-D from libenchant-dev to libenchant-2-dev. (Closes: #956689).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Apr 2020 09:21:03 +0200
+
+pluma (1.24.0-1) unstable; urgency=medium
+
+  [ Andreas Henriksson ]
+  * New upstream release.
+  * Upstream ported to python3 (Closes: #940199)
+    - Drop libpeas-1.0-python2loader dependency
+    - Switch python dependency to python3
+  * debian/control:
+    + Adjust build-deps for upstream porting from intltool to gettext
+    + Add gla11y build-dep for checking .ui accessability
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+    + Update auto-generated copyright.in file.
+  * debian/patches:
+    + Add 1001_ensure-python3-execution.patch. Ensure Py3 usage for switch-c
+      script.
+  * debian/rules:
+    + Don't install Python cache dirs into bin:pkg.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2020 09:04:28 +0100
+
+pluma (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:35:24 +0200
+
+pluma (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Updated for MATE Desktop 1.22
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/pluma-common.install:
+    + Collapse everything in /usr/share/pluma
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Jul 2019 21:47:55 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog pluma-doc`.

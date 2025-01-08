@@ -1,0 +1,4 @@
+shlibs:Depends=libc6 (>= 2.38), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgtk-3-0t64 (>= 3.0.0), libsoup-2.4-1 (>= 2.41.90), libxml2 (>= 2.7.4)
+t64:Provides=libmateweather1 (= ${binary:Version})
+misc:Depends=
+misc:Pre-Depends=

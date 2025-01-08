@@ -1,0 +1,9 @@
+gir1.2-matepanelapplet-4.0_1.28.4-1_amd64.deb introspection optional
+libmate-panel-applet-4-1-dbgsym_1.28.4-1_amd64.deb debug optional automatic=yes
+libmate-panel-applet-4-1_1.28.4-1_amd64.deb libs optional
+libmate-panel-applet-dev_1.28.4-1_amd64.deb libdevel optional
+libmate-panel-applet-doc_1.28.4-1_all.deb doc optional
+mate-panel-common_1.28.4-1_all.deb x11 optional
+mate-panel-dbgsym_1.28.4-1_amd64.deb debug optional automatic=yes
+mate-panel_1.28.4-1_amd64.buildinfo x11 optional
+mate-panel_1.28.4-1_amd64.deb x11 optional

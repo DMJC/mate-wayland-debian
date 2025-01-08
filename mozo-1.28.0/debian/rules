@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/utils.mk
+
+DEB_BUILD_PARALLEL = 1
+
+DEB_DH_INSTALL_ARGS +=
+
+# use the NEWS file as upstream ChangeLog...
+DEB_DH_INSTALLCHANGELOGS_ARGS = NEWS
+DEB_INSTALL_DOCS_ALL = README AUTHORS
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-silent-rules \
+                             --with-pythondir=/usr/share/mozo
+
+install/mozo::
+	dh_python3
+
+common-binary-post-install-arch:: list-missing
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -1,0 +1,9 @@
+Document: libcaja-extension-doc
+Title: libcaja-extension API documentation
+Author: MATE Desktop Team
+Abstract: This document describes the API of the libcaja-extension library.
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libcaja-extension-doc/html/index.html
+Files: /usr/share/doc/libcaja-extension-doc/html/*

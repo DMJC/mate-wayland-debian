@@ -1,0 +1,3 @@
+version=4
+https://github.com/mate-desktop/caja-actions/tags .*/archive/refs/tags/v?([\d\.]+).tar.gz
+

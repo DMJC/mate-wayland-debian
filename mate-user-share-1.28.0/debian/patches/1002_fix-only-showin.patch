@@ -1,0 +1,27 @@
+Description: Drop empty Categories= key, avoid missing line-wrapping.
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+
+--- a/data/mate-user-share-obexftp.desktop.in.in
++++ b/data/mate-user-share-obexftp.desktop.in.in
+@@ -9,5 +9,4 @@
+ Exec=@installdir@/mate-user-share
+ Terminal=false
+ Type=Application
+-Categories=
+ OnlyShowIn=MATE;
+--- a/data/mate-user-share-obexpush.desktop.in.in
++++ b/data/mate-user-share-obexpush.desktop.in.in
+@@ -9,5 +9,4 @@
+ Exec=@installdir@/mate-user-share
+ Terminal=false
+ Type=Application
+-Categories=
+ OnlyShowIn=MATE;
+--- a/data/mate-user-share-webdav.desktop.in.in
++++ b/data/mate-user-share-webdav.desktop.in.in
+@@ -9,5 +9,4 @@
+ Exec=@installdir@/mate-user-share
+ Terminal=false
+ Type=Application
+-Categories=
+ OnlyShowIn=MATE;

@@ -1,0 +1,20 @@
+Package: libmate-menu-dev
+Source: mate-menus
+Version: 1.28.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 95
+Depends: libglib2.0-dev, libmate-menu2 (= 1.28.0-1), gir1.2-matemenu-2.0 (= 1.28.0-1)
+Breaks: gir1.2-mate-menu (<< 1.18.1-2~), libmatemenu-dev
+Replaces: gir1.2-mate-menu (<< 1.18.1-2~), libmatemenu-dev
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.mate-desktop.org/
+Description: implementation of the freedesktop menu specs for MATE (development files)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the development files.

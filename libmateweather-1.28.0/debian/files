@@ -1,0 +1,6 @@
+libmateweather-common_1.28.0-1_all.deb libs optional
+libmateweather-dev_1.28.0-1_amd64.deb libdevel optional
+libmateweather-doc_1.28.0-1_all.deb doc optional
+libmateweather1t64-dbgsym_1.28.0-1_amd64.deb debug optional automatic=yes
+libmateweather1t64_1.28.0-1_amd64.deb libs optional
+libmateweather_1.28.0-1_amd64.buildinfo libs optional

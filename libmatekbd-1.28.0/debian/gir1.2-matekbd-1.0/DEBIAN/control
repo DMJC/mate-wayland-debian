@@ -1,0 +1,24 @@
+Package: gir1.2-matekbd-1.0
+Source: libmatekbd
+Version: 1.28.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 32
+Depends: gir1.2-gobject-2.0, gir1.2-gtk-3.0, gir1.2-xkl-1.0, gir1.2-xlib-2.0, libmatekbd4 (>= 1.28.0-1)
+Breaks: gir1.2-matekbd (<< 1.18.2-2~)
+Replaces: gir1.2-matekbd (<< 1.18.2-2~)
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.mate-desktop.org/
+Description: GObject introspection data for libmatekbd and libmatekbdui
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains introspection data for the libmatekbd and the
+ libmatekbdui libraries.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.

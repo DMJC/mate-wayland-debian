@@ -1,0 +1,41 @@
+diff --git a/capplets/time-admin/src/time-admin.ui b/capplets/time-admin/src/time-admin.ui
+index dc4e7b2..1508b58 100644
+--- a/capplets/time-admin/src/time-admin.ui
++++ b/capplets/time-admin/src/time-admin.ui
+@@ -350,18 +350,6 @@ Author: Robert Buj
+             <property name="margin_bottom">18</property>
+             <property name="spacing">12</property>
+             <property name="layout_style">end</property>
+-            <child>
+-              <object class="GtkLockButton" id="button4">
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="margin_start">18</property>
+-              </object>
+-              <packing>
+-                <property name="expand">True</property>
+-                <property name="fill">True</property>
+-                <property name="position">0</property>
+-              </packing>
+-            </child>
+             <child>
+               <object class="GtkButton" id="button2">
+                 <accessibility>
+@@ -378,7 +366,7 @@ Author: Robert Buj
+               <packing>
+                 <property name="expand">True</property>
+                 <property name="fill">True</property>
+-                <property name="position">1</property>
++                <property name="position">0</property>
+               </packing>
+             </child>
+             <child>
+@@ -394,7 +382,7 @@ Author: Robert Buj
+               <packing>
+                 <property name="expand">True</property>
+                 <property name="fill">True</property>
+-                <property name="position">2</property>
++                <property name="position">1</property>
+               </packing>
+             </child>
+           </object>

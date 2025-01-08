@@ -1,0 +1,4 @@
+debian/tmp/usr/include/
+debian/tmp/usr/lib/x86_64-linux-gnu/libmate-desktop-2.so
+debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/
+debian/tmp/usr/share/gir-1.0/

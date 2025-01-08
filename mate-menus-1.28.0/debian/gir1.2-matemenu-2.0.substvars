@@ -1,0 +1,3 @@
+gir:Depends=gir1.2-gio-2.0, libmate-menu2 (>= 1.22.0)
+misc:Depends=
+misc:Pre-Depends=

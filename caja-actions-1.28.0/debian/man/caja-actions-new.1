@@ -1,0 +1,66 @@
+.TH caja\-actions\-new 1 "Feb 2015" "Version 1.8.0" "caja-actions"
+.SH NAME
+caja\-actions\-new \- create new caja actions
+.SH SYNOPSIS
+\fBcaja\-actions\-new\fR [\fIOPTION\fR]
+.SH DESCRIPTION
+\fBcaja\-actions\-new\fR creates new actions for the caja file manager
+non\-interactively via the commandline. Action attributes are specified
+via command\-line options.
+.SH OPTIONS
+\fIHelp options\fR
+.TP
+\fB\-?, \-h, \-\-help\fR Show help options
+.TP
+\fB\-\-help\-all\fR Show all help options
+.TP
+\fB\-\-help\-output\fR Choose where the program creates the action
+.TP
+\fIAction-creation options\fR
+.TP
+\fB\-l, \-\-label=LABEL\fR The label of the menu item (amndatory)
+.TP
+\fB\-t, \-\-tooltip=TOOLTIP\fR The tooltip of the menu
+.TP
+\fB\-i, \-\-icon=ICON\fR The icon of the menu item (filename or GTK stock
+ID)
+.TP
+\fB\-c, \-\-command=PATH\fR The path of the command
+.TP
+\fB\-p, \-\-parameters=PARAMS\fR The parameters of the command
+.TP
+\fB\-m, \-\-match=EXPR\fR A pattern to match selected files against. May
+include wildcards (*or?) (you must set one option for each pattern you
+need)
+.TP
+\fB\-C, \-\-match\-case=PATH\fR The path command
+.TP
+\fB\-T, \-\-mimetypes=EXPR\fR A pattern to match selected files' mimetype
+against. May include wildcards (*or?) (you must set one option for each
+pattern you need)
+.TP
+\fB\-f, \-\-accept\-files\fR Set it if selection must only contain files
+.TP
+\fB\-d, \-\-accept\-dirs\fR Set it if the selection must only contain folders.
+Specify both '\-\-isfile' and '\-\-isdir' options is selection can contain
+both types of items
+.TP
+\fB\-M, \-\-accept\-multiple\-files\fR Set it if the selection can have several
+items
+.TP
+\fB\-s, \-\-scheme=SCHEME\fR A valid GVFS scheme where the selected files
+should be located (you must set onw option for each scheme you need)
+.SH AUTHOR
+\fIcaja\-actions\fR has been derived from \fInautilus\-actions\fR which has
+been written by Rodrigo Moya <rodrigo[AT]novell.com>, Frederic Ruaudel
+<grumz[AT]grumz.net>, Pierre Wieser <pwieser[AT]trychlos.org>, and
+contributors.
+.PP
+The porting work to the MATE desktop environment under the extension name
+\fIcaja\-actions\fR has been done by Wolfgang Ulbrich <chat\-to\-me[at]raveit.de>.
+.PP
+This manual page was written Vangelis Mouhtsis <vangelis[AT]gnugr.org>,
+for the Debian MATE Packaging Team, and may be used by others.
+.SH LICENSING
+Both the caja-actions source code and this man page are licensed under
+the GNU General Public License (v2 or higher).

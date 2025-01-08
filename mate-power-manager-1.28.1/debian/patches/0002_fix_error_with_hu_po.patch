@@ -1,0 +1,17 @@
+Description: Fix FTBFS with gettext 0.22
+Author: Faidon Liambotis <paravoid@debian.org>
+Bug: https://github.com/mate-desktop/mate-power-manager/issues/390
+Bug-Debian: https://bugs.debian.org/1074753
+Last-Update: 2024-09-05
+
+--- a/po/hu.po
++++ b/po/hu.po
+@@ -1333,7 +1333,7 @@ msgstr "A noteszgép akkumulátora gyeng
+ #: src/gpm-manager.c:1313
+ #, c-format
+ msgid "Approximately <b>%s</b> remaining (%.0f%%)"
+-msgstr "Megközelítőleg <b>%s</b> van hátra (%.0lf%%)"
++msgstr "Megközelítőleg <b>%s</b> van hátra (%.0f%%)"
+ 
+ #: src/gpm-manager.c:1317
+ msgid "UPS low"

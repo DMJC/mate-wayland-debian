@@ -1,0 +1,12 @@
+Package: mate-media-dbgsym
+Source: mate-media
+Version: 1.28.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 305
+Depends: mate-media (= 1.28.1-1)
+Section: debug
+Priority: optional
+Description: debug symbols for mate-media
+Build-Ids: 15cd153d08aebe29aee017f2c3cbbba576e4bb54 aca89d3529fc8fca8b8c743789859e5f438e6ecf d118f123504e72eaa65e20f63f1ac3d9860820a2

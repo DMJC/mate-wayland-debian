@@ -1,0 +1,156 @@
+mate-desktop (1.28.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Non-maintainer upload.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:24:00 +0930
+
+mate-desktop (1.26.2-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rename libraries for 64-bit time_t transition.  Closes: #1062849
+
+ -- Graham Inggs <ginggs@debian.org>  Thu, 29 Feb 2024 12:11:12 +0000
+
+mate-desktop (1.26.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/mate-desktop-common.install:
+    + Add mate-portals.conf.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 24 Sep 2023 17:55:34 +0200
+
+mate-desktop (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/patches:
+    + Drop patches 0001, 0002 and 0003. All applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 10 Jul 2023 06:04:57 +0200
+
+mate-desktop (1.26.0-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Trivial rebase of 001_prefer-x-terminal-emulator.patch.
+    + Add patches 0001 and 0002. Fix two memory leaks.
+    + Add patch 0003 fix use-after-free issue. (Closes: #1033719).
+  * debian/control:
+    + In bin:pkg libmate-desktop-dev switch from libgdk-pixbuf2.0-dev
+      (deprecated) to libgdk-pixbuf-2.0-dev. Thanks, lintian.
+  * debian/copyright:
+    + Update copyright attribution for debian/ folder.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Apr 2023 16:35:44 +0200
+
+mate-desktop (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+    + Drop transitional pkg 'gir1.2-mate-desktop' and drop
+      lintian override for this.
+  * debian/watch:
+    + Use format version 4.
+  * debian/{rules,libmate-desktop-doc.*}:
+    + Move GTK API documentation to pkg's doc folder.
+  * debian/libmate-desktop-doc.doc-base:
+    + Add file. Register API docs with doc-base system.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 10 Dec 2021 20:59:48 +0100
+
+mate-desktop (1.24.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Switch B-D from libgdk-pixbuf2.0-dev to libgdk-pixbuf-2.0-dev.
+      (Closes: #976031).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Nov 2020 17:16:56 +0100
+
+mate-desktop (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+  * debian/patches:
+    + Drop 2002_reproducible-build.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 19 Aug 2020 22:48:56 +0200
+
+mate-desktop (1.24.0-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 2002_reproducible-build.patch. Make builds reproducible. Thanks to
+      Chris Lamb for providing the patch. (Closes: #951357).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Feb 2020 07:56:25 +0100
+
+mate-desktop (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update various B-Ds with minimal versions. Match <LIB>_REQUIRED
+      variables in configure.ac.
+    + Add B-D autoconf-archive.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/libmate-desktop-2-17.symbols:
+    + Update symbols.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2020 08:20:20 +0100
+
+mate-desktop (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:53:43 +0200
+
+mate-desktop (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add B-D: librsvg2-bin.
+    + Updated for MATE Desktop 1.22
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Delete 0001_add-setting-for-xkb-modifier-latching.patch.
+      Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/libmate-desktop-2-17.symbols:
+    + Update symbols file for this upstream release.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 10:26:19 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog gir1.2-matedesktop-2.0`.

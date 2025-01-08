@@ -1,0 +1,5 @@
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatemixer.so.0
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatemixer.so.0.0.0
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatemixer/libmatemixer-alsa.so
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatemixer/libmatemixer-null.so
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatemixer/libmatemixer-pulse.so

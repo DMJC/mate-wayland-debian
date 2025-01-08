@@ -1,0 +1,13 @@
+Description: Add keywords entry to .desktop file.
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+
+--- a/mate-terminal.desktop.in.in
++++ b/mate-terminal.desktop.in.in
+@@ -4,6 +4,7 @@
+ Comment=Use the command line
+ TryExec=mate-terminal
+ Exec=mate-terminal
++Keywords=Terminal,Shell,Console,Command
+ # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+ Icon=utilities-terminal
+ Type=Application

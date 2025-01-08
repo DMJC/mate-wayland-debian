@@ -1,0 +1,13 @@
+diff --git a/libmenu/menu-monitor.c b/libmenu/menu-monitor.c
+index b57174f..8312667 100644
+--- a/libmenu/menu-monitor.c
++++ b/libmenu/menu-monitor.c
+@@ -141,7 +141,7 @@ static void menu_monitor_queue_event(MenuMonitorEventInfo* event_info)
+
+   if (events_idle_handler == 0)
+     {
+-      events_idle_handler = g_idle_add ((GSourceFunc) emit_events_in_idle, NULL);
++      events_idle_handler = g_timeout_add_seconds (1, (GSourceFunc) emit_events_in_idle, NULL);
+     }
+ }
+

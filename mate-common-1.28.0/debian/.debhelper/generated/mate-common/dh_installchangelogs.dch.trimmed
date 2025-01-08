@@ -1,0 +1,83 @@
+mate-common (1.28.0-1) unstable; urgency=medium
+
+  [ James Carthew ]
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+    + Bump DH compat level to version 13.
+  * debian/watch:
+    + Use format version 4.
+  * debian/patches:
+    + Add 1001_use-bash-for-mate-autogen.patch. Script uses bash'isms.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:00:00 +0930
+
+mate-common (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+    + Bump DH compat level to version 13.
+  * debian/watch:
+    + Use format version 4.
+  * debian/patches:
+    + Add 1001_use-bash-for-mate-autogen.patch. Script uses bash'isms.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 10 Dec 2021 11:26:51 +0100
+
+mate-common (1.24.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 15 Aug 2020 11:27:11 +0200
+
+mate-common (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Apr 2020 09:43:31 +0200
+
+mate-common (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/control:
+    + Add D (mate-common): autoconf-archive. A build-requirement
+      of many other MATE packages. Pulling it in together with
+      mate-common instead of adding a B-D on autoconf-archive everywhere.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2020 08:06:49 +0100
+
+mate-common (1.22.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 Sep 2019 00:04:04 +0200
+
+mate-common (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat]:
+    + Use new debhelper-compat notation. Bump to DH compat level version 12.
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 10 Jul 2019 12:59:51 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-common`.

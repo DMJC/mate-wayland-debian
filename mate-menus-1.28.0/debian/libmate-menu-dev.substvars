@@ -1,0 +1,4 @@
+gir:Provides=gir1.2-matemenu-2.0-dev (= 1.28.0-1)
+gir:Depends=gir1.2-gio-2.0-dev, gir1.2-matemenu-2.0 (= 1.28.0-1)
+misc:Depends=
+misc:Pre-Depends=

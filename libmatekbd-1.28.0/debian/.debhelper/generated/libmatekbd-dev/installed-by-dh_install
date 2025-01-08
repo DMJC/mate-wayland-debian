@@ -1,0 +1,5 @@
+debian/tmp/usr/include/
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatekbd.so
+debian/tmp/usr/lib/x86_64-linux-gnu/libmatekbdui.so
+debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/
+debian/tmp/usr/share/gir-1.0/

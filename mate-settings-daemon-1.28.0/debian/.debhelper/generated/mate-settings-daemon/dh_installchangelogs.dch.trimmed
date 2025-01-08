@@ -1,0 +1,160 @@
+mate-settings-daemon (1.28.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sun, 13 Oct 2024 19:33:29 +0930
+
+mate-settings-daemon (1.26.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Use udev.pc to place udev files. (Closes: #1059283)
+
+ -- Chris Hofstaedtler <zeha@debian.org>  Thu, 30 May 2024 03:21:29 +0200
+
+mate-settings-daemon (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+  * debian/patches:
+    + Fix typo in patch comment (1002-debounce_multiple_rfkill_events.patch).
+  * debian/rules:
+    + Set libexecdir to /usr/libexec (rather than /usr/bin).
+  * debian/mate-settings-daemon.install:
+    + Adjust to new libexecdir location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 06 Jan 2024 08:00:22 +0100
+
+mate-settings-daemon (1.26.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 1002-debounce_multiple_rfkill_events.patch (LP: #1936956)
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Drop B-D: on deprecated policykit-1. Not required. B-D on
+      libpolkit-gobject-1-dev is sufficient. (Closes: #1025600).
+    + Switch from libfontconfig1-dev to libfontconfig-dev. Thanks, lintian.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 10 Sep 2023 14:02:31 +0200
+
+mate-settings-daemon (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fix various memory leaks. (Closes: #837781).
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Rebase 1001_RDA-Don-t-apply-stored-monitor-configuration-if-sess.patch.
+  * debian/mate-settings-daemon.maintscript:
+    + Add file. Remove obsolete conffile. (Closes: #953077).
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4."
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Dec 2021 16:57:53 +0100
+
+mate-settings-daemon (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+     + Refactor 1001_RDA-Don-t-apply-stored-monitor-configuration-if-sess.patch.
+  * debian/copyright:
+     + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 14:51:26 +0200
+
+mate-settings-daemon (1.24.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add B:/R: relation to mate-desktop-common (<< 1.24.0-1~). (Closes:
+      #952713).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 28 Feb 2020 07:36:05 +0100
+
+mate-settings-daemon (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_new_video_key.patch. Rejected upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Update Build-Depends: to support MATE Desktop 1.24.
+    + Add B-D policykit-1.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 12:28:50 +0100
+
+mate-settings-daemon (1.22.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Bump Standards-Version: to 4.4.1. No changes needed.
+    + Add Rules-Requires-Root: field and set it to no.
+    + Add B-D librda-dev (>= 0.0.3).
+  * debian/patches:
+    + Add 1001_RDA-Don-t-apply-stored-monitor-configuration-if-sess.patch.
+      Don't re-apply stored monitor configuration if session is remote.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Dec 2019 09:17:14 +0100
+
+mate-settings-daemon (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:21:53 +0200
+
+mate-settings-daemon (1.22.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add B-D: dh-exec.
+  * debian/rules:
+    + Add --disable-rfkill configure option on non-Linux host archs.
+  * debian/mate-settings-daemon-common.install:
+    + Use dh-exec; omit installation of udev rules as they don't get created
+      when --disable-rfkill configure option is used on non-Linux host archs.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 04 Aug 2019 12:46:49 +0200
+
+mate-settings-daemon (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_support-org-mate-a11y-kbd-stickykeys-latch-to-lock.patch.
+      Applied upstream.
+  * debian/control:
+    + Updated for MATE Desktop 1.22
+  * debian/mate-settings-daemon-common.install:
+    + Add udev rules.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 17:18:34 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-settings-daemon`.

@@ -1,0 +1,5 @@
+debian/tmp/etc/
+debian/tmp/usr/libexec/
+debian/tmp/usr/lib/x86_64-linux-gnu/mate-settings-daemon/
+debian/tmp/usr/share/dbus-1/
+debian/tmp/usr/share/polkit-1/

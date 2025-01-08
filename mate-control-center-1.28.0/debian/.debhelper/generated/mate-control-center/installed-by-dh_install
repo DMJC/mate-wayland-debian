@@ -1,0 +1,6 @@
+debian/tmp/etc/
+debian/tmp/usr/bin/
+debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/mate-default-applications.pc
+debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/mate-keybindings.pc
+debian/tmp/usr/sbin/
+debian/tmp/usr/share/applications/

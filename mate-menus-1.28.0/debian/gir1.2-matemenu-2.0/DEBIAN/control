@@ -1,0 +1,20 @@
+Package: gir1.2-matemenu-2.0
+Source: mate-menus
+Version: 1.28.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 43
+Depends: gir1.2-gio-2.0, libmate-menu2 (>= 1.22.0)
+Breaks: gir1.2-mate-menu (<< 1.18.1-2~)
+Replaces: gir1.2-mate-menu (<< 1.18.1-2~)
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.mate-desktop.org/
+Description: GObject introspection data for the MATE menu specification
+ This package contains introspection data for MATE menu specification,
+ an implementation of the draft "Desktop Menu Specification" from
+ freedesktop.org.
+ .
+ It can be used by packages using the GIRepository format to generate dynamic
+ bindings.

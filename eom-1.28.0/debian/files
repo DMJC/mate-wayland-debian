@@ -1,0 +1,7 @@
+eom-common_1.28.0-1_all.deb graphics optional
+eom-dbgsym_1.28.0-1_amd64.deb debug optional automatic=yes
+eom-dev_1.28.0-1_amd64.deb libdevel optional
+eom-doc_1.28.0-1_all.deb doc optional
+eom_1.28.0-1_amd64.buildinfo graphics optional
+eom_1.28.0-1_amd64.deb graphics optional
+gir1.2-eom-1.0_1.28.0-1_amd64.deb introspection optional

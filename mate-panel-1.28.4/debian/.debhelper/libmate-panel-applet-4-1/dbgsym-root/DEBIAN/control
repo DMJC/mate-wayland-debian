@@ -1,0 +1,13 @@
+Package: libmate-panel-applet-4-1-dbgsym
+Source: mate-panel
+Version: 1.28.4-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 109
+Depends: libmate-panel-applet-4-1 (= 1.28.4-1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libmate-panel-applet-4-1
+Build-Ids: 5d02871e6c241cc7c5216e668bfa49556d2297c6

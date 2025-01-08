@@ -1,0 +1,20 @@
+pluma-plugins (1.27.0-3) unstable; urgency=medium
+
+  * Re-upload source-only as is.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Feb 2023 12:57:37 +0100
+
+pluma-plugins (1.27.0-2) unstable; urgency=medium
+
+  * Initial release to Debian. (Closes: #1001670).
+  * debian/copyright:
+    + Improve copyright attributions of help/*.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Fri, 03 Feb 2023 10:55:52 +0100
+
+pluma-plugins (1.27.0-1) REJECTED; urgency=medium
+
+  [ Johannes Unruh ]
+  * Initial release. (Closes: #1001670).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 Jan 2023 15:40:02 +0100

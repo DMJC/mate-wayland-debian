@@ -1,0 +1,200 @@
+caja-actions (1.27.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+    + Drop unused license paragraph. Thanks, lintian.
+    + Don't list COPYING files in copyright attributions.
+  * debian/rules:
+    + Drop dbgsym migration DH override. The dbgsym migration is over.
+    + Don't set DH flag '--parallel'. It's the default these days.
+  * debian/upstream/metadata:
+    + Add file. Comply with DEP-12.
+  * debian/patches:
+    + Mark 2003_no-extra-license-file.patch as Debian-specific.
+  * debian/caja-actions.lintian-overrides:
+    + Drop postinst-has-useless-call-to-ldconfig and
+      postrm-has-useless-call-to-ldconfig.
+  * debian/source/lintian-overrides:
+    + Add file. Add various source-is-missing overrides for html files.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 30 Jan 2023 00:00:33 +0100
+
+caja-actions (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Update Homepage: field.
+  * debian/caja-actions-dev.install:
+    + Drop gtk-doc folder.
+  * debian/patches:
+    + Drop 1001_typo-fix.patch. Patched file no longer in upstream project.
+    + Refactor 2003_no-extra-license-file.patch.
+  * debian/copyright:
+    + Update Source: URL.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/patches:
+    + Drop 1002_cross.patch, applied upstream.
+  * debian/watch:
+    + Use format version 4, update upstream URL.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 27 Jan 2022 22:44:23 +0100
+
+caja-actions (1.8.3-6) unstable; urgency=medium
+
+  * debian/caja-actions.install:
+    + Use wild-card for /usr/lib* (also covering ~/usr/libexec/). Fixes FTBFS
+      caused by dh_missing complaining about non-installed files after install
+      target.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 10 May 2021 17:29:47 +0200
+
+caja-actions (1.8.3-5) unstable; urgency=medium
+
+  * debian/{compat,control}:
+    + Use debhelper-compat notation.
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump DH compat level to version 13.
+    + Bump Standards-Version: to 4.5.1. No changes needed.
+  * debian/watch:
+    + Fix Github watch URL.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 10 May 2021 11:44:35 +0200
+
+caja-actions (1.8.3-4) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Use secure URI for copyright format.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+  * debian/patches:
+    + Add 1002_cross.patch. Fix FTCBFS: lintian tag autotools-pkg-config-macro-
+      not-cross-compilation-safe. (Closes: #902824). Thanks to Helmut Grohne
+      for providing the patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 22 Jul 2018 21:42:59 +0200
+
+caja-actions (1.8.3-3) unstable; urgency=medium
+
+  * debian/control:
+    + Drop now unneeded B-D on autotools-dev.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+     + Make B-D on libcaja-extension-dev versioned (>= 1.17.1).
+  * debian/{control,compat}:
+    + Bump to DH version level 11.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 09 Jan 2018 16:19:24 +0100
+
+caja-actions (1.8.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Update Ds (caja-actions-dev) to the new GTK+ 3.0 build. (Closes: #885809).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 09 Jan 2018 16:03:16 +0100
+
+caja-actions (1.8.3-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Move --fail-missing option from dh_install to dh_missing.
+  * debian/{compat,control}:
+    + Switch to DH version level 10.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+    + Drop B-D libunique-3.0-dev. Not required anymore. (Closes: #844376).
+  * debian/patches:
+    + Drop patches 1001_fix-spelling-errors.patch,
+                   1002_add-keywords-entry-to-desktop-file.patch,
+                   1003_no-version-in-doc-path.patch.
+      All applied upstream.
+    + Update 2003_no-extra-license-file.patch.
+    + Add 1001_typo-fix.patch. Fix spelling of the word \"unknown\".
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh."
+    + Remove ChangeLog file from doc folder, placed there by upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Aug 2017 17:03:18 -0400
+
+caja-actions (1.8.1-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * New upstream release
+  * debian/caja-actions.install:
+    + Add needed path to install help files.
+  * debian/copyright:Add missing files.
+  * debian/patches:
+    + Drop 2003_no-extra-license-file.patch and README.
+    + Drop 2001_omit-gfdl-license-doc-files.patch and
+      2002_no-version-in-pkgdocdir.patch.
+    + Drop 1001_desktop-entry-lacks-keywords-entry.patch and
+      1002_various-spelling-fixes.patch.
+  * debian/copyright:
+    + Add GFDL license.
+  * debian/watch:
+    + Update upstream URL changes.
+
+  [ Martin Wimpress ]
+  * debian/changelog:
+    + Drop +dfsg1 suffix.
+  * debian/copyright:
+    + Add COPYING-DOCS
+  * debian/rules:
+    + Drop +dfsg1 repacking because the docs are DFSG compliant.
+  * debian/watch:
+    + Drop dfsg1 suffix.
+
+  [ Mike Gabriel ]
+  * debian/{control,rules}:
+    + Switch to building against GTK-3.
+    + Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+    + Use secure URLs for Vcs-*: fields.
+    + Add Breaks:/Replaces: to caja-actions-common (breaking caja-actions
+      << 1.8.1-1~).
+  * lintian:
+    + Drop not-needed-anymore
+      pkg-has-shlibs-control-file-but-no-actual-shared-libs override.
+  * caja-actions(-common).install:
+    + Move help files into -common bin:package.
+  * debian/rules:
+    + Enable all hardening flags.
+  * debian/patches:
+    + Add 1001_fix-spelling-errors.patch: Fix various spelling issues in code
+      and printed messages (plus translations).
+    + Add 1002_add-keywords-entry-to-desktop-file.patch: Silence lintian on
+      missing keyword entry.
+    + Add 1003_no-version-in-doc-path.patch: Don't install doc files into
+      versioned folder.
+    + Update/rebase 2003_no-extra-license-file.patch.
+  * doc-base: Add doc-base description file.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Oct 2016 11:21:00 +0200
+
+caja-actions (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release (Closes: #777226).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 Feb 2015 12:06:56 +0100

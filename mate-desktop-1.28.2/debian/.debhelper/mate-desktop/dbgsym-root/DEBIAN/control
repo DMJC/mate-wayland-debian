@@ -1,0 +1,12 @@
+Package: mate-desktop-dbgsym
+Source: mate-desktop
+Version: 1.28.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 41
+Depends: mate-desktop (= 1.28.2-1)
+Section: debug
+Priority: optional
+Description: debug symbols for mate-desktop
+Build-Ids: 7c89eca0fd3917eb8d542c47d06c7621b81b308c 9e062523bb8c3827bbc3473975c7ede4ad45d58b

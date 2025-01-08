@@ -1,0 +1,5 @@
+mate-settings-daemon-common_1.28.0-1_all.deb x11 optional
+mate-settings-daemon-dbgsym_1.28.0-1_amd64.deb debug optional automatic=yes
+mate-settings-daemon-dev_1.28.0-1_amd64.deb devel optional
+mate-settings-daemon_1.28.0-1_amd64.buildinfo x11 optional
+mate-settings-daemon_1.28.0-1_amd64.deb x11 optional

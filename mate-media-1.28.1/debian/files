@@ -1,0 +1,4 @@
+mate-media-common_1.28.1-1_all.deb x11 optional
+mate-media-dbgsym_1.28.1-1_amd64.deb debug optional automatic=yes
+mate-media_1.28.1-1_amd64.buildinfo x11 optional
+mate-media_1.28.1-1_amd64.deb x11 optional

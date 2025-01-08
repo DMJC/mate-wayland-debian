@@ -1,0 +1,5 @@
+debian/tmp/usr/bin/eom
+debian/tmp/usr/lib/x86_64-linux-gnu/eom/plugins/
+debian/tmp/usr/share/applications/eom.desktop
+debian/tmp/usr/share/glib-2.0/
+debian/tmp/usr/share/man/

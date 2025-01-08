@@ -1,0 +1,20 @@
+Package: libmate-menu2
+Source: mate-menus
+Version: 1.28.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 132
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.80.0)
+Breaks: libmate-slab0 (<< 1.22.0), libmatemenu, mate-menus (<= 1.0.2-1), mate-panel (<< 1.22.0), mate-screensaver (<< 1.22.0), python-mate-menu (<< 1.22.0)
+Replaces: libmatemenu, mate-menus (<= 1.0.2-1), python-mate-menu (<< 1.22.0)
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.mate-desktop.org/
+Description: implementation of the freedesktop menu specification for MATE (library)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the actual library files.

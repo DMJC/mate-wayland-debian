@@ -1,0 +1,12 @@
+Package: mate-applets-dbgsym
+Source: mate-applets
+Version: 1.28.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 1089
+Depends: mate-applets (= 1.28.1-1)
+Section: debug
+Priority: optional
+Description: debug symbols for mate-applets
+Build-Ids: 00a9408c1e6aeed7cb5688bf6c98596887decb5c 159aedd24341ad83a52ea49e3a8e8b076ae656f4 2d7f3d53669d6470691e6db3c69a1306b080ae6d 2db69f1da3eb26abdbd5ae1d8015a5b7c2fb744d 38d8e13ee5743c74d52a96fac2af359febf105bf 3e226f2d6f043e6c1e16d6ed06f839885ed46b83 470794773cec49b9a3327a69498f7dcd56a73275 4b0fa5f5818014d17149e242147cd5aa8ca78d1d 56fa622fb6c01f4d8acd506e2e4cd841a11a8a89 715e0eb6bb907ecf42b3551283d15d57278f293a 7f6d80e862e94a9044447b6c98db8f9e33831a73 86eb139e4a81cd479bd05d60e5fc175544597e9b d1bced45ea716ceaff4d2e5e2469b50562da1332 eecff731febf62c7fb2e790b969bce0086f97213

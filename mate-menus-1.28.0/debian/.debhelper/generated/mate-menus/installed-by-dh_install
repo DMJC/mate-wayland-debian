@@ -1,0 +1,4 @@
+debian/tmp/etc/
+debian/tmp/usr/share/locale
+debian/tmp/usr/share/mate
+debian/tmp/usr/share/mate-menus

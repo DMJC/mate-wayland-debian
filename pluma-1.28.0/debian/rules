@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@ $(DHFLAGS) --with gir --without autoreconf
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/pluma/plugins/*.la
+	rm -rf debian/tmp/usr/lib/*/pluma/plugins/*/*.pyc
+	rm -rf debian/tmp/usr/lib/*/pluma/plugins/*/*.pyo
+	rm -rfv debian/tmp/usr/lib/*/pluma/plugins/*/__pycache__/
+	mkdir -p debian/tmp/usr/share/doc/pluma/
+	mv debian/tmp/usr/share/gtk-doc/html/pluma debian/tmp/usr/share/doc/pluma/html
+	dh_install
+
+override_dh_auto_configure:
+	# we need libegg from mate-submodules
+	cd pluma/mate-submodules/; tar xvJf /usr/src/mate-submodules-source.tar.xz
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
+		--libexecdir=/usr/libexec \
+		--enable-gtk-doc
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_auto_test:
+	DEB_BUILD_OPTIONS=nocheck dh_auto_test
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

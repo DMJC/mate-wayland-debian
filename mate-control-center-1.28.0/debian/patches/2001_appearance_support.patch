@@ -1,0 +1,127 @@
+diff --git a/capplets/appearance/appearance-support.c b/capplets/appearance/appearance-support.c
+index 7c339e5..1f2917b 100644
+--- a/capplets/appearance/appearance-support.c
++++ b/capplets/appearance/appearance-support.c
+@@ -100,19 +100,108 @@ metacity_theme_apply(const gchar *theme, const gchar *font)
+     }
+ }
+ 
++/* Change the Plank theme if a Yaru theme is selected */
++static void
++plank_theme_apply(const gchar *theme, const gchar *layout)
++{
++    gchar *dconf_cmd = NULL;
++
++    if (g_str_has_prefix (theme, "Yaru"))
++    {
++        if (g_str_has_prefix (layout, "mutiny"))
++        {
++            if (g_str_has_suffix (theme, "-dark"))
++            {
++                dconf_cmd = g_strdup_printf("dconf write /net/launchpad/plank/docks/dock1/theme \"'Mutiny-dark'\"");
++            } else
++            {
++                dconf_cmd = g_strdup_printf("dconf write /net/launchpad/plank/docks/dock1/theme \"'Mutiny-light'\"");
++            }
++        }
++        else
++        {
++            if (g_str_has_suffix (theme, "-dark"))
++            {
++                dconf_cmd = g_strdup_printf("dconf write /net/launchpad/plank/docks/dock1/theme \"'Yaru-dark'\"");
++            } else
++            {
++                dconf_cmd = g_strdup_printf("dconf write /net/launchpad/plank/docks/dock1/theme \"'Yaru-light'\"");
++            }
++        }
++        g_spawn_command_line_async (dconf_cmd, NULL);
++        g_free (dconf_cmd);
++    }
++}
++
++/* Change the GtkSourceView Style for Pluma if a Yaru theme is selected */
++static void
++pluma_theme_apply(const gchar *theme)
++{
++    gchar *gsettings_cmd = NULL;
++
++    if (g_str_has_prefix (theme, "Yaru"))
++    {
++        if (g_str_has_suffix (theme, "-dark"))
++        {
++            gsettings_cmd = g_strdup_printf("gsettings set org.mate.pluma color-scheme 'Yaru-dark'");
++        } else
++        {
++            gsettings_cmd = g_strdup_printf("gsettings set org.mate.pluma color-scheme 'Yaru'");
++        }
++        g_spawn_command_line_async (gsettings_cmd, NULL);
++        g_free (gsettings_cmd);
++    }
++}
++
++/* If the theme is "-dark", set the GNOME 42 dark preference */
++static void
++color_scheme_apply(const gchar *theme)
++{
++    gchar *gsettings_cmd = NULL;
++
++    if (g_str_has_suffix (theme, "-dark"))
++    {
++        gsettings_cmd = g_strdup_printf("gsettings set org.gnome.desktop.interface color-scheme prefer-dark");
++    } else
++    {
++        gsettings_cmd = g_strdup_printf("gsettings set org.gnome.desktop.interface color-scheme default");
++    }
++    g_spawn_command_line_async (gsettings_cmd, NULL);
++    g_free (gsettings_cmd);
++}
++
+ static void
+ marco_theme_changed(GSettings *settings, gchar *key, AppearanceData* data)
+ {
+     gchar *theme = NULL;
+     gchar *font = NULL;
++    gchar *layout = NULL;
++    GSettings * panel_settings;
++
++    theme = g_settings_get_string (settings, MARCO_THEME_KEY);
++    font = g_settings_get_string (settings, WINDOW_TITLE_FONT_KEY);
++
++    panel_settings = g_settings_new ("org.mate.panel");
++    layout = g_settings_get_string (panel_settings, "default-layout");
++
++    if (is_program_in_path ("gsettings"))
++    {
++        color_scheme_apply (theme);
++        pluma_theme_apply (theme);
++    }
++
++    if (is_program_in_path ("dconf"))
++    {
++        plank_theme_apply (theme, layout);
++    }
++
+     if (metacity_is_running ())
+     {
+-        theme = g_settings_get_string (settings, MARCO_THEME_KEY);
+-        font = g_settings_get_string (settings, WINDOW_TITLE_FONT_KEY);
+         metacity_theme_apply (theme, font);
+-        g_free (theme);
+-        g_free (font);
+     }
++    g_free (theme);
++    g_free (font);
++    g_free (layout);
+ }
+ 
+ void
+@@ -126,8 +215,7 @@ support_init(AppearanceData* data)
+     g_signal_connect (data->marco_settings, "changed::" WINDOW_TITLE_FONT_KEY,
+                       G_CALLBACK (marco_theme_changed), data);
+     /* apply theme at start */
+-    if (metacity_is_running ())
+-        marco_theme_changed (data->marco_settings, NULL, data);
++    marco_theme_changed (data->marco_settings, NULL, data);
+ }
+ 
+ void

@@ -1,0 +1,25 @@
+From 01a64cddcd20b8b6647962e1336a3bb608d39a02 Mon Sep 17 00:00:00 2001
+From: Colomban Wendling <cwendling@hypra.fr>
+Date: Tue, 23 Jan 2024 19:20:11 +0100
+Subject: [PATCH] 7z: Fix accepting RAR archives when unar-open-zip=true
+
+Offset was not properly updated when adding support for EPUB+ZIP in
+84fb5cfe96263f79e50b68a5a6996e40c514cf74, leading to disabling both ZIP
+and RAR when the option unar-open-zip was enabled.
+
+Signed-off-by: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+---
+ src/fr-command-7z.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/src/fr-command-7z.c
++++ b/src/fr-command-7z.c
+@@ -611,7 +611,7 @@
+ 
+ 	if (g_settings_get_boolean (settings, "unar-open-zip") &&
+ 	    is_program_in_path ("unar") && is_program_in_path ("lsar"))
+-		sevenz_mime_types [8] = NULL;
++		sevenz_mime_types [9] = NULL;
+ 	else
+ 		g_settings_set_boolean (settings, "unar-open-zip", FALSE);
+ 

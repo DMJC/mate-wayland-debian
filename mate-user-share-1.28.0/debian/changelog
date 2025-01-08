@@ -1,0 +1,320 @@
+mate-user-share (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/mate-user-share.lintian-overrides:
+    + Drop file. Not required anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 13 Dec 2021 08:01:20 +0100
+
+mate-user-share (1.24.0-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1002_fix-only-showin.patch. Drop empty Categories= field. (Closes:
+      #952401).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Feb 2020 08:30:47 +0100
+
+mate-user-share (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 20:25:06 +0100
+
+mate-user-share (1.22.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop obex-data-server dependency, as Bluetooth support is not compiled
+    and thus obex-push / obexftp are not available.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Wed, 18 Dec 2019 01:45:06 +0000
+
+mate-user-share (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+    + Remove trailing line from EOF.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Jul 2019 21:02:49 +0200
+
+mate-user-share (1.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 08 Jul 2018 02:49:28 +0200
+
+mate-user-share (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.0-0ubuntu1):
+    + Update copyright attributions.
+  * debian/patches (already in 1.19.0-0ubuntu1):
+    + Drop 0001_build-use-correct-macros-to-fix-cross-build.patch. Applied
+      upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 10:32:21 +0100
+
+mate-user-share (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
+
+mate-user-share (1.19.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 25 Jan 2018 21:48:12 +0000
+
+mate-user-share (1.18.0-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 0001_build-use-correct-macros-to-fix-cross-build.patch. Fix pkg-config
+      originated FTCBFS. (Closes: #886578).
+  * debian/watch:
+    + Use secure URL for obtaining upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Jan 2018 11:13:30 +0100
+
+mate-user-share (1.18.0-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/rules: Add --disable-silent-rules, as used in other packages.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Add new block for DEB_DH_MISSING_ARGS.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Switch from DEB_DH_INSTALL_ARGS += --fail-missing to list-missing target
+      from CDBS's utils.mk.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 17:12:21 +0200
+
+mate-user-share (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Drop B-D: libunique-3.0-dev. Not required by this upstream
+      release anymore. (Closes: #827233). (Already dropped in 1.15).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 22:27:02 +0200
+
+mate-user-share (1.15.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + dbgsym: Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
+
+mate-user-share (1.14.0-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+    + Use encrypted URLs for Vcs-*: field.
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: libcaja-extension-dev (>= 1.14)
+    + B-D: libcanberra-gtk3-dev
+    + B-D: libgtk-3-dev
+    + B-D: libunique-3.0-dev
+    + Versioned B-D: mate-common (>= 1.14)
+    + Processed with wrap-and-sort.
+  * debian/mate-user-share-common.install:
+    + MateConf dropped upstream.
+  * debian/rules:
+    + Add --with-gtk=3.0
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+  * lintian: Drop unused overrides.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 17:16:45 +0200
+
+mate-user-share (1.12.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/rules:
+    + Remove obsolete deletion of dav_user_2.0.conf.
+  * debian/control:
+    + Correct Breaks and Replaces.
+    + Drop obsolete B-D: libdbus-1-dev.
+    + Versioned B-D: mate-common (>= 1.12) and libcaja-extension-dev (>= 1.12).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 10:22:43 +0100
+
+mate-user-share (1.10.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add mate-user-share-common package.
+    + Update for upstream release.
+  * debian/patches:
+    + Drop 1002_add-keywords-key-to-desktop-files.patch. Applied upstream.
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-user-share
+      help is DFSG compliant.
+  * debian/mate-user-share-common.install:
+    + Add usr/share/help.
+  * debian/rules:
+    + Remove +dfsg1 suffix.
+  * debian/watch:
+    + Remove +dfsg1 suffix.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Fix removal of libcaja-user-share.la (file name changed since 1.8.x
+      releases).
+    + Don't use "-f" option in rm command.
+  * debian/control:
+    + Use upstream's README as LONG_DESCRIPTION.
+  * lintian:
+    + Add overrides for erroneously triggered makeshlibs lintian error /
+      warnings.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Sep 2015 05:58:18 +0200
+
+mate-user-share (1.8.1+dfsg1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control:
+    + Update D (mate-user-share): apache2.2-bin -> apache2-bin. (Closes:
+      #785224).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 21 May 2015 06:18:58 +0200
+
+mate-user-share (1.8.1+dfsg1-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Including the GLib >= 2.43 compatibility patch. (Closes: #779850).
+  * debian/patches:
+    + Drop 0001_mem-leak-fix.patch, 0002_array-out-of-bounds.patch. Both
+      included in latest upstream release.
+  * debian/copyright:
+    + Add non-mentioned files.
+    + Don't mention files generated at build time.
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 13 Mar 2015 11:12:01 +0100
+
+mate-user-share (1.8.0+dfsg1-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_mem-leak-fix.patch, 0002_array-out-of-bounds.patch. Fix memory
+      leak and out-of-bounds access to array if bluetooth is disabled. (Closes:
+      #779821).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Mar 2015 15:33:50 +0100
+
+mate-user-share (1.8.0+dfsg1-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add D (mate-user-share): gvfs-backends. (Closes: #777311).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Mar 2015 08:19:34 +0100
+
+mate-user-share (1.8.0+dfsg1-2) unstable; urgency=low
+
+  * debian/control:
+    + Drop D (bin:package mate-user-share): mate-bluetooth. That package
+      is not / will not be available in Debian. The package dependency
+      on mate-bluetooth was required for MATE 1.6, but is deprecated
+      for MATE 1.8.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Apr 2014 11:54:04 +0200
+
+mate-user-share (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734989).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 25 Apr 2014 13:18:50 +0200

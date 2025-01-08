@@ -1,0 +1,2 @@
+# checking manually 1.26.0: it is linked against libc. Is this a false-positive?
+caja-sendto: library-not-linked-against-libc usr/lib/*/caja/extensions-2.0/libcaja-sendto.so

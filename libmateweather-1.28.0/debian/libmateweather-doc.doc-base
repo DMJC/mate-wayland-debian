@@ -1,0 +1,9 @@
+Document: libmateweather
+Title: libmateweather documentation
+Author: MATE Desktop Team
+Abstract: This document describes the mate weather library.
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libmateweather/html/index.html
+Files: /usr/share/doc/libmateweather/html/*

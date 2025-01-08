@@ -1,0 +1,466 @@
+mate-system-monitor (1.26.3-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix Italian localization. (Closes: #1060746)."
+  * debian/control:
+    + Downgrade D: on mate-session-manager to S:. (Closes: #1052997).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jan 2024 13:55:34 +0100
+
+mate-system-monitor (1.26.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 06 Jan 2024 09:21:41 +0100
+
+mate-system-monitor (1.26.0-5) unstable; urgency=medium
+
+  * debian/mate-system-monitor.install:
+    + libexec files need to be picked-up from /usr/libexec now, not /usr/lib.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 25 Sep 2023 07:42:42 +0200
+
+mate-system-monitor (1.26.0-4) unstable; urgency=medium
+
+  * debian/control:
+    + Add versioned D: (mate-system-monitor) on mate-session-manager
+      (>= 1.26.1-2~).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 24 Sep 2023 23:28:56 +0200
+
+mate-system-monitor (1.26.0-3) unstable; urgency=medium
+
+  * debian/rules: set LIBEXECDIR to /usr/libexec/. This is required for some
+    correct interaction with tools from mate-session-manager. Thanks to Jeremy
+    Bicha for bringing this up."
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 24 Sep 2023 23:23:05 +0200
+
+mate-system-monitor (1.26.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Replace deprecated D: on policykit-1 by B-D: on libpolkit-gobject-1-dev.
+      (Closes: #1025602, #1042350).
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 10 Sep 2023 14:30:31 +0200
+
+mate-system-monitor (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Dec 2021 00:44:37 +0100
+
+mate-system-monitor (1.24.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2020 09:47:47 +0200
+
+mate-system-monitor (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D policykit-1.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 11:07:17 +0100
+
+mate-system-monitor (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 23:02:34 +0200
+
+mate-system-monitor (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 27 Jul 2019 23:40:27 +0200
+
+mate-system-monitor (1.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+    + White-space clean-up at EOF.
+  * debian/rules:
+    + Drop override_dh_install target. The appdata.xml file is now installed
+      to the correct location."
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Jan 2019 12:16:42 +0100
+
+mate-system-monitor (1.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Make Upstream-Name: field's value more human readable.
+    + Update Source: field. Use upstream's Git site and https in  URL.
+    + Update Upstream-Contact: field.
+    + White-space fix for prev commit.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Jul 2018 15:17:25 +0200
+
+mate-system-monitor (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.1-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.1-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+  * debian/{rules,mate-system-monitor-common.install}:
+    + Move appstream metadata file to new location (until upstream has fixed
+      their location).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Feb 2018 20:16:57 +0100
+
+mate-system-monitor (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
+
+mate-system-monitor (1.19.1-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 23:51:59 +0000
+
+mate-system-monitor (1.18.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop from R: libgksu2-0. (Closes: #883487).
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Fri, 08 Dec 2017 11:56:16 +0100
+
+mate-system-monitor (1.18.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 10:05:12 +0100
+
+mate-system-monitor (1.18.0-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/mate-system-monitor-common.install: Add usr/share/polkit-1/
+  * debian/mate-system-monitorinstall: Add usr/lib/
+  * debian/copyright: Update copyright attributions.
+  * debian/control: Dependencies updated for MATE 1.18.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 14:08:39 +0200
+
+mate-system-monitor (1.16.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Drop unused B-D docbook-to-man.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 19:56:33 +0100
+
+mate-system-monitor (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 20:50:01 +0200
+
+mate-system-monitor (1.15.0-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
+
+mate-system-monitor (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 12:09:05 +0200
+
+mate-system-monitor (1.14.0-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + dbgsym: Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+  [ James Clarke ]
+  * debian/rules:
+    + Build without systemd support on non-Linux kernels (Closes: #826183).
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Sat, 04 Jun 2016 15:19:12 +0200
+
+mate-system-monitor (1.14.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev
+    + B-D: libgtkmm-3.0-dev
+    + B-D: libwnck-3-dev.
+    + Versioned B-D: mate-common (>= 1.14)
+  * debian/rules:
+    + MateConf dropped upstream.
+    + Add --with-gtk=3.0
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 16:40:54 +0200
+
+mate-system-monitor (1.12.2-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/copyright:
+    + Fix spelling error in License: field.
+  * debian/control:
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+    + Use encrypted URLs for Vcs-*: field.
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream bugfix release.
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Mar 2016 13:43:26 +0200
+
+mate-system-monitor (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fix display of memory sizes in process tab. (Closes: #804661).
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Drop 1002_stdc++11.patch. Applied upstream.
+    + Drop 1001_search-for-libsystemd-dev.patch. Applied upstream.
+  * debian/watch:
+    + Drop +gfdl suffix.
+  * debian/control:
+    + Drop obsolete B-D: mate-icon-theme.
+    + Versioned B-D: mate-common (>= 1.12).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 08:27:29 +0100
+
+mate-system-monitor (1.10.1+gfdl1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Fix Breaks:/Replaces: (mate-system-monitor-common) relation between
+      mate-system-monitor and mate-system-monitor-common (m-s-m-common breaks
+      mate-system-monitor, but does not replace it). Also correct the Debian
+      version for Breaks: field.
+  * debian/patches:
+    + Add 1002_stdc++11.patch. Use -std=c++11 (instead of -std=c++98) in
+      CXXFLAGS.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Oct 2015 10:03:29 +0200
+
+mate-system-monitor (1.10.1+gfdl1-1) unstable; urgency=medium
+
+  * debian/patches:
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-system-monitor help
+      is DFSG compliant.
+  * debian/control:
+    + Remove superfluous libdbus-glib-1-dev build dependency.
+    + Update Replaces and Breaks for mate-system-monitor-common.
+  * debian/mate-system-monitor-common.install:
+    + Add usr/share/{glib-2.0,help,man}.
+  * debian/rules:
+    + Remove +dfsg1 suffix.
+  * debian/watch:
+    + Remove +dfsg1 suffix.
+  * debian/copyright:
+    + Add copyright attribution for help authors and translators.
+
+  [ Mike Gabriel ]
+  * Re-upload to unstable. (Closes: #795066).
+    - Temporarily use a +gfdl1 suffix to make this upload's
+      upstream version greater than the previous +dfsg1 upload.
+      FIXME: drop the upstream version suffix completely with next upstream
+      release).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2015 23:35:22 +0200
+
+mate-system-monitor (1.10.1+dfsg1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 15:48:29 +0200
+
+mate-system-monitor (1.10.0+dfsg1-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/mate-system-monitor-common.install:
+    + Add /usr/share/appdata/.
+  * debian/copyright:
+    + Update copyright file after new upstream release.
+  * debian/patches:
+    + Drop 1001_fix-name-section-in-man-page.patch. Applied upstream.
+  * debian/rules:
+    + Add --enable-systemd because systemd is disabled by default.
+    + Remove obsolete --disable-scrollkeeper.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.10).
+    + Add B-D: libsystemd-dev.
+    + Add Martin Wimpress to Uploaders: field.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in $(CURDIR).
+  * debian/copyright:
+    + Really mention all upstream files.
+    + More updates for new upstream release.
+  * debian/patches:
+    + Add 1001_search-for-libsystemd-dev.patch. Be satisfied if libsystemd-dev
+      is installed at build time.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+  * debian/rules:
+    + Remove non-packaged *.convert files after build.
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 14:37:05 +0200
+
+mate-system-monitor (1.8.0+dfsg1-2) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Fix copy+paste error in tarball repacking code.
+  * debian/mate-system-monitor-common.install:
+    + Drop mate-conf .convert files from package.
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + mate-system-monitor depends on mate-system-monitor-common.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 10:35:29 +0200
+
+mate-system-monitor (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    + Provide README explaining the patch numbering scheme.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/patches:
+    + Drop patch 1001_add-keywords-to-desktop-file.patch. Fixed upstream.
+    + Refresh patch 2001_omit-gfdl-licensed-help-files.patch.
+    + Add patch 1001_fix-name-section-in-man-page.patch. Fix whatis
+      entry in NAME section of mate-system-monitor.1 man page.
+  * debian/copyright:
+    + Adapt to files in new (repacked) upstream tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * debian/control:
+    + Drop B-D: libmate-wnck-dev.
+    + Add B-D: libwnck-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Mar 2014 17:38:50 +0100
+
+mate-system-monitor (1.6.1+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734871).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Feb 2014 10:43:50 +0100

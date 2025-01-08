@@ -1,0 +1,7 @@
+gir1.2-pluma-1.0_1.28.0-1_amd64.deb introspection optional
+pluma-common_1.28.0-1_all.deb x11 optional
+pluma-dbgsym_1.28.0-1_amd64.deb debug optional automatic=yes
+pluma-dev_1.28.0-1_amd64.deb libdevel optional
+pluma-doc_1.28.0-1_all.deb doc optional
+pluma_1.28.0-1_amd64.buildinfo x11 optional
+pluma_1.28.0-1_amd64.deb x11 optional

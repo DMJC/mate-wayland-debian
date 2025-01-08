@@ -1,0 +1,3 @@
+# We have no better way to shut down user processes
+caja-dropbox: killall-is-dangerous [control/prerm:8]
+

@@ -1,0 +1,7 @@
+# filed upstream: https://github.com/mate-desktop/mate-applets/issues/375
+mate-applets-common: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/32x32/apps/mate-ax-slowkeys-no.png 20x20
+mate-applets-common: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/32x32/apps/mate-ax-slowkeys-pending.png 24x24
+mate-applets-common: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/32x32/apps/mate-ax-slowkeys-yes.png 20x20
+mate-applets-common: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/48x48/apps/mate-ax-slowkeys-no.png 20x20
+mate-applets-common: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/48x48/apps/mate-ax-slowkeys-pending.png 24x24
+mate-applets-common: icon-size-and-directory-name-mismatch usr/share/icons/hicolor/48x48/apps/mate-ax-slowkeys-yes.png 20x20

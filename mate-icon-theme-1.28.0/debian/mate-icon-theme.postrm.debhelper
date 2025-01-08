@@ -1,0 +1,5 @@
+# Automatically added by dh_icons/13.20
+if command -v update-icon-caches >/dev/null; then
+	update-icon-caches /usr/share/icons/mate /usr/share/icons/menta
+fi
+# End automatically added section

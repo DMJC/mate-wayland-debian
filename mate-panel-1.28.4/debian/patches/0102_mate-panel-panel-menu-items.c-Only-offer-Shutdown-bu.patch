@@ -1,0 +1,38 @@
+From 2c80243e124a1998727b2273505a01d9d3d4a85c Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Wed, 21 Jun 2023 08:46:23 +0200
+Subject: [PATCH 2/6] mate-panel/panel-menu-items.c: Only offer Shutdown
+ button, if not running remotely (with HAVE_RDA defined).
+
+Signed-off-by: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+---
+ mate-panel/panel-menu-items.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/mate-panel/panel-menu-items.c b/mate-panel/panel-menu-items.c
+index 60555401..8eb9fd08 100644
+--- a/mate-panel/panel-menu-items.c
++++ b/mate-panel/panel-menu-items.c
+@@ -1630,6 +1630,9 @@ panel_menu_items_append_lock_logout (GtkWidget *menu)
+ 		gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+ 	}
+ 
++#ifdef HAVE_RDA
++	if (rda_session_is_local()) {
++#endif /* HAVE_RDA */
+ 	item = panel_menu_items_create_action_item (PANEL_ACTION_SHUTDOWN);
+ 	if (item != NULL) {
+ 		if (!separator_inserted)
+@@ -1637,6 +1640,9 @@ panel_menu_items_append_lock_logout (GtkWidget *menu)
+ 
+ 		gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+ 	}
++#ifdef HAVE_RDA
++	}
++#endif /* HAVE_RDA */
+ }
+ 
+ void
+-- 
+2.39.2
+

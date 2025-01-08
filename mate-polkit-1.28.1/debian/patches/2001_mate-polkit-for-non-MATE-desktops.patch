@@ -1,0 +1,16 @@
+Description: Allow mate-polkit to be used in Xfce, Cinnamon, etc.
+Author: Unit193
+
+---
+ src/polkit-mate-authentication-agent-1.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/src/polkit-mate-authentication-agent-1.desktop.in.in
++++ b/src/polkit-mate-authentication-agent-1.desktop.in.in
+@@ -5,5 +5,5 @@ Exec=@FULL_LIBEXECDIR@/polkit-mate-authe
+ Terminal=false
+ Type=Application
+ NoDisplay=true
+-OnlyShowIn=MATE;
++NotShowIn=GNOME;KDE;
+ X-MATE-AutoRestart=true

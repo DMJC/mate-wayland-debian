@@ -1,0 +1,7 @@
+2001_fix-FTCBFS.patch
+1001_add-shebang-to-isoinfo-script.patch
+0001_fix-segfault-on-opening-deb-files.patch
+0002_7zip.patch
+0003_7z-Fix-accepting-RAR-archives-when-unar-open-zip-tru.patch
+0004_Add-MIME-aliases-for-gzip-and-bzip2.patch
+1002_implicit-function-declaration.patch

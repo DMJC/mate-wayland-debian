@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+DEB_HOST_ARCH_OS?=$(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+ifeq (,$(filter linux, $(DEB_HOST_ARCH_OS)))
+WITHOUT_RFKILL = "--disable-rfkill"
+export deb_udevdir =
+else
+WITHOUT_RFKILL = ""
+export deb_udevdir = $(shell pkg-config --variable=udevdir udev | sed s,^/,,)
+endif
+
+
+%:
+	dh $@ $(DHFLAGS) --without autoreconf
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_install:
+	rm -rf debian/tmp/usr/lib/*/mate-settings-daemon/*.la
+	dh_install
+
+override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
+		--libexecdir=/usr/libexec \
+		--disable-static \
+	        $(WITHOUT_RFKILL) \
+		--enable-pulse
+
+override_dh_makeshlibs:
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

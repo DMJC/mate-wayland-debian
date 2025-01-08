@@ -1,0 +1,12 @@
+Description: Use bash in shebang as script uses bash'isms (reported by lintian)
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Forwarded: https://github.com/mate-desktop/mate-common/issues/35
+
+--- a/macros/mate-autogen
++++ b/macros/mate-autogen
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ #
+ # mate-common - Run this to generate all the initial makefiles, etc.
+ #

@@ -1,0 +1,12 @@
+Package: mate-polkit-dbgsym
+Source: mate-polkit
+Version: 1.28.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 83
+Depends: mate-polkit (= 1.28.1-1)
+Section: debug
+Priority: optional
+Description: debug symbols for mate-polkit
+Build-Ids: 98890bd6a6ac85221b517bffca129d7a9ac62d63

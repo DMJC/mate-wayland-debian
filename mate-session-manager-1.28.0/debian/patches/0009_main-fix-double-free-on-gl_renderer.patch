@@ -1,0 +1,27 @@
+From 1deb34ac81817da45b1e1d0c80f2bb4954a4253e Mon Sep 17 00:00:00 2001
+From: Jan Palus <jpalus@fastmail.com>
+Date: Sun, 21 May 2023 00:30:29 +0200
+Subject: [PATCH] main: fix double free on gl_renderer
+
+Fixes: 1263384 ("mate-session: fix memory leak")
+Fixes: #304
+Signed-off-by: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+---
+ mate-session/main.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/mate-session/main.c b/mate-session/main.c
+index fc2148e..68e3864 100644
+--- a/mate-session/main.c
++++ b/mate-session/main.c
+@@ -759,7 +759,6 @@ int main(int argc, char** argv)
+ 
+ 	gsm_xsmp_server_start(xsmp_server);
+ 	_gsm_manager_set_renderer (manager, gl_renderer);
+-	g_free (gl_renderer);
+ 	gsm_manager_start(manager);
+ 
+ 	gtk_main();
+-- 
+2.39.2
+

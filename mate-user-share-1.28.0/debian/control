@@ -1,0 +1,74 @@
+Source: mate-user-share
+Section: x11
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: cdbs,
+               debhelper (>= 10.3~),
+               dpkg-dev (>= 1.16.1.1),
+               intltool (>= 0.35.0),
+               libcaja-extension-dev (>= 1.18),
+               libcanberra-gtk3-dev,
+               libdbus-glib-1-dev,
+               libglib2.0-dev (>= 2.15.2),
+               libgtk-3-dev,
+               libnotify-dev,
+               libselinux1-dev [linux-any],
+               libxt-dev,
+               mate-common (>= 1.18),
+               pkg-config,
+               quilt,
+               yelp-tools,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: http://www.mate-desktop.org
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-user-share
+Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-user-share.git
+
+Package: mate-user-share
+Architecture: any
+Depends: apache2-bin,
+         gvfs-backends,
+         libapache2-mod-dnssd (>= 0.6),
+         mate-user-share-common (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: User level public file sharing via WebDAV
+ MATE user share is a small tool that binds together various free
+ software projects to bring easy to use user-level file sharing to the
+ masses.
+ .
+ The program is meant to run in the background when the user is logged
+ in, and when file sharing is enabled a webdav server is started that
+ shares the $HOME/Public folder. The share is then published to all
+ computers on the local network using mDNS/rendezvous, so that it shows
+ up in the Network location in GNOME.
+ .
+ The dav server used is Apache, so you need that installed. Avahi or
+ Howl is used for mDNS support, so you need to have that installed and
+ mDNSResolver running.
+
+Package: mate-user-share-common
+Architecture: all
+Depends: ${misc:Depends},
+Replaces: mate-user-share (<< 1.11.0),
+Breaks: mate-user-share (<< 1.11.0),
+Description: User level public file sharing via WebDAV (common files)
+ MATE user share is a small tool that binds together various free
+ software projects to bring easy to use user-level file sharing to the
+ masses.
+ .
+ The program is meant to run in the background when the user is logged
+ in, and when file sharing is enabled a webdav server is started that
+ shares the $HOME/Public folder. The share is then published to all
+ computers on the local network using mDNS/rendezvous, so that it shows
+ up in the Network location in GNOME.
+ .
+ The dav server used is Apache, so you need that installed. Avahi or
+ Howl is used for mDNS support, so you need to have that installed and
+ mDNSResolver running.
+ .
+ This package contains the architecture independent files.

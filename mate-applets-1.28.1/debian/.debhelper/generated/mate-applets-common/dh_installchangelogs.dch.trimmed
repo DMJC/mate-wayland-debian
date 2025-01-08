@@ -1,0 +1,170 @@
+mate-applets (1.28.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Wed, 11 Dec 2024 07:44:25 +0930
+
+mate-applets (1.28.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 12:14:25 +0930
+
+mate-applets (1.26.1-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload, with permission.
+  * Backport an upstream commit to fix a FTBFS with GCC 14. (Closes: #1075258)
+  * Revert the libnl -> libiwevgenie netspeed changes introduced with
+    1.26.1-3. libiw is deprecated, the build dependency is obsolete, and the
+    kernel emits warnings for the use of the deprecated API as well.
+    (Closes: #1058736)
+  * Remove org.mate.CPUFreqSelector.conf from /etc on upgrades, as this is
+    cruft left behind from when the file was moved to /usr/share back in the
+    1.24 series. (Closes: #951678)
+
+ -- Faidon Liambotis <paravoid@debian.org>  Thu, 05 Sep 2024 18:11:25 +0300
+
+mate-applets (1.26.1-3) unstable; urgency=medium
+
+  * debian/rules:
+    + Add configure option --with-iwevgenie for netspeed applet. (Closes:
+      #1017429).
+    + Disable configure option: --without-nl. (Conflicts with --with-iwevgenie).
+  * debian/control:
+    + Drop libnl-genl-3-dev from B-D. Not used for building netspeed applet.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 29 Mar 2024 16:58:15 +0100
+
+mate-applets (1.26.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop B-D: on deprecated policykit-1. Not required. B-D on
+      libpolkit-gobject-1-dev is sufficient. (Closes: #1025597).
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 10 Sep 2023 14:14:58 +0200
+
+mate-applets (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - geyes: consider the offset widget <-> window. (Closes: #865593).
+    - See upstream ChangeLog for further updates/fixes.
+  * debian/patches:
+    + Drop 1001_spelling-fixes.patch. Applied upstream
+  * debian/control:
+    + Bump Standards-Version: to 4.6.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 23 Jul 2022 23:51:50 +0200
+
+mate-applets (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Dependencies updated for MATE 1.26.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Add 1001_spelling-fixes.patch. Typo fix.
+  * debian/mate-applets-common.lintian-overrides:
+    + Override icon-size-and-directory-name-mismatch, issue filed upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Dec 2021 23:20:08 +0100
+
+mate-applets (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:48:34 +0200
+
+mate-applets (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/rules:
+    + Remove superfluous man pages.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D policykit-1.
+  * debian/rules:
+    + Remove obsolete -with-cpufreq-lib=cpupower.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 14:26:34 +0100
+
+mate-applets (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_FTBFS-against-libcpupower.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:33:24 +0200
+
+mate-applets (1.22.1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Restrict B-D to [linux-any] architectures. Fixes FTBFS on kfreebsd-* and
+      hurd-i386.
+  * debian/control:
+    + Allow libcpufreq-dev as alternative B-D on e.g. Ubuntu build daemons, as
+      libcpupower-dev is not available for Ubuntu at this time.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 10 Aug 2019 21:19:46 +0200
+
+mate-applets (1.22.1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1001_FTBFS-against-libcpupower.patch. Fix build
+      --with-libcpufreq=cpupower.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 10 Aug 2019 02:00:41 +0200
+
+mate-applets (1.22.1-2) unstable; urgency=medium
+
+  [ Frédéric Bonnard ]
+  * Switch to libcpupower usage. (Closes: #930783).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 09 Aug 2019 10:56:01 +0200
+
+mate-applets (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control (et al.):
+    + Drop Python and mention of the Invest applet (Closes: #927875).
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Jul 2019 00:56:21 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-applets-common`.

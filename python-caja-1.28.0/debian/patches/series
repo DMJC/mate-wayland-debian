@@ -1,0 +1,3 @@
+0001_reproducible-build.patch
+2001_fix-python-libdir-not-found.patch
+1000_fix_missing_g_strdup.patch

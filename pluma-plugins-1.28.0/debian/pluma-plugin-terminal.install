@@ -1,0 +1,4 @@
+usr/lib/*/pluma/plugins/terminal*
+usr/share/metainfo/pluma-terminal.metainfo.xml
+usr/share/glib-2.0/schemas/org.mate.pluma.plugins.terminal.gschema.xml
+usr/share/help/*/pluma-plugins/terminal.page

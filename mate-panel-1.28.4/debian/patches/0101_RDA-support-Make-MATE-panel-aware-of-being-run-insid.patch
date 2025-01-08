@@ -1,0 +1,201 @@
+From d8ae1087d3d6adc34a896be50ecbbdf58a58c773 Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Wed, 27 Jun 2018 15:20:16 +0200
+Subject: [PATCH] RDA support: Make MATE panel aware of being run inside a
+ remote desktop technology.
+
+Signed-off-by: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+---
+ configure.ac                       |  7 ++++++
+ mate-panel/Makefile.am             |  2 ++
+ mate-panel/panel-action-button.c   | 37 ++++++++++++++++++++++++++++++
+ mate-panel/panel-enums-gsettings.h |  1 +
+ mate-panel/panel-icon-names.h      |  5 ++++
+ mate-panel/panel-menu-items.c      | 25 ++++++++++++++++++++
+ 6 files changed, 77 insertions(+)
+
+diff --git a/configure.ac b/configure.ac
+index bfa9afc2..8db57601 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -243,6 +243,13 @@ if test "x$have_randr" = "xyes"; then
+   AC_DEFINE(HAVE_RANDR, 1, [Have the Xrandr extension library])
+ fi
+ 
++dnl Remote Desktop Awareness
++
++PKG_CHECK_MODULES(RDA, rda, have_rda=yes, have_rda=no)
++if test "x$have_rda" = "xyes"; then
++  AC_DEFINE(HAVE_RDA, 1, [Have the Remote Desktop Awareness library])
++fi
++
+ dnl Modules dir
+ AC_SUBST([modulesdir],"\$(libdir)/mate-panel/modules")
+ 
+diff --git a/mate-panel/Makefile.am b/mate-panel/Makefile.am
+index f2f04d27..b588bad3 100644
+--- a/mate-panel/Makefile.am
++++ b/mate-panel/Makefile.am
+@@ -142,6 +142,7 @@ mate_panel_SOURCES = \
+ mate_panel_CPPFLAGS = \
+ 	$(AM_CPPFLAGS) \
+ 	$(XRANDR_CFLAGS) \
++	$(RDA_CFLAGS) \
+ 	-DPANEL_MODULES_DIR=\"$(modulesdir)\" \
+ 	-DMATEMENU_I_KNOW_THIS_IS_UNSTABLE
+ 
+@@ -157,6 +158,7 @@ mate_panel_LDADD = \
+ 	$(PANEL_LIBS) \
+ 	$(DCONF_LIBS) \
+ 	$(XRANDR_LIBS) \
++	$(RDA_LIBS) \
+ 	$(X_LIBS) \
+ 	$(WAYLAND_LIBS)
+ 
+diff --git a/mate-panel/panel-action-button.c b/mate-panel/panel-action-button.c
+index 7d5bdefa..87b67cd5 100644
+--- a/mate-panel/panel-action-button.c
++++ b/mate-panel/panel-action-button.c
+@@ -34,6 +34,10 @@
+ #include <glib/gi18n.h>
+ #include <gio/gio.h>
+ 
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif
++
+ #define MATE_DESKTOP_USE_UNSTABLE_API
+ #include <libmate-desktop/mate-desktop-utils.h>
+ #include <libmate-desktop/mate-gsettings.h>
+@@ -86,6 +90,9 @@ static const char *panel_action_type [PANEL_ACTION_LAST] = {
+   [PANEL_ACTION_NONE] =           "none",
+   [PANEL_ACTION_LOCK] =           "lock",
+   [PANEL_ACTION_LOGOUT] =         "logout",
++#ifdef HAVE_RDA
++  [PANEL_ACTION_SUSPEND] =        "suspend",
++#endif
+   [PANEL_ACTION_RUN] =            "run",
+   [PANEL_ACTION_SEARCH] =         "search",
+   [PANEL_ACTION_FORCE_QUIT] =     "force-quit",
+@@ -213,6 +220,24 @@ panel_action_logout (GtkWidget *widget)
+ 						      PANEL_SESSION_MANAGER_LOGOUT_MODE_NORMAL);
+ }
+ 
++#ifdef HAVE_RDA
++/* Suspend Remote Session
++ */
++static void
++panel_action_suspend (GtkWidget *widget)
++{
++
++	rda_session_suspend();
++
++}
++
++static gboolean
++panel_action_suspend_not_supported(void)
++{
++	return (!rda_session_can_be_suspended());
++}
++#endif /* HAVE_RDA */
++
+ static void
+ panel_action_shutdown (GtkWidget *widget)
+ {
+@@ -361,6 +386,18 @@ static PanelAction actions [PANEL_ACTION_LAST] = {
+ 		panel_action_logout, NULL, NULL,
+ 		panel_lockdown_get_disable_log_out
+ 	},
++#ifdef HAVE_RDA
++	[PANEL_ACTION_SUSPEND] = {
++		PANEL_ACTION_SUSPEND,
++		PANEL_ICON_SUSPEND,
++		N_("Suspend Session..."),
++		N_("Suspend the Remote Session and Resume later"),
++		"gospanel-20",
++		"ACTION:suspend:NEW",
++		panel_action_suspend, NULL, NULL,
++		panel_action_suspend_not_supported
++	},
++#endif /* HAVE_RDA */
+ 	[PANEL_ACTION_RUN] = {
+ 		PANEL_ACTION_RUN,
+ 		PANEL_ICON_RUN,
+diff --git a/mate-panel/panel-enums-gsettings.h b/mate-panel/panel-enums-gsettings.h
+index 89e8f7e1..ad75d533 100644
+--- a/mate-panel/panel-enums-gsettings.h
++++ b/mate-panel/panel-enums-gsettings.h
+@@ -70,6 +70,7 @@ typedef enum {
+ 	PANEL_ACTION_NONE = 0,
+ 	PANEL_ACTION_LOCK,
+ 	PANEL_ACTION_LOGOUT,
++	PANEL_ACTION_SUSPEND,
+ 	PANEL_ACTION_RUN,
+ 	PANEL_ACTION_SEARCH,
+ 	PANEL_ACTION_FORCE_QUIT,
+diff --git a/mate-panel/panel-icon-names.h b/mate-panel/panel-icon-names.h
+index 4c948b76..b50f685a 100644
+--- a/mate-panel/panel-icon-names.h
++++ b/mate-panel/panel-icon-names.h
+@@ -1,3 +1,5 @@
++#include <config.h>
++
+ #ifndef PANEL_ICON_NAMES_H
+ #define PANEL_ICON_NAMES_H
+ 
+@@ -21,6 +23,9 @@
+ #define PANEL_ICON_LAUNCHER		"mate-panel-launcher"
+ #define PANEL_ICON_LOCKSCREEN		"system-lock-screen"
+ #define PANEL_ICON_LOGOUT		"system-log-out"
++#ifdef HAVE_RDA
++#define PANEL_ICON_SUSPEND		"stock_media-pause"
++#endif
+ #define PANEL_ICON_MAIN_MENU		"start-here"
+ #define PANEL_ICON_NETWORK		"network-workgroup"
+ #define PANEL_ICON_NETWORK_SERVER	"network-server"
+diff --git a/mate-panel/panel-menu-items.c b/mate-panel/panel-menu-items.c
+index aa4c5d1f..60555401 100644
+--- a/mate-panel/panel-menu-items.c
++++ b/mate-panel/panel-menu-items.c
+@@ -40,6 +40,9 @@
+ #include <string.h>
+ #include <glib/gi18n.h>
+ #include <gio/gio.h>
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif
+ #include <libmate-desktop/mate-gsettings.h>
+ 
+ #include <libpanel-util/panel-error.h>
+@@ -1543,6 +1546,28 @@ panel_menu_items_append_lock_logout (GtkWidget *menu)
+ 	}
+ 	g_list_free (children);
+ 
++#ifdef HAVE_RDA
++	if (rda_session_can_be_suspended())
++	{
++
++		label = g_strdup_printf (_("Suspend %s Session..."),
++                                        rda_get_remote_technology_name());
++		tooltip = g_strdup_printf (_("Suspend this %s session and resume it later..."),
++                                        rda_get_remote_technology_name());
++		item = panel_menu_items_create_action_item_full (PANEL_ACTION_SUSPEND,
++                                                                label, tooltip);
++		g_free (label);
++		g_free (tooltip);
++
++		if (item != NULL) {
++			/* this separator will always be inserted */
++			add_menu_separator (menu);
++			gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++		}
++
++	}
++#endif /* HAVE_RDA */
++
+ 	if (panel_lock_screen_action_available("lock"))
+ 	{
+ 		item = panel_menu_items_create_action_item(PANEL_ACTION_LOCK);
+-- 
+2.39.2
+

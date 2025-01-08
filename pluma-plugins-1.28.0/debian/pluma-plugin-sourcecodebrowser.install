@@ -1,0 +1,4 @@
+usr/lib/*/pluma/plugins/*sourcecodebrowser*
+usr/share/pluma/plugins/sourcecodebrowser/icons/
+usr/share/pluma/plugins/sourcecodebrowser/ui/
+usr/share/glib-2.0/schemas/org.mate.pluma.plugins.sourcecodebrowser.gschema.xml

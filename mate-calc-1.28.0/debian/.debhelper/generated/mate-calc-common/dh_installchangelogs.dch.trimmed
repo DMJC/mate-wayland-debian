@@ -1,0 +1,92 @@
+mate-calc (1.28.0-1) unstable; urgency=medium
+
+  [ James Carthew ]
+  * New upstream release.
+  * debian/control:
+    + Dependencies updated for MATE 1.28.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:14:00 +0930
+
+mate-calc (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Dependencies updated for MATE 1.26.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Fix pretty name in Maintainer: field.
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Dec 2021 23:33:51 +0100
+
+mate-calc (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:44:59 +0200
+
+mate-calc (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_add-keywords-field-to-desktop-file.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D libxml2-utils.
+    + Update Build-Depends: to support MATE Desktop 1.24.
+  * debian/mate-calc-common.install:
+    + Remove obsolete reference to usr/share/mate-calc/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 15:58:00 +0100
+
+mate-calc (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:46:28 +0200
+
+mate-calc (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/mate-calc-common.install:
+    + Correct order.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 16:50:19 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-calc-common`.

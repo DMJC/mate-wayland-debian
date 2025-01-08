@@ -1,0 +1,8 @@
+f8e6e254f56f781a45fd9a9ba0a6a1b3  usr/include/mate-panel-4.0/libmate-panel-applet/mate-panel-applet-enums.h
+0f114a14241f4e5bf33fe2f0cc924657  usr/include/mate-panel-4.0/libmate-panel-applet/mate-panel-applet-gsettings.h
+cc6bd307b31feee64d7f40482441391c  usr/include/mate-panel-4.0/libmate-panel-applet/mate-panel-applet.h
+b93eff1c3f63bb0f6e2de927bb0f95a9  usr/lib/x86_64-linux-gnu/pkgconfig/libmatepanelapplet-4.0.pc
+312d6e6e9cd068a12b185d07bca0367f  usr/share/doc/libmate-panel-applet-dev/changelog.Debian.gz
+6cfc49af27adfcea2e007fc943b90cd8  usr/share/doc/libmate-panel-applet-dev/changelog.gz
+49546bd19832a0f95443ab023fd7c366  usr/share/doc/libmate-panel-applet-dev/copyright
+3a5bca3feb145f17eedb27a234205286  usr/share/gir-1.0/MatePanelApplet-4.0.gir

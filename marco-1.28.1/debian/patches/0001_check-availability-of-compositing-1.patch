@@ -1,0 +1,171 @@
+From 7db333cd008d9965dacb6490120c74394d1d5590 Mon Sep 17 00:00:00 2001
+From: Mihai Moldovan <ionic@ionic.de>
+Date: Fri, 28 Jul 2023 20:24:57 +0200
+Subject: [PATCH] ui/frames: check that compositing is not only requested, but
+ also available.
+
+Enabling code that is supposed to be used in compositing conditions is
+harmful if compositing is not actually available. Just checking the
+preference is not enough to make sure that compositing is available -
+the X server might be missing crucial extensions for compositing to
+work, which in turn correctly disables the internal compositor.
+
+The end result is graphical issues like black borders around windows in
+such situations.
+
+Make sure that compositing is both requested AND available to fix this
+bug.
+---
+ src/core/frame.c |  2 ++
+ src/include/ui.h | 12 +++++++-----
+ src/ui/frames.c  | 16 ++++++++++------
+ src/ui/frames.h  | 12 +++++++-----
+ src/ui/ui.c      | 13 +++++++------
+ 5 files changed, 33 insertions(+), 22 deletions(-)
+
+diff --git a/src/core/frame.c b/src/core/frame.c
+index 957f6c762..e1eec2a40 100644
+--- a/src/core/frame.c
++++ b/src/core/frame.c
+@@ -152,6 +152,7 @@ meta_window_ensure_frame (MetaWindow *window)
+ 
+   /* Shape mask */
+   meta_ui_apply_frame_shape (frame->window->screen->ui,
++                             frame->window->display,
+                              frame->xwindow,
+                              frame->rect.width,
+                              frame->rect.height,
+@@ -325,6 +326,7 @@ update_shape (MetaFrame *frame)
+   if (frame->need_reapply_frame_shape)
+     {
+       meta_ui_apply_frame_shape (frame->window->screen->ui,
++                                 frame->window->display,
+                                  frame->xwindow,
+                                  frame->rect.width,
+                                  frame->rect.height,
+diff --git a/src/include/ui.h b/src/include/ui.h
+index c02e78a21..9d95e37af 100644
+--- a/src/include/ui.h
++++ b/src/include/ui.h
+@@ -26,6 +26,7 @@
+ 
+ /* Don't include gtk.h or gdk.h here */
+ #include "common.h"
++#include "types.h"
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
+ #include <glib.h>
+@@ -91,11 +92,12 @@ void meta_ui_map_frame   (MetaUI *ui,
+ void meta_ui_unmap_frame (MetaUI *ui,
+                           Window  xwindow);
+ 
+-void meta_ui_apply_frame_shape  (MetaUI  *ui,
+-                                 Window   xwindow,
+-                                 int      new_window_width,
+-                                 int      new_window_height,
+-                                 gboolean window_has_shape);
++void meta_ui_apply_frame_shape  (MetaUI      *ui,
++                                 MetaDisplay *display,
++                                 Window       xwindow,
++                                 int          new_window_width,
++                                 int          new_window_height,
++                                 gboolean     window_has_shape);
+ 
+ cairo_region_t *meta_ui_get_frame_bounds (MetaUI *ui,
+                                           Window  xwindow,
+diff --git a/src/ui/frames.c b/src/ui/frames.c
+index d65dac82d..ad7e10c8f 100644
+--- a/src/ui/frames.c
++++ b/src/ui/frames.c
+@@ -37,6 +37,7 @@
+ #include "theme.h"
+ #include "prefs.h"
+ #include "ui.h"
++#include "display.h"
+ 
+ #ifdef HAVE_SHAPE
+ #include <X11/extensions/shape.h>
+@@ -1063,11 +1064,12 @@ get_frame_region (int window_width,
+ #endif /* HAVE_SHAPE */
+ 
+ void
+-meta_frames_apply_shapes (MetaFrames *frames,
+-                          Window      xwindow,
+-                          int         new_window_width,
+-                          int         new_window_height,
+-                          gboolean    window_has_shape)
++meta_frames_apply_shapes (MetaFrames  *frames,
++                          MetaDisplay *meta_display,
++                          Window       xwindow,
++                          int          new_window_width,
++                          int          new_window_height,
++                          gboolean     window_has_shape)
+ {
+ #ifdef HAVE_SHAPE
+   /* Apply shapes as if window had new_window_width, new_window_height */
+@@ -1095,7 +1097,9 @@ meta_frames_apply_shapes (MetaFrames *frames,
+ 
+   meta_frames_calc_geometry (frames, frame, &fgeom);
+ 
+-  compositing_manager = meta_prefs_get_compositing_manager ();
++  compositing_manager = meta_prefs_get_compositing_manager () &&
++                        meta_display &&
++                        !!(meta_display_get_compositor (meta_display));
+ 
+   if (!window_has_shape && compositing_manager)
+     return;
+diff --git a/src/ui/frames.h b/src/ui/frames.h
+index ad86ee44f..f4821e435 100644
+--- a/src/ui/frames.h
++++ b/src/ui/frames.h
+@@ -28,6 +28,7 @@
+ #include <gdk/gdkx.h>
+ #include "common.h"
+ #include "theme.h"
++#include "types.h"
+ 
+ typedef enum
+ {
+@@ -135,11 +136,12 @@ void meta_frames_get_borders (MetaFrames       *frames,
+                               Window            xwindow,
+                               MetaFrameBorders *borders);
+ 
+-void meta_frames_apply_shapes (MetaFrames *frames,
+-                               Window      xwindow,
+-                               int         new_window_width,
+-                               int         new_window_height,
+-                               gboolean    window_has_shape);
++void meta_frames_apply_shapes (MetaFrames  *frames,
++                               MetaDisplay *meta_display,
++                               Window       xwindow,
++                               int          new_window_width,
++                               int          new_window_height,
++                               gboolean     window_has_shape);
+ cairo_region_t *meta_frames_get_frame_bounds (MetaFrames *frames,
+                                               Window      xwindow,
+                                               int         window_width,
+diff --git a/src/ui/ui.c b/src/ui/ui.c
+index 9976c7014..2b15cc82d 100644
+--- a/src/ui/ui.c
++++ b/src/ui/ui.c
+@@ -458,13 +458,14 @@ meta_ui_repaint_frame (MetaUI *ui,
+ }
+ 
+ void
+-meta_ui_apply_frame_shape  (MetaUI  *ui,
+-                            Window   xwindow,
+-                            int      new_window_width,
+-                            int      new_window_height,
+-                            gboolean window_has_shape)
++meta_ui_apply_frame_shape  (MetaUI      *ui,
++                            MetaDisplay *display,
++                            Window       xwindow,
++                            int          new_window_width,
++                            int          new_window_height,
++                            gboolean     window_has_shape)
+ {
+-  meta_frames_apply_shapes (ui->frames, xwindow,
++  meta_frames_apply_shapes (ui->frames, display, xwindow,
+                             new_window_width, new_window_height,
+                             window_has_shape);
+ }

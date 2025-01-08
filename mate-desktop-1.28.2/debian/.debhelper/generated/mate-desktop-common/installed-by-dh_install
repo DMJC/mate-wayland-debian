@@ -1,0 +1,6 @@
+debian/tmp/usr/share/glib-2.0/
+debian/tmp/usr/share/icons/
+debian/tmp/usr/share/libmate-desktop/
+debian/tmp/usr/share/locale/
+debian/tmp/usr/share/mate-about/
+debian/tmp/usr/share/xdg-desktop-portal/mate-portals.conf

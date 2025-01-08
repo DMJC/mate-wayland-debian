@@ -1,0 +1,35 @@
+diff --git a/src/compositor/compositor-xrender.c b/src/compositor/compositor-xrender.c
+index dae88fc..0b8c296 100644
+--- a/src/compositor/compositor-xrender.c
++++ b/src/compositor/compositor-xrender.c
+@@ -224,18 +224,18 @@ typedef struct _MetaCompWindow
+ #define WINDOW_SOLID 0
+ #define WINDOW_ARGB 1
+ 
+-#define SHADOW_SMALL_RADIUS 3.0
+-#define SHADOW_MEDIUM_RADIUS 6.0
+-#define SHADOW_LARGE_RADIUS 12.0
+-
+-#define SHADOW_SMALL_OFFSET_X (SHADOW_SMALL_RADIUS * -3 / 2)
+-#define SHADOW_SMALL_OFFSET_Y (SHADOW_SMALL_RADIUS * -3 / 2)
+-#define SHADOW_MEDIUM_OFFSET_X (SHADOW_MEDIUM_RADIUS * -3 / 2)
+-#define SHADOW_MEDIUM_OFFSET_Y (SHADOW_MEDIUM_RADIUS * -5 / 4)
+-#define SHADOW_LARGE_OFFSET_X -15
+-#define SHADOW_LARGE_OFFSET_Y -15
+-
+-#define SHADOW_OPACITY 0.66
++#define SHADOW_SMALL_RADIUS 10.0
++#define SHADOW_MEDIUM_RADIUS 12.0
++#define SHADOW_LARGE_RADIUS 14.0
++
++#define SHADOW_SMALL_OFFSET_X (SHADOW_SMALL_RADIUS * -3 / 2)
++#define SHADOW_SMALL_OFFSET_Y (SHADOW_SMALL_RADIUS * -3 / 2)
++#define SHADOW_MEDIUM_OFFSET_X (SHADOW_MEDIUM_RADIUS * -3 / 2)
++#define SHADOW_MEDIUM_OFFSET_Y (SHADOW_MEDIUM_RADIUS * -3 / 2)
++#define SHADOW_LARGE_OFFSET_X (SHADOW_LARGE_RADIUS * -3 / 2)
++#define SHADOW_LARGE_OFFSET_Y (SHADOW_LARGE_RADIUS * -3 / 2)
++
++#define SHADOW_OPACITY 0.325
+ 
+ #define TRANS_OPACITY 0.75
+ 

@@ -1,0 +1,9 @@
+Document: libmatemixer-doc
+Title: libmatemixer API documentation
+Author: MATE Desktop Team
+Abstract: This document describes the API of the libmatemixer library.
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libmatemixer-doc/html/index.html
+Files: /usr/share/doc/libmatemixer-doc/html/*

@@ -1,0 +1,4 @@
+gir:Provides=gir1.2-matekbd-1.0-dev (= 1.28.0-1)
+gir:Depends=gir1.2-gobject-2.0-dev, gir1.2-gtk-3.0-dev, gir1.2-matekbd-1.0 (= 1.28.0-1), gir1.2-xlib-2.0-dev, libxklavier-dev
+misc:Depends=
+misc:Pre-Depends=

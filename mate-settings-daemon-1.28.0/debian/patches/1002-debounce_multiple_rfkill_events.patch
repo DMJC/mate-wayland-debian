@@ -1,0 +1,51 @@
+Description: When pressing airplane mode hotkey on many HP laptops, the AT keyboard,
+HP Wireless device (HPQ6001) and Intel HID device (INT33D5) can all send
+rfkill hotkey event.
+
+Preferably we should just leave one device and unregister the others. In
+practice this is hard to achieve, because the presence of a device
+doesn't necessarily mean it can generate rfkill hotkey event, we can
+only know what devices are capable to generate rfkill event when the
+hotkey gets pressed.
+
+So add a delay between each rfkill event to workaround the issue. This
+is also how the other OS handles multiple rfkill events.
+
+Author: Martin Wimpress <code@wimpress.io>
+
+diff --git a/plugins/media-keys/msd-media-keys-manager.c b/plugins/media-keys/msd-media-keys-manager.c
+index 4abb4af..facf2ac 100644
+--- a/plugins/media-keys/msd-media-keys-manager.c
++++ b/plugins/media-keys/msd-media-keys-manager.c
+@@ -84,6 +84,7 @@ struct _MsdMediaKeysManagerPrivate
+ 
+         /* RFKill stuff */
+         guint            rfkill_watch_id;
++        guint64          rfkill_last_time;
+         GDBusProxy      *rfkill_proxy;
+         GCancellable    *rfkill_cancellable;
+ 
+@@ -977,6 +978,7 @@ do_rfkill_action (MsdMediaKeysManager *manager,
+ {
+         const char *has_mode, *hw_mode, *mode;
+         gboolean new_state;
++        guint64 current_time;
+         RfkillData *data;
+ 
+         dialog_init (manager);
+@@ -988,6 +990,15 @@ do_rfkill_action (MsdMediaKeysManager *manager,
+         if (manager->priv->rfkill_proxy == NULL)
+                 return;
+ 
++        /* Some hardware can generate multiple rfkill events from different
++         * drivers, on a single hotkey press. Only process the first event and
++         * debounce the others */
++        current_time = g_get_monotonic_time ();
++        if (current_time - manager->priv->rfkill_last_time < G_USEC_PER_SEC)
++                return;
++
++        manager->priv->rfkill_last_time = current_time;
++
+         if (get_rfkill_property (manager, has_mode) == FALSE)
+                 return;
+ 

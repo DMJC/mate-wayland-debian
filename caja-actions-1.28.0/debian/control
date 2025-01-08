@@ -1,0 +1,67 @@
+Source: caja-actions
+Section: utils
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: Martin Wimpress <code@flexion.org>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper-compat (= 13),
+               mate-common,
+               libgtk-3-dev,
+               libgtop2-dev,
+               libxml2-dev,
+               uuid-dev,
+               libcaja-extension-dev (>= 1.17.1),
+               docbook-utils,
+               yelp-tools,
+Build-Depends-Indep: intltool (>= 0.40.0),
+                     gettext,
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Homepage: https://github.com/mate-desktop/caja-actions
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/caja-actions
+Vcs-Git: https://salsa.debian.org/debian-mate-team/caja-actions.git
+
+
+Package: caja-actions
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-actions-common  (= ${source:Version}),
+Description: Caja extension to create custom actions
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+
+Package: caja-actions-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks:
+ caja-actions (<< 1.8.1-1~),
+Replaces:
+ caja-actions (<< 1.8.1-1~),
+Description: Caja extension to create custom actions (common files)
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+ .
+ This package contains the architecture independent files.
+
+Package: caja-actions-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         caja-actions  (= ${binary:Version}),
+         libgtk-3-dev,
+         libgtop2-dev,
+         libxml2-dev,
+         uuid-dev,
+         libcaja-extension-dev,
+Description: Caja extension to create custom actions (development files)
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+ .
+ This package contains the development files for the libraries needed
+ by Caja's extensions.

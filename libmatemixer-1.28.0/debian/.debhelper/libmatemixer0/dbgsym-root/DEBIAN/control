@@ -1,0 +1,13 @@
+Package: libmatemixer0-dbgsym
+Source: libmatemixer
+Version: 1.28.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 397
+Depends: libmatemixer0 (= 1.28.0-1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libmatemixer0
+Build-Ids: 09f2484381193f002ca18f84cd7fbfae783b13c2 0f9e51b8b4a0c5955e313f8b3dc5e3fea1f66ea9 13ad28c3fbbc9c397d8310273e474990d1718a75 7ad5b764591a5ffbf82473053e46c77969e36946

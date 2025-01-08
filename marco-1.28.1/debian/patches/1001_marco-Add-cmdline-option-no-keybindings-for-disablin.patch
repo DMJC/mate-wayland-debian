@@ -1,0 +1,65 @@
+From e29e44be77e289623ce7ab4333e571ea2b7a31ed Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Mon, 28 Mar 2022 08:07:49 +0200
+Subject: [PATCH] marco: Add cmdline option --no-keybindings for disabling all
+ key bindings directly on WM startup.
+
+Signed-off-by: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+---
+ doc/man/marco.1 |  3 +++
+ src/core/main.c | 10 ++++++++++
+ 2 files changed, 13 insertions(+)
+
+--- a/doc/man/marco.1
++++ b/doc/man/marco.1
+@@ -45,6 +45,9 @@
+ \fB\-\-no\-force\-fullscreen\fR
+ Do not create fullscreen windows without decorations.
+ .TP
++\fB\-\-no\-keybindings\fR
++Have all keybindings disabled on startup.
++.TP
+ \fB\-\-version\fR
+ Print current version information and exit.
+ .TP
+--- a/src/core/main.c
++++ b/src/core/main.c
+@@ -51,6 +51,7 @@
+ #include "util.h"
+ #include "display-private.h"
+ #include "errors.h"
++#include "keybindings.h"
+ #include "ui.h"
+ #include "session.h"
+ #include "prefs.h"
+@@ -211,6 +212,7 @@
+   gboolean composite;
+   gboolean no_composite;
+   gboolean no_force_fullscreen;
++  gboolean no_keybindings;
+ } MetaArguments;
+ 
+ #ifdef HAVE_COMPOSITE_EXTENSIONS
+@@ -298,6 +300,12 @@
+       N_("Don't make fullscreen windows that are maximized and have no decorations"),
+       NULL
+     },
++    {
++      "no-keybindings", 0, 0, G_OPTION_ARG_NONE,
++      &my_args.no_keybindings,
++      N_("Have all keybindings disabled on startup"),
++      NULL
++    },
+     {NULL}
+   };
+   GOptionContext *ctx;
+@@ -550,6 +558,9 @@
+   if (meta_args.no_force_fullscreen)
+     meta_prefs_set_force_fullscreen (FALSE);
+ 
++  if (meta_args.no_keybindings)
++    meta_set_keybindings_disabled (TRUE);
++
+   if (!meta_display_open ())
+     meta_exit (META_EXIT_ERROR);
+ 

@@ -1,0 +1,117 @@
+eom (1.28.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 12:33:11 +0930
+
+eom (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 30 Dec 2023 18:17:11 +0100
+
+eom (1.26.0-3) unstable; urgency=medium
+
+  * debian/control:
+    + Drop alternative D: on libgl1-mesa-glx. (Closes: #1051597).
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 10 Sep 2023 14:19:52 +0200
+
+eom (1.26.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Mike Gabriel ]
+  * debian/control: Add to R (eom): libgdk-pixbuf2.0-bin. (Closes: #1012860)
+
+  [ Jeremy Bicha ]
+  * Depend on webp-pixbuf-loader for .webp support (Closes: #1017450)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 01 Sep 2022 10:34:07 -0400
+
+eom (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Drop transitional pkg 'gir1.2-eom' and drop lintian override for it.
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Rewrite file.
+  * debian/eom.lintian-overrides:
+    + Drop file. Not required anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Dec 2021 21:24:11 +0100
+
+eom (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2020 11:13:07 +0200
+
+eom (1.24.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/source/lintian-overrides:
+    + Move file to new location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Feb 2020 08:24:19 +0100
+
+eom (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_restore_image_types.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:36:00 +0200
+
+eom (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_use-persistent-page-setup.patch. Applied upstream.
+    + Add 0001_restore_image_types.patch. Restore all the image
+      types and retain the wildcard.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/eom-common.install:
+    + Updated for MATE Desktop 1.22
+  * debian/control:
+    + Add D gir1.2-eom-1.0 (Closes: #926600).
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 30 Jul 2019 23:23:29 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog eom`.

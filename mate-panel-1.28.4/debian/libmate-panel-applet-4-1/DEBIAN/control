@@ -1,0 +1,23 @@
+Package: libmate-panel-applet-4-1
+Source: mate-panel
+Version: 1.28.4-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 123
+Depends: libc6 (>= 2.4), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.80.0), libgtk-3-0t64 (>= 3.21.5), libx11-6
+Breaks: libmate-panel-applet4-1, libmatepanelapplet, mate-panel (<= 1.0.0-3)
+Replaces: libmate-panel-applet4-1, libmatepanelapplet
+Provides: libmate-panel-applet4-1, libmatepanelapplet
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.mate-desktop.org/
+Description: library for MATE Panel applets
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the MATE Panel applet library.

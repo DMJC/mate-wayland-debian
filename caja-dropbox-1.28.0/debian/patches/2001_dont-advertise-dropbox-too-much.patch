@@ -1,0 +1,14 @@
+Description: Don't advertise Dropbox too much, express that it is proprietary and non-free.
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+
+--- a/caja-dropbox.in
++++ b/caja-dropbox.in
+@@ -64,7 +64,7 @@ from operator import methodcaller
+ from os.path import relpath
+ from posixpath import curdir, sep, pardir, join, abspath, commonprefix
+
+-INFO = _("Dropbox is the easiest way to share and store your files online. Want to learn more? Head to")
++INFO = _("Dropbox is a proprietary (non-free) service on the internet to share and store your files online. Want to learn more? Head to")
+ LINK = "https://www.dropbox.com"
+ WARNING = _("In order to use Dropbox, you must download the proprietary daemon.")
+ GPG_WARNING = _("Note: python-gpg (python-gpgme for Ubuntu 16.10 and lower) is not installed, we will not be able to verify binary signatures.")

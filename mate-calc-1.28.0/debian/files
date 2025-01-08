@@ -1,0 +1,4 @@
+mate-calc-common_1.28.0-1_all.deb math optional
+mate-calc-dbgsym_1.28.0-1_amd64.deb debug optional automatic=yes
+mate-calc_1.28.0-1_amd64.buildinfo math optional
+mate-calc_1.28.0-1_amd64.deb math optional

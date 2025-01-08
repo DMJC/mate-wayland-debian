@@ -1,0 +1,117 @@
+libmatemixer (1.28.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:06:00 +0930
+
+libmatemixer (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Resolve heap corruption / crash when removing (USB) audio devices.
+      (Closes: #1052555).
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 24 Sep 2023 19:24:17 +0200
+
+libmatemixer (1.26.0-2) unstable; urgency=medium
+
+  * debian/rules:
+    + Only move gtk-doc files if they have been created. Resolves
+      FTBFS of arch:any-only builds.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 13 Dec 2021 17:25:45 +0100
+
+libmatemixer (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/libmatemixer0.symbols:
+    + Add more Build-Depends-Package: meta data fields for all .so files
+      mentioned in the .symbols file.
+  * debian/{rules,libmatemixer-doc.*}:
+    + Move GTK API documentation to pkg's doc folder.
+  * debian/libmatemixer-doc.doc-base:
+    + Add file. Register API docs with doc-base system.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 10 Dec 2021 22:32:38 +0100
+
+libmatemixer (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:54:38 +0200
+
+libmatemixer (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add B-D autoconf-archive.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 10:54:32 +0100
+
+libmatemixer (1.22.0-2) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * debian/rules:
+    + Fix FTCBFS: --disable-gtk-doc for arch-only builds. (Closes: #944879).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 24 Nov 2019 14:14:01 +0100
+
+libmatemixer (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Updated for MATE Desktop 1.22
+    + White space removal.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/libmatemixer0.symbols:
+    + Add Build-Depends-Package: meta field.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/libmatemixer-dev.examples:
+    + Add monitor.c into doc/examples folder.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 10 Jul 2019 13:37:35 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog libmatemixer-doc`.

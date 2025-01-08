@@ -1,0 +1,72 @@
+mate-backgrounds (1.28.0-1) unstable; urgency=medium
+
+  [ James Carthew ]
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 13:18:32 +0930
+
+mate-backgrounds (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/rules:
+    + Wipe empty /usr/share/locale/ during dh_install override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 10 Dec 2021 23:53:32 +0100
+
+mate-backgrounds (1.24.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Sep 2020 17:59:35 +0200
+
+mate-backgrounds (1.24.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 16 Mar 2020 11:52:59 +0100
+
+mate-backgrounds (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/copyright:
+    + Drop tabs from license text. Thanks, lintian.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:40:33 +0100
+
+mate-backgrounds (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:15:32 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-backgrounds`.

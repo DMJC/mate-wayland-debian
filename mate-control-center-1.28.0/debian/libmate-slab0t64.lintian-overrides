@@ -1,0 +1,4 @@
+# Discussed with upstream. The exit() call takes place in a forked context
+# and thus is valid/ok.
+libmate-slab0t64: exit-in-shared-library [usr/lib/x86_64-linux-gnu/libmate-slab.so.0.0.0]
+libmate-slab0t64: package-name-doesnt-match-sonames libmate-slab0

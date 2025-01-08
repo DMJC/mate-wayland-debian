@@ -1,0 +1,12 @@
+Document: caja-actions
+Title: Caja Actions' Configuration Guide
+Author: The Caja Actions Developers
+Abstract: Caja Actions is an add-on for the Caja filebrowser providing means to add custom actions to Caja's context menus
+Section: File Management
+
+Format: PDF
+Files: /usr/share/doc/caja-actions/pdf/C/caja-actions-config-tool.pdf.gz
+
+Format: html
+Index: /usr/share/doc/caja-actions/html/C/cact/caja-actions-config-tool.html
+Files: /usr/share/doc/caja-actions/html/C/cact/caja-actions-config-tool.html

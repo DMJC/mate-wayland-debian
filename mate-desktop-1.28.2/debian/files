@@ -1,0 +1,9 @@
+gir1.2-matedesktop-2.0_1.28.2-1_amd64.deb introspection optional
+libmate-desktop-2-17t64-dbgsym_1.28.2-1_amd64.deb debug optional automatic=yes
+libmate-desktop-2-17t64_1.28.2-1_amd64.deb libs optional
+libmate-desktop-dev_1.28.2-1_amd64.deb libdevel optional
+libmate-desktop-doc_1.28.2-1_all.deb doc optional
+mate-desktop-common_1.28.2-1_all.deb x11 optional
+mate-desktop-dbgsym_1.28.2-1_amd64.deb debug optional automatic=yes
+mate-desktop_1.28.2-1_amd64.buildinfo x11 optional
+mate-desktop_1.28.2-1_amd64.deb x11 optional

@@ -1,0 +1,111 @@
+mate-polkit (1.28.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 12:07:02 +0930
+
+mate-polkit (1.26.1-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 2001_mate-polkit-for-non-MATE-desktops.patch. Allow mate-polkit to be
+      used in Xfce, Cinnamon, and other desktops. (Closes: #1040011). Thanks to
+      Unit193 for proposing this patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 11 Aug 2023 09:48:02 +0200
+
+mate-polkit (1.26.1-3) unstable; urgency=medium
+
+  * Re-upload source-only. (By mistake, previous upload was src+amd64 upload).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Apr 2023 16:12:33 +0200
+
+mate-polkit (1.26.1-2) unstable; urgency=medium
+
+  [ Thomas Uhle ]
+  * debian/:
+    + Move polkit-agent executable to /usr/libexec directory. Move man page
+      into mate-polkit-bin bin:pkg. (Closes: #1006996). Re-adjust inter-package
+      relations and bin:pkg architecture declarations. Remove remnants of this
+      package being a shared library once (i.e. drop Multi-Arch: fields).
+  * debian/rules:
+    + Drop duplicate --disable-silent-rules from configure run.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Switch from D: policykit-1 (deprecated) to polkitd. (Closes: #1025598).
+  * debian/copyright:
+    + Update copyright attributions for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Apr 2023 13:15:11 +0000
+
+mate-polkit (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 16 Oct 2022 22:15:12 +0200
+
+mate-polkit (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Dec 2021 02:17:55 +0100
+
+mate-polkit (1.24.0-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1001_drop-empty-categories.patch. Fix broken line-wrapping after
+      .desktop file has been translated. (Closes: #952402).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Feb 2020 08:53:45 +0100
+
+mate-polkit (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001-Switch-to-Ayatana-AppIndicator.patch. Applied upstream.
+    + Drop 0002-Prefer-building-against-Ayatana-AppIndicator-but-als.patch.
+      Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D autoconf-archive.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 12:13:14 +0100
+
+mate-polkit (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:34:55 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-polkit-common`.

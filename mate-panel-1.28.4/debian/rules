@@ -1,0 +1,39 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@ $(DHFLAGS) --without autoreconf
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_install:
+	rm -f debian/tmp/usr/lib/*/*.la
+	mkdir -p debian/tmp/usr/share/doc/libmate-panel-applet-doc/
+	mv debian/tmp/usr/share/gtk-doc/html/mate-panel-applet debian/tmp/usr/share/doc/libmate-panel-applet-doc/html
+	dh_install
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_auto_configure:
+	# we need libegg from mate-submodules
+	cd mate-panel/mate-submodules/; tar xvJf /usr/src/mate-submodules-source.tar.xz
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
+		--localstatedir=/var \
+		--libexecdir=/usr/libexec/mate-panel \
+		--disable-static \
+		--enable-introspection \
+		--enable-gtk-doc \
+		--with-in-process-applets=all		
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

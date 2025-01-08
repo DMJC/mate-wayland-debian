@@ -1,0 +1,154 @@
+libmateweather (1.28.0-1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:10:00 +0930
+
+libmateweather (1.26.3-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rename libraries for 64-bit time_t transition.  Closes: #1062411
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 28 Feb 2024 14:02:49 +0000
+
+libmateweather (1.26.3-3) unstable; urgency=medium
+
+  * debian/control:
+    + Also drop libsoup-gnome2.4-dev from bin:pkg libmateweather-dev. (Closes:
+      #1056129).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 06 Feb 2024 15:26:16 +0100
+
+libmateweather (1.26.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop B-D on libsoup-gnome2.4-dev. (Closes: #1056129).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jan 2024 09:31:29 +0100
+
+libmateweather (1.26.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 06 Jan 2024 07:56:15 +0100
+
+libmateweather (1.26.2-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Update URL of Aviation Weather data provider. (Closes: #1054248,
+      #1054268).
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+    + Update copyright attributions.
+  * debian/patches:
+    + Drop timezone.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 31 Oct 2023 07:58:05 +0100
+
+libmateweather (1.26.0-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Update spelling of Kiev/Kyiv to match tzdata (Closes: #1017304)
+
+ -- Reiner Herrmann <reiner@reiner-h.de>  Sat, 15 Oct 2022 17:45:15 +0200
+
+libmateweather (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 10 Dec 2021 23:02:01 +0100
+
+libmateweather (1.24.1-2) unstable; urgency=medium
+
+  * debian/watch:
+    + Switch watching over to git.mate-desktop.org.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 29 Apr 2021 13:42:20 +0200
+
+libmateweather (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+  * debian/patches:
+    + Drop 1001_adapt-to-timezone-namechange-for-America-Nuuk.patch. Applied
+      upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:20:54 +0200
+
+libmateweather (1.24.0-2) unstable; urgency=medium
+
+  [ Pablo Barciela ]
+  * debian/patches:
+    + Add 1001_adapt-to-timezone-namechange-for-America-Nuuk.patch. (Closes
+      #959545).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 18 Jun 2020 09:54:47 +0200
+
+libmateweather (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Fix missing entry in previous stanza.
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add B-D autoconf-archive.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:17:34 +0100
+
+libmateweather (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/watch:
+    + Switch to orig tarball download from Github. The site
+      git.mate-desktop.org behaved weirdly, recently.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:38:01 +0200
+
+libmateweather (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/rules:
+    + Add --enable-all-translations-in-one-xml to shave
+      10MB of the size of libmateweather-common.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 10 Jul 2019 14:00:03 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog libmateweather-doc`.

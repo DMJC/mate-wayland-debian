@@ -1,0 +1,13 @@
+Package: libmate-desktop-2-17t64-dbgsym
+Source: mate-desktop
+Version: 1.28.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 433
+Depends: libmate-desktop-2-17t64 (= 1.28.2-1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libmate-desktop-2-17t64
+Build-Ids: 2283ae0ae674214d5d61d6e8ae6a9883bde3843e

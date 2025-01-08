@@ -1,0 +1,125 @@
+mate-media (1.28.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:47:00 +0930
+
+mate-media (1.26.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop all patches. Applied upstream.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 06 Jan 2024 09:25:42 +0100
+
+mate-media (1.26.0-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Use 0001_revert-fix-validation-warnings.patch from upstream Git (with
+      all the metadata included).
+    + Add 0002_fix-memleak-in-vol-mixer.patch. (Closes: #971783).
+    + Add 0003_a11y-improvements.patch.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions for debian/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Feb 2023 15:15:21 +0100
+
+mate-media (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/rules:
+    + Man page rename applied upstream.
+  * debian/patches:
+    + Add 0001_revert-fix-validation-warnings.patch. (LP: #1945261)
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Dec 2021 23:56:43 +0100
+
+mate-media (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 21:50:55 +0200
+
+mate-media (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 09:53:24 +0100
+
+mate-media (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 22:04:03 +0200
+
+mate-media (1.22.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/mate-media-common.maintscript:
+    + Due to how /etc files are handled, use maintscript to make sure the file
+      is actually renamed, not copied with a new name.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:55:36 +0200
+
+mate-media (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add B-D: libmate-panel-applet-dev (>=1.22)
+  * debian/mate-media.install:
+    + Add usr/lib/, usr/share/dbus-1/, usr/share/mate-panel/
+  * debian/rules:
+    + Update Ubuntu specific removal of
+      /etc/xdg/autostart/mate-volume-control-status-icon.desktop.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/mate-media.install:
+    + Fix FTBFS when systems install libexec files to /usr/libexec/ rather than
+      /usr/lib/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 27 Jul 2019 23:22:56 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-media-common`.

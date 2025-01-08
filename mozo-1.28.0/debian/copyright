@@ -1,0 +1,85 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Mozo
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mozo/
+
+Files: Mozo/MainWindow.py
+       Mozo/util.py
+Copyright: 2006, Travis Watkins
+           2012-2021, MATE Developers
+License: LGPL-2+
+
+Files: Mozo/MenuEditor.py
+Copyright: 2006, Travis Watkins, Heinrich Wendel
+           2012-2021, MATE Developers
+License: LGPL-2+
+
+Files: .build.yml
+       .travis.yml
+       .tx/config
+       .github/issue_template.md
+       .github/FUNDING.yml
+       data/Makefile.am
+       data/meson.build
+       data/*.ui
+       data/*.desktop.in.in
+       data/mozo.1
+       data/icons/Makefile.am
+       data/icons/meson.build
+       data/icons/*.png
+       po/LINGUAS
+       po/Makevars
+       po/POTFILES.*
+       po/meson.build
+       Mozo/Makefile.am
+       Mozo/meson.build
+       Mozo/__init__.py
+       Mozo/config.py.in
+       autogen.sh
+       configure.ac
+       AUTHORS
+       ChangeLog
+       Makefile.am
+       meson.build
+       post_install.py
+       NEWS
+       README
+       makepot
+       mozo.in
+Copyright: *No copyright*
+License: LGPL-2+
+Comment:
+ Use license as found in COPYING file.
+
+Files: mozo.pot
+       po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
+Copyright: 2007, Free Software Foundation, Inc.
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: LGPL-2+
+Comment:
+ Assume license as found in COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: LGPL-2+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".

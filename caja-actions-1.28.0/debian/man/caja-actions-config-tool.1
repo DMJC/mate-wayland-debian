@@ -1,0 +1,45 @@
+.TH Tue 5 "Jan 2016" MATE "User Manuals"
+.SH NAME
+caja-actions - configure programs to launch from the caja file manager
+.SH SYNOPSIS
+caja-actions-config
+.SH OPTIONS
+
+\fIHelp Options\fR
+.TP
+\fB\-?, \-\-help\fR
+Show help options
+.TP
+\fB\-\-help\-all\fR
+Show all help options
+.TP
+\fB\-\-help\-misc\fR
+Show miscellaneous options
+
+.PP
+
+\fIApplication Options\fR
+.TP
+\fB\-\-non\-unique\fR
+Set it to run multiple instances of the program
+.TP
+\fB\-\-version\fR
+Output the version number, and exit gracefully
+.TP
+\fB\-\-display=DISPLAY\fR
+X display to use
+
+.SH DESCRIPTION
+.B caja-actions
+is an extension for the caja file manager which allows arbitrary programa to be launched through the caja popup menu.
+Each time you right-click on one or several files in caja, or any part of the background of the currently opened folder,
+.BR caja-actions
+will look at its configured actions to see if a program has been setup for this selection. If so, it will add an item to
+the menu that allows you to execute the program on the selected files.
+Configurations are stored in DConf for speed and integration with other MATE programs.
+.SH AUTHOR
+.B caja-actions
+was written by Rodrigo Moya (rodrigo [AT] novell.com) and Frederic Ruaudel <grumz [AT] grumx.net>.
+This manual page was written by Vangelis Mouhtsis <vangelis [AT] gnugr.org> for the Debian project (but may be used by others).
+.SH LICENSING
+Both the caja-actions source code and this man page are licensed under the GNU General Public License.

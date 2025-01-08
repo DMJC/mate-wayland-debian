@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+
+DHFLAGS=
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@ $(DHFLAGS) --without autoreconf
+
+override_dh_install:
+	rm -fv debian/tmp/usr/lib/*/*.la
+	rm -fv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	rm -fv debian/tmp/usr/lib/*/caja-actions/*.la
+	rm -fv debian/tmp/usr/share/doc/caja-actions/ChangeLog
+	dh_install
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+	        --with-gtk=3 \
+	        --disable-scrollkeeper \
+	        --disable-static \
+	        --disable-silent-rules \
+	        --enable-html-manuals
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

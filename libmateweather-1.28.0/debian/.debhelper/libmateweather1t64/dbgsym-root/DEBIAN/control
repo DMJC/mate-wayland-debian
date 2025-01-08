@@ -1,0 +1,13 @@
+Package: libmateweather1t64-dbgsym
+Source: libmateweather
+Version: 1.28.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 145
+Depends: libmateweather1t64 (= 1.28.0-1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libmateweather1t64
+Build-Ids: 233331923a4278d5968ff65686612e170805908c

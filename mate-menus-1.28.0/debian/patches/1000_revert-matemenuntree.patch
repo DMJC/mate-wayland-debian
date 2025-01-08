@@ -1,0 +1,12 @@
+--- a/libmenu/matemenu-tree.c
++++ b/libmenu/matemenu-tree.c
+@@ -696,8 +696,8 @@
+       g_strfreev (str);
+     }
+     g_ptr_array_add (self->collection_applet, desktop_name);
+-    g_free (location);
+   }
++  g_free (location);
+   g_free (object_path);
+   g_object_unref (settings);
+ }

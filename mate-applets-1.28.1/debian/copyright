@@ -1,0 +1,3497 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: MATE Applets
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-applets/
+
+Files: accessx-status/docs/C/legal.xml
+ accessx-status/docs/af/af.po
+ accessx-status/docs/am/am.po
+ accessx-status/docs/as/as.po
+ accessx-status/docs/ast/ast.po
+ accessx-status/docs/az/az.po
+ accessx-status/docs/be/be.po
+ accessx-status/docs/bg/bg.po
+ accessx-status/docs/bn/bn.po
+ accessx-status/docs/bn_IN/bn_IN.po
+ accessx-status/docs/br/br.po
+ accessx-status/docs/bs/bs.po
+ accessx-status/docs/cmn/cmn.po
+ accessx-status/docs/crh/crh.po
+ accessx-status/docs/cy/cy.po
+ accessx-status/docs/dz/dz.po
+ accessx-status/docs/en_AU/en_AU.po
+ accessx-status/docs/en_CA/en_CA.po
+ accessx-status/docs/eo/eo.po
+ accessx-status/docs/es_AR/es_AR.po
+ accessx-status/docs/es_CR/es_CR.po
+ accessx-status/docs/es_DO/es_DO.po
+ accessx-status/docs/es_EC/es_EC.po
+ accessx-status/docs/es_ES/es_ES.po
+ accessx-status/docs/es_MX/es_MX.po
+ accessx-status/docs/es_NI/es_NI.po
+ accessx-status/docs/es_PA/es_PA.po
+ accessx-status/docs/es_PE/es_PE.po
+ accessx-status/docs/es_PR/es_PR.po
+ accessx-status/docs/es_SV/es_SV.po
+ accessx-status/docs/es_UY/es_UY.po
+ accessx-status/docs/es_VE/es_VE.po
+ accessx-status/docs/et/et.po
+ accessx-status/docs/fa/fa.po
+ accessx-status/docs/fi/fi.po
+ accessx-status/docs/fur/fur.po
+ accessx-status/docs/fy/fy.po
+ accessx-status/docs/ga/ga.po
+ accessx-status/docs/gu/gu.po
+ accessx-status/docs/ha/ha.po
+ accessx-status/docs/hi/hi.po
+ accessx-status/docs/hr/hr.po
+ accessx-status/docs/ia/ia.po
+ accessx-status/docs/ie/ie.po
+ accessx-status/docs/ig/ig.po
+ accessx-status/docs/is/is.po
+ accessx-status/docs/ka/ka.po
+ accessx-status/docs/kab/kab.po
+ accessx-status/docs/kk/kk.po
+ accessx-status/docs/kn/kn.po
+ accessx-status/docs/ku/ku.po
+ accessx-status/docs/ky/ky.po
+ accessx-status/docs/lv/lv.po
+ accessx-status/docs/mai/mai.po
+ accessx-status/docs/mg/mg.po
+ accessx-status/docs/mk/mk.po
+ accessx-status/docs/ml/ml.po
+ accessx-status/docs/mr/mr.po
+ accessx-status/docs/nb/nb.po
+ accessx-status/docs/nds/nds.po
+ accessx-status/docs/ne/ne.po
+ accessx-status/docs/nl/nl.po
+ accessx-status/docs/nn/nn.po
+ accessx-status/docs/nso/nso.po
+ accessx-status/docs/or/or.po
+ accessx-status/docs/ps/ps.po
+ accessx-status/docs/ro/ro.po
+ accessx-status/docs/si/si.po
+ accessx-status/docs/sl/sl.po
+ accessx-status/docs/sq/sq.po
+ accessx-status/docs/sr@latin/sr@latin.po
+ accessx-status/docs/ta/ta.po
+ accessx-status/docs/te/te.po
+ accessx-status/docs/ug/ug.po
+ accessx-status/docs/uz/uz.po
+ accessx-status/docs/vi/vi.po
+ accessx-status/docs/xh/xh.po
+ accessx-status/docs/yo/yo.po
+ accessx-status/docs/zh-Hans/zh-Hans.po
+ accessx-status/docs/zh_HK/zh_HK.po
+ accessx-status/docs/zh_TW/zh_TW.po
+ accessx-status/docs/zu/zu.po
+ battstat/docs/C/legal.xml
+ battstat/docs/af/af.po
+ battstat/docs/am/am.po
+ battstat/docs/an/an.po
+ battstat/docs/as/as.po
+ battstat/docs/ast/ast.po
+ battstat/docs/az/az.po
+ battstat/docs/be/be.po
+ battstat/docs/bg/bg.po
+ battstat/docs/bn/bn.po
+ battstat/docs/bn_IN/bn_IN.po
+ battstat/docs/br/br.po
+ battstat/docs/bs/bs.po
+ battstat/docs/cmn/cmn.po
+ battstat/docs/crh/crh.po
+ battstat/docs/cy/cy.po
+ battstat/docs/dz/dz.po
+ battstat/docs/en_AU/en_AU.po
+ battstat/docs/en_CA/en_CA.po
+ battstat/docs/eo/eo.po
+ battstat/docs/es_AR/es_AR.po
+ battstat/docs/es_ES/es_ES.po
+ battstat/docs/es_MX/es_MX.po
+ battstat/docs/es_PR/es_PR.po
+ battstat/docs/et/et.po
+ battstat/docs/fa/fa.po
+ battstat/docs/fi/fi.po
+ battstat/docs/frp/frp.po
+ battstat/docs/fur/fur.po
+ battstat/docs/fy/fy.po
+ battstat/docs/ga/ga.po
+ battstat/docs/gu/gu.po
+ battstat/docs/ha/ha.po
+ battstat/docs/hi/hi.po
+ battstat/docs/hr/hr.po
+ battstat/docs/ia/ia.po
+ battstat/docs/ie/ie.po
+ battstat/docs/ig/ig.po
+ battstat/docs/is/is.po
+ battstat/docs/jv/jv.po
+ battstat/docs/ka/ka.po
+ battstat/docs/kab/kab.po
+ battstat/docs/kk/kk.po
+ battstat/docs/km/km.po
+ battstat/docs/kn/kn.po
+ battstat/docs/ku/ku.po
+ battstat/docs/ku_IQ/ku_IQ.po
+ battstat/docs/ky/ky.po
+ battstat/docs/la/la.po
+ battstat/docs/lv/lv.po
+ battstat/docs/mai/mai.po
+ battstat/docs/mg/mg.po
+ battstat/docs/mi/mi.po
+ battstat/docs/mk/mk.po
+ battstat/docs/ml/ml.po
+ battstat/docs/mr/mr.po
+ battstat/docs/nb/nb.po
+ battstat/docs/nds/nds.po
+ battstat/docs/ne/ne.po
+ battstat/docs/nl/nl.po
+ battstat/docs/nn/nn.po
+ battstat/docs/nso/nso.po
+ battstat/docs/or/or.po
+ battstat/docs/ps/ps.po
+ battstat/docs/ro/ro.po
+ battstat/docs/si/si.po
+ battstat/docs/sl/sl.po
+ battstat/docs/sq/sq.po
+ battstat/docs/sr@latin/sr@latin.po
+ battstat/docs/ta/ta.po
+ battstat/docs/te/te.po
+ battstat/docs/tk/tk.po
+ battstat/docs/ug/ug.po
+ battstat/docs/uz/uz.po
+ battstat/docs/vi/vi.po
+ battstat/docs/xh/xh.po
+ battstat/docs/yo/yo.po
+ battstat/docs/zh_HK/zh_HK.po
+ battstat/docs/zh_TW/zh_TW.po
+ battstat/docs/zu/zu.po
+ charpick/help/C/legal.xml
+ charpick/help/af/af.po
+ charpick/help/am/am.po
+ charpick/help/as/as.po
+ charpick/help/ast/ast.po
+ charpick/help/az/az.po
+ charpick/help/be/be.po
+ charpick/help/bg/bg.po
+ charpick/help/bn/bn.po
+ charpick/help/bn_IN/bn_IN.po
+ charpick/help/br/br.po
+ charpick/help/bs/bs.po
+ charpick/help/cmn/cmn.po
+ charpick/help/crh/crh.po
+ charpick/help/cy/cy.po
+ charpick/help/dz/dz.po
+ charpick/help/en_AU/en_AU.po
+ charpick/help/en_CA/en_CA.po
+ charpick/help/eo/eo.po
+ charpick/help/es_AR/es_AR.po
+ charpick/help/es_CR/es_CR.po
+ charpick/help/es_DO/es_DO.po
+ charpick/help/es_EC/es_EC.po
+ charpick/help/es_ES/es_ES.po
+ charpick/help/es_MX/es_MX.po
+ charpick/help/es_NI/es_NI.po
+ charpick/help/es_PA/es_PA.po
+ charpick/help/es_PE/es_PE.po
+ charpick/help/es_PR/es_PR.po
+ charpick/help/es_SV/es_SV.po
+ charpick/help/es_UY/es_UY.po
+ charpick/help/es_VE/es_VE.po
+ charpick/help/et/et.po
+ charpick/help/fa/fa.po
+ charpick/help/fi/fi.po
+ charpick/help/fur/fur.po
+ charpick/help/fy/fy.po
+ charpick/help/ga/ga.po
+ charpick/help/gu/gu.po
+ charpick/help/ha/ha.po
+ charpick/help/hi/hi.po
+ charpick/help/hr/hr.po
+ charpick/help/ia/ia.po
+ charpick/help/ie/ie.po
+ charpick/help/ig/ig.po
+ charpick/help/is/is.po
+ charpick/help/ka/ka.po
+ charpick/help/kab/kab.po
+ charpick/help/kk/kk.po
+ charpick/help/kn/kn.po
+ charpick/help/ku/ku.po
+ charpick/help/ky/ky.po
+ charpick/help/la/la.po
+ charpick/help/lv/lv.po
+ charpick/help/mai/mai.po
+ charpick/help/mg/mg.po
+ charpick/help/mk/mk.po
+ charpick/help/ml/ml.po
+ charpick/help/mr/mr.po
+ charpick/help/nb/nb.po
+ charpick/help/nds/nds.po
+ charpick/help/ne/ne.po
+ charpick/help/nl/nl.po
+ charpick/help/nn/nn.po
+ charpick/help/nso/nso.po
+ charpick/help/or/or.po
+ charpick/help/ps/ps.po
+ charpick/help/ro/ro.po
+ charpick/help/si/si.po
+ charpick/help/sl/sl.po
+ charpick/help/sq/sq.po
+ charpick/help/sr@latin/sr@latin.po
+ charpick/help/ta/ta.po
+ charpick/help/te/te.po
+ charpick/help/ug/ug.po
+ charpick/help/uz/uz.po
+ charpick/help/vi/vi.po
+ charpick/help/xh/xh.po
+ charpick/help/yo/yo.po
+ charpick/help/zh-Hans/zh-Hans.po
+ charpick/help/zh_HK/zh_HK.po
+ charpick/help/zh_TW/zh_TW.po
+ charpick/help/zu/zu.po
+ cpufreq/help/C/legal.xml
+ cpufreq/help/af/af.po
+ cpufreq/help/am/am.po
+ cpufreq/help/an/an.po
+ cpufreq/help/as/as.po
+ cpufreq/help/ast/ast.po
+ cpufreq/help/az/az.po
+ cpufreq/help/be/be.po
+ cpufreq/help/bg/bg.po
+ cpufreq/help/bn/bn.po
+ cpufreq/help/bn_IN/bn_IN.po
+ cpufreq/help/br/br.po
+ cpufreq/help/bs/bs.po
+ cpufreq/help/cmn/cmn.po
+ cpufreq/help/crh/crh.po
+ cpufreq/help/cy/cy.po
+ cpufreq/help/dz/dz.po
+ cpufreq/help/en_AU/en_AU.po
+ cpufreq/help/en_CA/en_CA.po
+ cpufreq/help/eo/eo.po
+ cpufreq/help/es_AR/es_AR.po
+ cpufreq/help/es_CR/es_CR.po
+ cpufreq/help/es_DO/es_DO.po
+ cpufreq/help/es_EC/es_EC.po
+ cpufreq/help/es_ES/es_ES.po
+ cpufreq/help/es_MX/es_MX.po
+ cpufreq/help/es_NI/es_NI.po
+ cpufreq/help/es_PA/es_PA.po
+ cpufreq/help/es_PE/es_PE.po
+ cpufreq/help/es_PR/es_PR.po
+ cpufreq/help/es_SV/es_SV.po
+ cpufreq/help/es_UY/es_UY.po
+ cpufreq/help/es_VE/es_VE.po
+ cpufreq/help/et/et.po
+ cpufreq/help/fa/fa.po
+ cpufreq/help/fi/fi.po
+ cpufreq/help/fil/fil.po
+ cpufreq/help/fr_CA/fr_CA.po
+ cpufreq/help/frp/frp.po
+ cpufreq/help/fur/fur.po
+ cpufreq/help/fy/fy.po
+ cpufreq/help/ga/ga.po
+ cpufreq/help/gu/gu.po
+ cpufreq/help/ha/ha.po
+ cpufreq/help/hi/hi.po
+ cpufreq/help/hr/hr.po
+ cpufreq/help/ia/ia.po
+ cpufreq/help/ie/ie.po
+ cpufreq/help/ig/ig.po
+ cpufreq/help/is/is.po
+ cpufreq/help/jv/jv.po
+ cpufreq/help/ka/ka.po
+ cpufreq/help/kab/kab.po
+ cpufreq/help/kk/kk.po
+ cpufreq/help/km/km.po
+ cpufreq/help/kn/kn.po
+ cpufreq/help/ku/ku.po
+ cpufreq/help/ku_IQ/ku_IQ.po
+ cpufreq/help/ky/ky.po
+ cpufreq/help/la/la.po
+ cpufreq/help/li/li.po
+ cpufreq/help/lv/lv.po
+ cpufreq/help/mai/mai.po
+ cpufreq/help/mg/mg.po
+ cpufreq/help/mi/mi.po
+ cpufreq/help/mk/mk.po
+ cpufreq/help/ml/ml.po
+ cpufreq/help/mr/mr.po
+ cpufreq/help/nb/nb.po
+ cpufreq/help/nds/nds.po
+ cpufreq/help/ne/ne.po
+ cpufreq/help/nl/nl.po
+ cpufreq/help/nn/nn.po
+ cpufreq/help/nso/nso.po
+ cpufreq/help/or/or.po
+ cpufreq/help/ps/ps.po
+ cpufreq/help/ro/ro.po
+ cpufreq/help/rw/rw.po
+ cpufreq/help/si/si.po
+ cpufreq/help/sl/sl.po
+ cpufreq/help/sq/sq.po
+ cpufreq/help/sr@latin/sr@latin.po
+ cpufreq/help/ta/ta.po
+ cpufreq/help/te/te.po
+ cpufreq/help/tk/tk.po
+ cpufreq/help/ug/ug.po
+ cpufreq/help/uz/uz.po
+ cpufreq/help/vi/vi.po
+ cpufreq/help/xh/xh.po
+ cpufreq/help/yo/yo.po
+ cpufreq/help/zh-Hans/zh-Hans.po
+ cpufreq/help/zh_HK/zh_HK.po
+ cpufreq/help/zh_TW/zh_TW.po
+ cpufreq/help/zu/zu.po
+ drivemount/help/C/legal.xml
+ drivemount/help/af/af.po
+ drivemount/help/am/am.po
+ drivemount/help/as/as.po
+ drivemount/help/ast/ast.po
+ drivemount/help/az/az.po
+ drivemount/help/be/be.po
+ drivemount/help/bg/bg.po
+ drivemount/help/bn/bn.po
+ drivemount/help/bn_IN/bn_IN.po
+ drivemount/help/br/br.po
+ drivemount/help/bs/bs.po
+ drivemount/help/cmn/cmn.po
+ drivemount/help/crh/crh.po
+ drivemount/help/cy/cy.po
+ drivemount/help/dz/dz.po
+ drivemount/help/en_AU/en_AU.po
+ drivemount/help/en_CA/en_CA.po
+ drivemount/help/eo/eo.po
+ drivemount/help/es_AR/es_AR.po
+ drivemount/help/es_CR/es_CR.po
+ drivemount/help/es_DO/es_DO.po
+ drivemount/help/es_EC/es_EC.po
+ drivemount/help/es_ES/es_ES.po
+ drivemount/help/es_MX/es_MX.po
+ drivemount/help/es_NI/es_NI.po
+ drivemount/help/es_PA/es_PA.po
+ drivemount/help/es_PE/es_PE.po
+ drivemount/help/es_PR/es_PR.po
+ drivemount/help/es_SV/es_SV.po
+ drivemount/help/es_UY/es_UY.po
+ drivemount/help/es_VE/es_VE.po
+ drivemount/help/et/et.po
+ drivemount/help/fa/fa.po
+ drivemount/help/fi/fi.po
+ drivemount/help/fur/fur.po
+ drivemount/help/fy/fy.po
+ drivemount/help/ga/ga.po
+ drivemount/help/gu/gu.po
+ drivemount/help/ha/ha.po
+ drivemount/help/hi/hi.po
+ drivemount/help/hr/hr.po
+ drivemount/help/ia/ia.po
+ drivemount/help/ie/ie.po
+ drivemount/help/ig/ig.po
+ drivemount/help/is/is.po
+ drivemount/help/ka/ka.po
+ drivemount/help/kab/kab.po
+ drivemount/help/kk/kk.po
+ drivemount/help/kn/kn.po
+ drivemount/help/ku/ku.po
+ drivemount/help/ky/ky.po
+ drivemount/help/la/la.po
+ drivemount/help/lv/lv.po
+ drivemount/help/mai/mai.po
+ drivemount/help/mg/mg.po
+ drivemount/help/mk/mk.po
+ drivemount/help/ml/ml.po
+ drivemount/help/mr/mr.po
+ drivemount/help/nb/nb.po
+ drivemount/help/nds/nds.po
+ drivemount/help/ne/ne.po
+ drivemount/help/nl/nl.po
+ drivemount/help/nn/nn.po
+ drivemount/help/nso/nso.po
+ drivemount/help/or/or.po
+ drivemount/help/ps/ps.po
+ drivemount/help/ro/ro.po
+ drivemount/help/si/si.po
+ drivemount/help/sl/sl.po
+ drivemount/help/sq/sq.po
+ drivemount/help/sr@latin/sr@latin.po
+ drivemount/help/ta/ta.po
+ drivemount/help/te/te.po
+ drivemount/help/ug/ug.po
+ drivemount/help/uz/uz.po
+ drivemount/help/vi/vi.po
+ drivemount/help/xh/xh.po
+ drivemount/help/yo/yo.po
+ drivemount/help/zh-Hans/zh-Hans.po
+ drivemount/help/zh_HK/zh_HK.po
+ drivemount/help/zh_TW/zh_TW.po
+ drivemount/help/zu/zu.po
+ geyes/docs/C/legal.xml
+ geyes/docs/af/af.po
+ geyes/docs/am/am.po
+ geyes/docs/an/an.po
+ geyes/docs/as/as.po
+ geyes/docs/ast/ast.po
+ geyes/docs/az/az.po
+ geyes/docs/be/be.po
+ geyes/docs/bg/bg.po
+ geyes/docs/bn/bn.po
+ geyes/docs/bn_IN/bn_IN.po
+ geyes/docs/br/br.po
+ geyes/docs/bs/bs.po
+ geyes/docs/cmn/cmn.po
+ geyes/docs/crh/crh.po
+ geyes/docs/csb/csb.po
+ geyes/docs/cy/cy.po
+ geyes/docs/dz/dz.po
+ geyes/docs/en_AU/en_AU.po
+ geyes/docs/en_CA/en_CA.po
+ geyes/docs/eo/eo.po
+ geyes/docs/es_AR/es_AR.po
+ geyes/docs/es_CR/es_CR.po
+ geyes/docs/es_DO/es_DO.po
+ geyes/docs/es_EC/es_EC.po
+ geyes/docs/es_ES/es_ES.po
+ geyes/docs/es_MX/es_MX.po
+ geyes/docs/es_NI/es_NI.po
+ geyes/docs/es_PA/es_PA.po
+ geyes/docs/es_PE/es_PE.po
+ geyes/docs/es_PR/es_PR.po
+ geyes/docs/es_SV/es_SV.po
+ geyes/docs/es_UY/es_UY.po
+ geyes/docs/es_VE/es_VE.po
+ geyes/docs/et/et.po
+ geyes/docs/fa/fa.po
+ geyes/docs/fi/fi.po
+ geyes/docs/fil/fil.po
+ geyes/docs/frp/frp.po
+ geyes/docs/fur/fur.po
+ geyes/docs/fy/fy.po
+ geyes/docs/ga/ga.po
+ geyes/docs/gu/gu.po
+ geyes/docs/ha/ha.po
+ geyes/docs/hi/hi.po
+ geyes/docs/hr/hr.po
+ geyes/docs/ia/ia.po
+ geyes/docs/ie/ie.po
+ geyes/docs/ig/ig.po
+ geyes/docs/is/is.po
+ geyes/docs/jv/jv.po
+ geyes/docs/ka/ka.po
+ geyes/docs/kab/kab.po
+ geyes/docs/kk/kk.po
+ geyes/docs/km/km.po
+ geyes/docs/kn/kn.po
+ geyes/docs/ks/ks.po
+ geyes/docs/ku/ku.po
+ geyes/docs/ky/ky.po
+ geyes/docs/la/la.po
+ geyes/docs/lb/lb.po
+ geyes/docs/li/li.po
+ geyes/docs/lv/lv.po
+ geyes/docs/mai/mai.po
+ geyes/docs/mg/mg.po
+ geyes/docs/mi/mi.po
+ geyes/docs/mk/mk.po
+ geyes/docs/ml/ml.po
+ geyes/docs/mr/mr.po
+ geyes/docs/my/my.po
+ geyes/docs/nb/nb.po
+ geyes/docs/nds/nds.po
+ geyes/docs/ne/ne.po
+ geyes/docs/nl/nl.po
+ geyes/docs/nn/nn.po
+ geyes/docs/nso/nso.po
+ geyes/docs/or/or.po
+ geyes/docs/pms/pms.po
+ geyes/docs/ps/ps.po
+ geyes/docs/ro/ro.po
+ geyes/docs/rw/rw.po
+ geyes/docs/sc/sc.po
+ geyes/docs/si/si.po
+ geyes/docs/sl/sl.po
+ geyes/docs/sq/sq.po
+ geyes/docs/sr@latin/sr@latin.po
+ geyes/docs/sw/sw.po
+ geyes/docs/ta/ta.po
+ geyes/docs/te/te.po
+ geyes/docs/tk/tk.po
+ geyes/docs/ts/ts.po
+ geyes/docs/ug/ug.po
+ geyes/docs/uz/uz.po
+ geyes/docs/vi/vi.po
+ geyes/docs/xh/xh.po
+ geyes/docs/yo/yo.po
+ geyes/docs/zh-Hans/zh-Hans.po
+ geyes/docs/zh_HK/zh_HK.po
+ geyes/docs/zh_TW/zh_TW.po
+ geyes/docs/zu/zu.po
+ mate-accessx-status.pot
+ mate-battstat.pot
+ mate-char-palette.pot
+ mate-cpufreq-applet.pot
+ mate-drivemount.pot
+ mate-geyes.pot
+ mate-multiload.pot
+ mate-netspeed-applet.pot
+ mate-stickynotes-applet.pot
+ mate-trashapplet.pot
+ mateweather.pot
+ mateweather/docs/C/legal.xml
+ mateweather/docs/af/af.po
+ mateweather/docs/am/am.po
+ mateweather/docs/as/as.po
+ mateweather/docs/ast/ast.po
+ mateweather/docs/az/az.po
+ mateweather/docs/be/be.po
+ mateweather/docs/bg/bg.po
+ mateweather/docs/bn/bn.po
+ mateweather/docs/bn_IN/bn_IN.po
+ mateweather/docs/br/br.po
+ mateweather/docs/bs/bs.po
+ mateweather/docs/cmn/cmn.po
+ mateweather/docs/crh/crh.po
+ mateweather/docs/cy/cy.po
+ mateweather/docs/dz/dz.po
+ mateweather/docs/en_AU/en_AU.po
+ mateweather/docs/en_CA/en_CA.po
+ mateweather/docs/eo/eo.po
+ mateweather/docs/es_AR/es_AR.po
+ mateweather/docs/es_CR/es_CR.po
+ mateweather/docs/es_DO/es_DO.po
+ mateweather/docs/es_EC/es_EC.po
+ mateweather/docs/es_ES/es_ES.po
+ mateweather/docs/es_MX/es_MX.po
+ mateweather/docs/es_NI/es_NI.po
+ mateweather/docs/es_PA/es_PA.po
+ mateweather/docs/es_PE/es_PE.po
+ mateweather/docs/es_PR/es_PR.po
+ mateweather/docs/es_SV/es_SV.po
+ mateweather/docs/es_UY/es_UY.po
+ mateweather/docs/es_VE/es_VE.po
+ mateweather/docs/et/et.po
+ mateweather/docs/fa/fa.po
+ mateweather/docs/fi/fi.po
+ mateweather/docs/frp/frp.po
+ mateweather/docs/fur/fur.po
+ mateweather/docs/fy/fy.po
+ mateweather/docs/ga/ga.po
+ mateweather/docs/gu/gu.po
+ mateweather/docs/ha/ha.po
+ mateweather/docs/hi/hi.po
+ mateweather/docs/hr/hr.po
+ mateweather/docs/ie/ie.po
+ mateweather/docs/ig/ig.po
+ mateweather/docs/is/is.po
+ mateweather/docs/ka/ka.po
+ mateweather/docs/kab/kab.po
+ mateweather/docs/kk/kk.po
+ mateweather/docs/km/km.po
+ mateweather/docs/kn/kn.po
+ mateweather/docs/ku/ku.po
+ mateweather/docs/ku_IQ/ku_IQ.po
+ mateweather/docs/ky/ky.po
+ mateweather/docs/la/la.po
+ mateweather/docs/li/li.po
+ mateweather/docs/lv/lv.po
+ mateweather/docs/mai/mai.po
+ mateweather/docs/mg/mg.po
+ mateweather/docs/mi/mi.po
+ mateweather/docs/mk/mk.po
+ mateweather/docs/ml/ml.po
+ mateweather/docs/mr/mr.po
+ mateweather/docs/nb/nb.po
+ mateweather/docs/nds/nds.po
+ mateweather/docs/ne/ne.po
+ mateweather/docs/nl/nl.po
+ mateweather/docs/nn/nn.po
+ mateweather/docs/nso/nso.po
+ mateweather/docs/or/or.po
+ mateweather/docs/ps/ps.po
+ mateweather/docs/ro/ro.po
+ mateweather/docs/rw/rw.po
+ mateweather/docs/sl/sl.po
+ mateweather/docs/sq/sq.po
+ mateweather/docs/sr@latin/sr@latin.po
+ mateweather/docs/ta/ta.po
+ mateweather/docs/te/te.po
+ mateweather/docs/tk/tk.po
+ mateweather/docs/ug/ug.po
+ mateweather/docs/uz/uz.po
+ mateweather/docs/vi/vi.po
+ mateweather/docs/xh/xh.po
+ mateweather/docs/yo/yo.po
+ mateweather/docs/zh_HK/zh_HK.po
+ mateweather/docs/zh_TW/zh_TW.po
+ mateweather/docs/zu/zu.po
+ multiload/docs/C/legal.xml
+ multiload/docs/af/af.po
+ multiload/docs/am/am.po
+ multiload/docs/as/as.po
+ multiload/docs/ast/ast.po
+ multiload/docs/az/az.po
+ multiload/docs/be/be.po
+ multiload/docs/bg/bg.po
+ multiload/docs/bn/bn.po
+ multiload/docs/bn_IN/bn_IN.po
+ multiload/docs/br/br.po
+ multiload/docs/bs/bs.po
+ multiload/docs/cmn/cmn.po
+ multiload/docs/crh/crh.po
+ multiload/docs/cy/cy.po
+ multiload/docs/dz/dz.po
+ multiload/docs/en_AU/en_AU.po
+ multiload/docs/en_CA/en_CA.po
+ multiload/docs/eo/eo.po
+ multiload/docs/es_AR/es_AR.po
+ multiload/docs/es_ES/es_ES.po
+ multiload/docs/et/et.po
+ multiload/docs/fa/fa.po
+ multiload/docs/fi/fi.po
+ multiload/docs/fur/fur.po
+ multiload/docs/fy/fy.po
+ multiload/docs/ga/ga.po
+ multiload/docs/gu/gu.po
+ multiload/docs/ha/ha.po
+ multiload/docs/hi/hi.po
+ multiload/docs/hr/hr.po
+ multiload/docs/ie/ie.po
+ multiload/docs/ig/ig.po
+ multiload/docs/is/is.po
+ multiload/docs/ka/ka.po
+ multiload/docs/kab/kab.po
+ multiload/docs/kk/kk.po
+ multiload/docs/kn/kn.po
+ multiload/docs/ku/ku.po
+ multiload/docs/ky/ky.po
+ multiload/docs/la/la.po
+ multiload/docs/li/li.po
+ multiload/docs/lv/lv.po
+ multiload/docs/mai/mai.po
+ multiload/docs/mg/mg.po
+ multiload/docs/mk/mk.po
+ multiload/docs/ml/ml.po
+ multiload/docs/mr/mr.po
+ multiload/docs/nb/nb.po
+ multiload/docs/nds/nds.po
+ multiload/docs/ne/ne.po
+ multiload/docs/nl/nl.po
+ multiload/docs/nn/nn.po
+ multiload/docs/nso/nso.po
+ multiload/docs/or/or.po
+ multiload/docs/ps/ps.po
+ multiload/docs/ro/ro.po
+ multiload/docs/si/si.po
+ multiload/docs/sl/sl.po
+ multiload/docs/sq/sq.po
+ multiload/docs/sr@latin/sr@latin.po
+ multiload/docs/ta/ta.po
+ multiload/docs/te/te.po
+ multiload/docs/ug/ug.po
+ multiload/docs/uz/uz.po
+ multiload/docs/vi/vi.po
+ multiload/docs/xh/xh.po
+ multiload/docs/yo/yo.po
+ multiload/docs/zh_HK/zh_HK.po
+ multiload/docs/zh_TW/zh_TW.po
+ multiload/docs/zu/zu.po
+ netspeed/help/C/legal.xml
+ netspeed/help/af/af.po
+ netspeed/help/am/am.po
+ netspeed/help/as/as.po
+ netspeed/help/ast/ast.po
+ netspeed/help/az/az.po
+ netspeed/help/be/be.po
+ netspeed/help/bg/bg.po
+ netspeed/help/bn/bn.po
+ netspeed/help/bn_IN/bn_IN.po
+ netspeed/help/br/br.po
+ netspeed/help/bs/bs.po
+ netspeed/help/cmn/cmn.po
+ netspeed/help/crh/crh.po
+ netspeed/help/cy/cy.po
+ netspeed/help/dz/dz.po
+ netspeed/help/en_AU/en_AU.po
+ netspeed/help/en_CA/en_CA.po
+ netspeed/help/eo/eo.po
+ netspeed/help/es_AR/es_AR.po
+ netspeed/help/es_ES/es_ES.po
+ netspeed/help/es_MX/es_MX.po
+ netspeed/help/et/et.po
+ netspeed/help/fa/fa.po
+ netspeed/help/fi/fi.po
+ netspeed/help/frp/frp.po
+ netspeed/help/fur/fur.po
+ netspeed/help/fy/fy.po
+ netspeed/help/ga/ga.po
+ netspeed/help/gu/gu.po
+ netspeed/help/ha/ha.po
+ netspeed/help/hi/hi.po
+ netspeed/help/hr/hr.po
+ netspeed/help/ia/ia.po
+ netspeed/help/ie/ie.po
+ netspeed/help/ig/ig.po
+ netspeed/help/is/is.po
+ netspeed/help/ka/ka.po
+ netspeed/help/kab/kab.po
+ netspeed/help/kk/kk.po
+ netspeed/help/kn/kn.po
+ netspeed/help/ku/ku.po
+ netspeed/help/ku_IQ/ku_IQ.po
+ netspeed/help/ky/ky.po
+ netspeed/help/li/li.po
+ netspeed/help/lv/lv.po
+ netspeed/help/mai/mai.po
+ netspeed/help/mg/mg.po
+ netspeed/help/mi/mi.po
+ netspeed/help/mk/mk.po
+ netspeed/help/ml/ml.po
+ netspeed/help/mr/mr.po
+ netspeed/help/nb/nb.po
+ netspeed/help/nds/nds.po
+ netspeed/help/ne/ne.po
+ netspeed/help/nl/nl.po
+ netspeed/help/nn/nn.po
+ netspeed/help/nso/nso.po
+ netspeed/help/or/or.po
+ netspeed/help/ps/ps.po
+ netspeed/help/ro/ro.po
+ netspeed/help/rw/rw.po
+ netspeed/help/si/si.po
+ netspeed/help/sl/sl.po
+ netspeed/help/sq/sq.po
+ netspeed/help/sr@latin/sr@latin.po
+ netspeed/help/sv/mate_netspeed_applet.xml
+ netspeed/help/ta/ta.po
+ netspeed/help/te/te.po
+ netspeed/help/tk/tk.po
+ netspeed/help/ug/ug.po
+ netspeed/help/uz/uz.po
+ netspeed/help/vi/vi.po
+ netspeed/help/xh/xh.po
+ netspeed/help/yo/yo.po
+ netspeed/help/zh_HK/zh_HK.po
+ netspeed/help/zh_TW/zh_TW.po
+ netspeed/help/zu/zu.po
+ stickynotes/docs/C/legal.xml
+ stickynotes/docs/af/af.po
+ stickynotes/docs/am/am.po
+ stickynotes/docs/an/an.po
+ stickynotes/docs/as/as.po
+ stickynotes/docs/ast/ast.po
+ stickynotes/docs/az/az.po
+ stickynotes/docs/be/be.po
+ stickynotes/docs/bg/bg.po
+ stickynotes/docs/bn/bn.po
+ stickynotes/docs/bn_IN/bn_IN.po
+ stickynotes/docs/br/br.po
+ stickynotes/docs/bs/bs.po
+ stickynotes/docs/cmn/cmn.po
+ stickynotes/docs/crh/crh.po
+ stickynotes/docs/cy/cy.po
+ stickynotes/docs/dz/dz.po
+ stickynotes/docs/en_AU/en_AU.po
+ stickynotes/docs/en_CA/en_CA.po
+ stickynotes/docs/eo/eo.po
+ stickynotes/docs/es_AR/es_AR.po
+ stickynotes/docs/es_CR/es_CR.po
+ stickynotes/docs/es_DO/es_DO.po
+ stickynotes/docs/es_EC/es_EC.po
+ stickynotes/docs/es_ES/es_ES.po
+ stickynotes/docs/es_MX/es_MX.po
+ stickynotes/docs/es_NI/es_NI.po
+ stickynotes/docs/es_PA/es_PA.po
+ stickynotes/docs/es_PE/es_PE.po
+ stickynotes/docs/es_PR/es_PR.po
+ stickynotes/docs/es_SV/es_SV.po
+ stickynotes/docs/es_UY/es_UY.po
+ stickynotes/docs/es_VE/es_VE.po
+ stickynotes/docs/et/et.po
+ stickynotes/docs/fa/fa.po
+ stickynotes/docs/fi/fi.po
+ stickynotes/docs/frp/frp.po
+ stickynotes/docs/fur/fur.po
+ stickynotes/docs/fy/fy.po
+ stickynotes/docs/ga/ga.po
+ stickynotes/docs/gu/gu.po
+ stickynotes/docs/ha/ha.po
+ stickynotes/docs/hi/hi.po
+ stickynotes/docs/hr/hr.po
+ stickynotes/docs/ia/ia.po
+ stickynotes/docs/ie/ie.po
+ stickynotes/docs/ig/ig.po
+ stickynotes/docs/is/is.po
+ stickynotes/docs/jv/jv.po
+ stickynotes/docs/ka/ka.po
+ stickynotes/docs/kab/kab.po
+ stickynotes/docs/kk/kk.po
+ stickynotes/docs/km/km.po
+ stickynotes/docs/kn/kn.po
+ stickynotes/docs/ku/ku.po
+ stickynotes/docs/ku_IQ/ku_IQ.po
+ stickynotes/docs/ky/ky.po
+ stickynotes/docs/la/la.po
+ stickynotes/docs/lv/lv.po
+ stickynotes/docs/mai/mai.po
+ stickynotes/docs/mg/mg.po
+ stickynotes/docs/mi/mi.po
+ stickynotes/docs/mk/mk.po
+ stickynotes/docs/ml/ml.po
+ stickynotes/docs/mr/mr.po
+ stickynotes/docs/nb/nb.po
+ stickynotes/docs/nds/nds.po
+ stickynotes/docs/ne/ne.po
+ stickynotes/docs/nl/nl.po
+ stickynotes/docs/nn/nn.po
+ stickynotes/docs/nso/nso.po
+ stickynotes/docs/or/or.po
+ stickynotes/docs/ps/ps.po
+ stickynotes/docs/ro/ro.po
+ stickynotes/docs/si/si.po
+ stickynotes/docs/sl/sl.po
+ stickynotes/docs/sq/sq.po
+ stickynotes/docs/sr@latin/sr@latin.po
+ stickynotes/docs/ta/ta.po
+ stickynotes/docs/te/te.po
+ stickynotes/docs/tk/tk.po
+ stickynotes/docs/ug/ug.po
+ stickynotes/docs/uz/uz.po
+ stickynotes/docs/vi/vi.po
+ stickynotes/docs/xh/xh.po
+ stickynotes/docs/yo/yo.po
+ stickynotes/docs/zh_HK/zh_HK.po
+ stickynotes/docs/zh_TW/zh_TW.po
+ stickynotes/docs/zu/zu.po
+ trashapplet/docs/C/legal.xml
+ trashapplet/docs/af/af.po
+ trashapplet/docs/am/am.po
+ trashapplet/docs/an/an.po
+ trashapplet/docs/as/as.po
+ trashapplet/docs/ast/ast.po
+ trashapplet/docs/az/az.po
+ trashapplet/docs/be/be.po
+ trashapplet/docs/bg/bg.po
+ trashapplet/docs/bn/bn.po
+ trashapplet/docs/bn_IN/bn_IN.po
+ trashapplet/docs/br/br.po
+ trashapplet/docs/bs/bs.po
+ trashapplet/docs/cmn/cmn.po
+ trashapplet/docs/crh/crh.po
+ trashapplet/docs/csb/csb.po
+ trashapplet/docs/cy/cy.po
+ trashapplet/docs/dz/dz.po
+ trashapplet/docs/en_AU/en_AU.po
+ trashapplet/docs/en_CA/en_CA.po
+ trashapplet/docs/eo/eo.po
+ trashapplet/docs/es_AR/es_AR.po
+ trashapplet/docs/es_CR/es_CR.po
+ trashapplet/docs/es_DO/es_DO.po
+ trashapplet/docs/es_EC/es_EC.po
+ trashapplet/docs/es_ES/es_ES.po
+ trashapplet/docs/es_MX/es_MX.po
+ trashapplet/docs/es_NI/es_NI.po
+ trashapplet/docs/es_PA/es_PA.po
+ trashapplet/docs/es_PE/es_PE.po
+ trashapplet/docs/es_PR/es_PR.po
+ trashapplet/docs/es_SV/es_SV.po
+ trashapplet/docs/es_UY/es_UY.po
+ trashapplet/docs/es_VE/es_VE.po
+ trashapplet/docs/et/et.po
+ trashapplet/docs/fa/fa.po
+ trashapplet/docs/fi/fi.po
+ trashapplet/docs/fil/fil.po
+ trashapplet/docs/frp/frp.po
+ trashapplet/docs/fur/fur.po
+ trashapplet/docs/fy/fy.po
+ trashapplet/docs/ga/ga.po
+ trashapplet/docs/gu/gu.po
+ trashapplet/docs/ha/ha.po
+ trashapplet/docs/hi/hi.po
+ trashapplet/docs/hr/hr.po
+ trashapplet/docs/ia/ia.po
+ trashapplet/docs/ie/ie.po
+ trashapplet/docs/ig/ig.po
+ trashapplet/docs/is/is.po
+ trashapplet/docs/jv/jv.po
+ trashapplet/docs/ka/ka.po
+ trashapplet/docs/kab/kab.po
+ trashapplet/docs/kk/kk.po
+ trashapplet/docs/km/km.po
+ trashapplet/docs/kn/kn.po
+ trashapplet/docs/ks/ks.po
+ trashapplet/docs/ku/ku.po
+ trashapplet/docs/ku_IQ/ku_IQ.po
+ trashapplet/docs/ky/ky.po
+ trashapplet/docs/la/la.po
+ trashapplet/docs/lb/lb.po
+ trashapplet/docs/li/li.po
+ trashapplet/docs/lv/lv.po
+ trashapplet/docs/mai/mai.po
+ trashapplet/docs/mg/mg.po
+ trashapplet/docs/mi/mi.po
+ trashapplet/docs/mk/mk.po
+ trashapplet/docs/ml/ml.po
+ trashapplet/docs/mr/mr.po
+ trashapplet/docs/nb/nb.po
+ trashapplet/docs/nds/nds.po
+ trashapplet/docs/ne/ne.po
+ trashapplet/docs/nl/nl.po
+ trashapplet/docs/nn/nn.po
+ trashapplet/docs/nso/nso.po
+ trashapplet/docs/or/or.po
+ trashapplet/docs/ro/ro.po
+ trashapplet/docs/sc/sc.po
+ trashapplet/docs/si/si.po
+ trashapplet/docs/sl/sl.po
+ trashapplet/docs/sq/sq.po
+ trashapplet/docs/sr@latin/sr@latin.po
+ trashapplet/docs/sw/sw.po
+ trashapplet/docs/te/te.po
+ trashapplet/docs/tk/tk.po
+ trashapplet/docs/ug/ug.po
+ trashapplet/docs/uz/uz.po
+ trashapplet/docs/vi/vi.po
+ trashapplet/docs/xh/xh.po
+ trashapplet/docs/yo/yo.po
+ trashapplet/docs/zh-Hans/zh-Hans.po
+ trashapplet/docs/zh_HK/zh_HK.po
+ trashapplet/docs/zh_TW/zh_TW.po
+ trashapplet/docs/zu/zu.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+
+Files: accessx-status/docs/el/el.po
+ accessx-status/docs/ja/ja.po
+ accessx-status/docs/mn/mn.po
+ accessx-status/docs/ru/ru.po
+ accessx-status/docs/uk/uk.po
+ accessx-status/docs/ur/ur.po
+ battstat/docs/el/el.po
+ battstat/docs/hy/hy.po
+ battstat/docs/ja/ja.po
+ battstat/docs/ko/ko.po
+ battstat/docs/mn/mn.po
+ battstat/docs/ru/ru.po
+ battstat/docs/uk/uk.po
+ battstat/docs/ur/ur.po
+ charpick/charpick.c
+ charpick/help/el/el.po
+ charpick/help/hy/hy.po
+ charpick/help/mn/mn.po
+ charpick/help/ru/ru.po
+ charpick/help/uk/uk.po
+ charpick/help/ur/ur.po
+ cpufreq/help/el/el.po
+ cpufreq/help/hy/hy.po
+ cpufreq/help/ja/ja.po
+ cpufreq/help/mn/mn.po
+ cpufreq/help/ru/ru.po
+ cpufreq/help/uk/uk.po
+ cpufreq/help/ur/ur.po
+ drivemount/help/el/el.po
+ drivemount/help/hy/hy.po
+ drivemount/help/ja/ja.po
+ drivemount/help/mn/mn.po
+ drivemount/help/ru/ru.po
+ drivemount/help/uk/uk.po
+ drivemount/help/ur/ur.po
+ geyes/docs/el/el.po
+ geyes/docs/hy/hy.po
+ geyes/docs/ja/ja.po
+ geyes/docs/mn/mn.po
+ geyes/docs/ru/ru.po
+ geyes/docs/uk/uk.po
+ geyes/docs/ur/ur.po
+ geyes/docs/ur_PK/ur_PK.po
+ mateweather/docs/el/el.po
+ mateweather/docs/hy/hy.po
+ mateweather/docs/mn/mn.po
+ mateweather/docs/ru/ru.po
+ mateweather/docs/uk/uk.po
+ mateweather/docs/ur/ur.po
+ multiload/docs/el/el.po
+ multiload/docs/hy/hy.po
+ multiload/docs/mn/mn.po
+ multiload/docs/ru/ru.po
+ multiload/docs/uk/uk.po
+ multiload/docs/ur/ur.po
+ netspeed/help/el/el.po
+ netspeed/help/hy/hy.po
+ netspeed/help/mn/mn.po
+ netspeed/help/ru/ru.po
+ netspeed/help/uk/uk.po
+ netspeed/help/ur/ur.po
+ stickynotes/docs/el/el.po
+ stickynotes/docs/hy/hy.po
+ stickynotes/docs/ja/ja.po
+ stickynotes/docs/mn/mn.po
+ stickynotes/docs/ru/ru.po
+ stickynotes/docs/uk/uk.po
+ stickynotes/docs/ur/ur.po
+ trashapplet/docs/el/el.po
+ trashapplet/docs/hy/hy.po
+ trashapplet/docs/ja/ja.po
+ trashapplet/docs/mn/mn.po
+ trashapplet/docs/ru/ru.po
+ trashapplet/docs/uk/uk.po
+ trashapplet/docs/ur/ur.po
+ trashapplet/docs/ur_PK/ur_PK.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming license from COPYING-DOCS and other documentation files.
+
+Files: accessx-status/AUTHORS
+ accessx-status/data/accessx-status-applet-menu.xml
+ accessx-status/data/accessx-status-resources.gresource.xml
+ accessx-status/data/Makefile.am
+ accessx-status/data/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in
+ accessx-status/data/org.mate.panel.applet.AccessxStatusAppletFactory.service.in
+ accessx-status/docs/C/figures/accessx_bounce-keys.png
+ accessx-status/docs/C/figures/accessx_mouse-keys.png
+ accessx-status/docs/C/figures/accessx_slow-keys.png
+ accessx-status/docs/C/figures/accessx-status-applet.png
+ accessx-status/docs/C/figures/accessx-status-disabled.png
+ accessx-status/docs/C/figures/accessx_sticky-altGr-key.png
+ accessx-status/docs/C/figures/accessx_sticky-keys.png
+ accessx-status/docs/C/figures/accessx_sticky-meta-key.png
+ accessx-status/docs/C/figures/accessx_sticky-shift-key.png
+ accessx-status/docs/C/figures/accessx_sticky-windows-key.png
+ accessx-status/docs/C/index.docbook
+ accessx-status/docs/da/da.po
+ accessx-status/docs/de/de.po
+ accessx-status/docs/eu/eu.po
+ accessx-status/docs/gl/gl.po
+ accessx-status/docs/it/it.po
+ accessx-status/docs/Makefile.am
+ accessx-status/docs/mate-accessx-status.omf.in
+ accessx-status/docs/ms/ms.po
+ accessx-status/docs/sr/sr.po
+ accessx-status/docs/sv/sv.po
+ accessx-status/docs/tr/tr.po
+ accessx-status/docs/uk/figures/accessx-status-applet.png
+ accessx-status/icons/16x16/apps/mate-ax-bouncekeys.png
+ accessx-status/icons/16x16/apps/mate-ax-key-base.png
+ accessx-status/icons/16x16/apps/mate-ax-key-inverse.png
+ accessx-status/icons/16x16/apps/mate-ax-key-none.png
+ accessx-status/icons/16x16/apps/mate-ax-key-no.png
+ accessx-status/icons/16x16/apps/mate-ax-key-yes.png
+ accessx-status/icons/16x16/apps/mate-ax-slowkeys-no.png
+ accessx-status/icons/16x16/apps/mate-ax-slowkeys-pending.png
+ accessx-status/icons/16x16/apps/mate-ax-slowkeys.png
+ accessx-status/icons/16x16/apps/mate-ax-slowkeys-yes.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-base.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-default-left.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-default-middle.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-default-right.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-pressed-left.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-pressed-middle.png
+ accessx-status/icons/16x16/apps/mate-mousekeys-pressed-right.png
+ accessx-status/icons/16x16/apps/mate-sticky-alt-latched.png
+ accessx-status/icons/16x16/apps/mate-sticky-alt-locked.png
+ accessx-status/icons/16x16/apps/mate-sticky-alt-none.png
+ accessx-status/icons/16x16/apps/mate-sticky-ctrl-latched.png
+ accessx-status/icons/16x16/apps/mate-sticky-ctrl-locked.png
+ accessx-status/icons/16x16/apps/mate-sticky-ctrl-none.png
+ accessx-status/icons/16x16/apps/mate-sticky-hyper-latched.png
+ accessx-status/icons/16x16/apps/mate-sticky-hyper-locked.png
+ accessx-status/icons/16x16/apps/mate-sticky-hyper-none.png
+ accessx-status/icons/16x16/apps/mate-sticky-meta-latched.png
+ accessx-status/icons/16x16/apps/mate-sticky-meta-locked.png
+ accessx-status/icons/16x16/apps/mate-sticky-meta-none.png
+ accessx-status/icons/16x16/apps/mate-sticky-shift-latched.png
+ accessx-status/icons/16x16/apps/mate-sticky-shift-locked.png
+ accessx-status/icons/16x16/apps/mate-sticky-shift-none.png
+ accessx-status/icons/16x16/apps/mate-sticky-super-latched.png
+ accessx-status/icons/16x16/apps/mate-sticky-super-locked.png
+ accessx-status/icons/16x16/apps/mate-sticky-super-none.png
+ accessx-status/icons/24x24/apps/mate-ax-bouncekeys.png
+ accessx-status/icons/24x24/apps/mate-ax-key-base.png
+ accessx-status/icons/24x24/apps/mate-ax-key-inverse.png
+ accessx-status/icons/24x24/apps/mate-ax-key-none.png
+ accessx-status/icons/24x24/apps/mate-ax-key-no.png
+ accessx-status/icons/24x24/apps/mate-ax-key-yes.png
+ accessx-status/icons/24x24/apps/mate-ax-slowkeys-no.png
+ accessx-status/icons/24x24/apps/mate-ax-slowkeys-pending.png
+ accessx-status/icons/24x24/apps/mate-ax-slowkeys.png
+ accessx-status/icons/24x24/apps/mate-ax-slowkeys-yes.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-base.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-default-left.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-default-middle.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-default-right.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-pressed-left.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-pressed-middle.png
+ accessx-status/icons/24x24/apps/mate-mousekeys-pressed-right.png
+ accessx-status/icons/24x24/apps/mate-sticky-alt-latched.png
+ accessx-status/icons/24x24/apps/mate-sticky-alt-locked.png
+ accessx-status/icons/24x24/apps/mate-sticky-alt-none.png
+ accessx-status/icons/24x24/apps/mate-sticky-ctrl-latched.png
+ accessx-status/icons/24x24/apps/mate-sticky-ctrl-locked.png
+ accessx-status/icons/24x24/apps/mate-sticky-ctrl-none.png
+ accessx-status/icons/24x24/apps/mate-sticky-hyper-latched.png
+ accessx-status/icons/24x24/apps/mate-sticky-hyper-locked.png
+ accessx-status/icons/24x24/apps/mate-sticky-hyper-none.png
+ accessx-status/icons/24x24/apps/mate-sticky-meta-latched.png
+ accessx-status/icons/24x24/apps/mate-sticky-meta-locked.png
+ accessx-status/icons/24x24/apps/mate-sticky-meta-none.png
+ accessx-status/icons/24x24/apps/mate-sticky-shift-latched.png
+ accessx-status/icons/24x24/apps/mate-sticky-shift-locked.png
+ accessx-status/icons/24x24/apps/mate-sticky-shift-none.png
+ accessx-status/icons/24x24/apps/mate-sticky-super-latched.png
+ accessx-status/icons/24x24/apps/mate-sticky-super-locked.png
+ accessx-status/icons/24x24/apps/mate-sticky-super-none.png
+ accessx-status/icons/32x32/apps/mate-ax-bouncekeys.png
+ accessx-status/icons/32x32/apps/mate-ax-key-base.png
+ accessx-status/icons/32x32/apps/mate-ax-key-inverse.png
+ accessx-status/icons/32x32/apps/mate-ax-key-none.png
+ accessx-status/icons/32x32/apps/mate-ax-key-no.png
+ accessx-status/icons/32x32/apps/mate-ax-key-yes.png
+ accessx-status/icons/32x32/apps/mate-ax-slowkeys-no.png
+ accessx-status/icons/32x32/apps/mate-ax-slowkeys-pending.png
+ accessx-status/icons/32x32/apps/mate-ax-slowkeys.png
+ accessx-status/icons/32x32/apps/mate-ax-slowkeys-yes.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-base.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-default-left.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-default-middle.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-default-right.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-pressed-left.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-pressed-middle.png
+ accessx-status/icons/32x32/apps/mate-mousekeys-pressed-right.png
+ accessx-status/icons/32x32/apps/mate-sticky-alt-latched.png
+ accessx-status/icons/32x32/apps/mate-sticky-alt-locked.png
+ accessx-status/icons/32x32/apps/mate-sticky-alt-none.png
+ accessx-status/icons/32x32/apps/mate-sticky-ctrl-latched.png
+ accessx-status/icons/32x32/apps/mate-sticky-ctrl-locked.png
+ accessx-status/icons/32x32/apps/mate-sticky-ctrl-none.png
+ accessx-status/icons/32x32/apps/mate-sticky-hyper-latched.png
+ accessx-status/icons/32x32/apps/mate-sticky-hyper-locked.png
+ accessx-status/icons/32x32/apps/mate-sticky-hyper-none.png
+ accessx-status/icons/32x32/apps/mate-sticky-meta-latched.png
+ accessx-status/icons/32x32/apps/mate-sticky-meta-locked.png
+ accessx-status/icons/32x32/apps/mate-sticky-meta-none.png
+ accessx-status/icons/32x32/apps/mate-sticky-shift-latched.png
+ accessx-status/icons/32x32/apps/mate-sticky-shift-locked.png
+ accessx-status/icons/32x32/apps/mate-sticky-shift-none.png
+ accessx-status/icons/32x32/apps/mate-sticky-super-latched.png
+ accessx-status/icons/32x32/apps/mate-sticky-super-locked.png
+ accessx-status/icons/32x32/apps/mate-sticky-super-none.png
+ accessx-status/icons/48x48/apps/mate-ax-bouncekeys.png
+ accessx-status/icons/48x48/apps/mate-ax-key-base.png
+ accessx-status/icons/48x48/apps/mate-ax-key-inverse.png
+ accessx-status/icons/48x48/apps/mate-ax-key-none.png
+ accessx-status/icons/48x48/apps/mate-ax-key-no.png
+ accessx-status/icons/48x48/apps/mate-ax-key-yes.png
+ accessx-status/icons/48x48/apps/mate-ax-slowkeys-no.png
+ accessx-status/icons/48x48/apps/mate-ax-slowkeys-pending.png
+ accessx-status/icons/48x48/apps/mate-ax-slowkeys.png
+ accessx-status/icons/48x48/apps/mate-ax-slowkeys-yes.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-base.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-default-left.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-default-middle.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-default-right.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-pressed-left.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-pressed-middle.png
+ accessx-status/icons/48x48/apps/mate-mousekeys-pressed-right.png
+ accessx-status/icons/48x48/apps/mate-sticky-alt-latched.png
+ accessx-status/icons/48x48/apps/mate-sticky-alt-locked.png
+ accessx-status/icons/48x48/apps/mate-sticky-alt-none.png
+ accessx-status/icons/48x48/apps/mate-sticky-ctrl-latched.png
+ accessx-status/icons/48x48/apps/mate-sticky-ctrl-locked.png
+ accessx-status/icons/48x48/apps/mate-sticky-ctrl-none.png
+ accessx-status/icons/48x48/apps/mate-sticky-hyper-latched.png
+ accessx-status/icons/48x48/apps/mate-sticky-hyper-locked.png
+ accessx-status/icons/48x48/apps/mate-sticky-hyper-none.png
+ accessx-status/icons/48x48/apps/mate-sticky-meta-latched.png
+ accessx-status/icons/48x48/apps/mate-sticky-meta-locked.png
+ accessx-status/icons/48x48/apps/mate-sticky-meta-none.png
+ accessx-status/icons/48x48/apps/mate-sticky-shift-latched.png
+ accessx-status/icons/48x48/apps/mate-sticky-shift-locked.png
+ accessx-status/icons/48x48/apps/mate-sticky-shift-none.png
+ accessx-status/icons/48x48/apps/mate-sticky-super-latched.png
+ accessx-status/icons/48x48/apps/mate-sticky-super-locked.png
+ accessx-status/icons/48x48/apps/mate-sticky-super-none.png
+ accessx-status/icons/Makefile.am
+ accessx-status/Makefile.am
+ accessx-status/src/Makefile.am
+ AUTHORS
+ autogen.sh
+ battstat/apmlib/Makefile.am
+ battstat/battstat-applet-menu.xml
+ battstat/battstat-preferences.ui
+ battstat/battstat-resources.gresource.xml
+ battstat/docs/bg/figures/battstat-credits-hal.png
+ battstat/docs/bg/figures/battstat-preferences.png
+ battstat/docs/bg/figures/context-menu.png
+ battstat/docs/ca/figures/battstat-applet-expanded.png
+ battstat/docs/ca/figures/battstat-applet.png
+ battstat/docs/ca/figures/battstat-credits-hal.png
+ battstat/docs/ca/figures/battstat-preferences.png
+ battstat/docs/ca/figures/context-menu.png
+ battstat/docs/C/figures/battstat-applet-expanded.png
+ battstat/docs/C/figures/battstat-applet.png
+ battstat/docs/C/figures/battstat-credits-hal.png
+ battstat/docs/C/figures/battstat-preferences.png
+ battstat/docs/C/figures/context-menu.png
+ battstat/docs/C/index.docbook
+ battstat/docs/cs/figures/battstat-applet-expanded.png
+ battstat/docs/cs/figures/battstat-applet.png
+ battstat/docs/cs/figures/battstat-credits-hal.png
+ battstat/docs/cs/figures/battstat-preferences.png
+ battstat/docs/cs/figures/context-menu.png
+ battstat/docs/da/da.po
+ battstat/docs/de/de.po
+ battstat/docs/de/figures/battstat-applet-expanded.png
+ battstat/docs/de/figures/battstat-applet.png
+ battstat/docs/de/figures/battstat-preferences.png
+ battstat/docs/de/figures/context-menu.png
+ battstat/docs/es/figures/battstat-applet-expanded.png
+ battstat/docs/es/figures/battstat-applet.png
+ battstat/docs/es/figures/battstat-credits-hal.png
+ battstat/docs/es/figures/battstat-preferences.png
+ battstat/docs/es/figures/context-menu.png
+ battstat/docs/eu/eu.po
+ battstat/docs/eu/figures/battstat-applet-expanded.png
+ battstat/docs/eu/figures/battstat-applet.png
+ battstat/docs/eu/figures/battstat-credits-hal.png
+ battstat/docs/eu/figures/battstat-preferences.png
+ battstat/docs/eu/figures/context-menu.png
+ battstat/docs/fi/figures/battstat-applet-expanded.png
+ battstat/docs/fi/figures/battstat-applet.png
+ battstat/docs/fi/figures/battstat-credits-hal.png
+ battstat/docs/fi/figures/battstat-preferences.png
+ battstat/docs/fi/figures/context-menu.png
+ battstat/docs/fr/figures/battstat-applet-expanded.png
+ battstat/docs/fr/figures/battstat-applet.png
+ battstat/docs/fr/figures/battstat-credits-hal.png
+ battstat/docs/fr/figures/battstat-preferences.png
+ battstat/docs/fr/figures/context-menu.png
+ battstat/docs/gl/gl.po
+ battstat/docs/it/it.po
+ battstat/docs/Makefile.am
+ battstat/docs/mate-battstat.omf.in
+ battstat/docs/ms/ms.po
+ battstat/docs/pt_BR/figures/battstat-applet-expanded.png
+ battstat/docs/pt_BR/figures/battstat-applet.png
+ battstat/docs/pt_BR/figures/battstat-credits-hal.png
+ battstat/docs/pt_BR/figures/battstat-preferences.png
+ battstat/docs/pt_BR/figures/context-menu.png
+ battstat/docs/sr/sr.po
+ battstat/docs/sv/figures/battstat-applet-expanded.png
+ battstat/docs/sv/figures/battstat-applet.png
+ battstat/docs/sv/figures/battstat-credits-hal.png
+ battstat/docs/sv/figures/battstat-preferences.png
+ battstat/docs/sv/figures/context-menu.png
+ battstat/docs/sv/sv.po
+ battstat/docs/tr/tr.po
+ battstat/docs/uk/figures/battstat-applet.png
+ battstat/docs/uk/figures/battstat-preferences.png
+ battstat/docs/zh_CN/figures/battstat-applet.png
+ battstat/Makefile.am
+ battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in
+ battstat/org.mate.panel.applet.BattstatAppletFactory.service.in
+ battstat/org.mate.panel.applet.battstat.gschema.xml.in
+ battstat/sounds/Makefile.am
+ battstat/sounds/mate-battstat_applet.soundlist.desktop.in
+ .build.yml
+ ChangeLog
+ charpick/charpick-applet-menu.xml
+ charpick/charpick.h
+ charpick/charpick-resources.gresource.xml
+ charpick/help/bg/figures/charpick-preferences.png
+ charpick/help/ca/figures/charpick-preferences.png
+ charpick/help/C/figures/charpalette_applet.png
+ charpick/help/C/figures/charpick_characters.png
+ charpick/help/C/figures/charpick-preferences.png
+ charpick/help/C/index.docbook
+ charpick/help/cs/figures/charpick-preferences.png
+ charpick/help/da/da.po
+ charpick/help/de/de.po
+ charpick/help/de/figures/charpick-preferences.png
+ charpick/help/el/figures/charpick-preferences.png
+ charpick/help/es/figures/charpick-preferences.png
+ charpick/help/eu/eu.po
+ charpick/help/eu/figures/charpick-preferences.png
+ charpick/help/fi/figures/charpick-preferences.png
+ charpick/help/fr/figures/charpalette_applet.png
+ charpick/help/fr/figures/charpick-preferences.png
+ charpick/help/gl/gl.po
+ charpick/help/it/figures/charpalette_applet.png
+ charpick/help/it/figures/charpick-preferences.png
+ charpick/help/it/it.po
+ charpick/help/Makefile.am
+ charpick/help/mate-char-palette.omf.in
+ charpick/help/ms/ms.po
+ charpick/help/nl/figures/charpalette_applet.png
+ charpick/help/nl/figures/charpick_characters.png
+ charpick/help/nl/figures/charpick-preferences.png
+ charpick/help/sr/sr.po
+ charpick/help/sv/figures/charpick-preferences.png
+ charpick/help/sv/sv.po
+ charpick/help/tr/tr.po
+ charpick/help/uk/figures/charpalette_applet.png
+ charpick/help/uk/figures/charpick_characters.png
+ charpick/help/uk/figures/charpick-preferences.png
+ charpick/Makefile.am
+ charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in
+ charpick/org.mate.panel.applet.CharpickerAppletFactory.service.in
+ charpick/org.mate.panel.applet.charpick.gschema.xml.in
+ charpick/properties.c
+ command/data/command-preferences.ui
+ command/data/command-resources.gresource.xml
+ command/data/Makefile.am
+ command/data/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in
+ command/data/org.mate.panel.applet.CommandAppletFactory.service.in
+ command/data/org.mate.panel.applet.command.gschema.xml.in
+ command/Makefile.am
+ command/src/Makefile.am
+ configure.ac
+ cpufreq/AUTHORS
+ cpufreq/cpufreq-applet-menu.xml
+ cpufreq/cpufreq-preferences.ui
+ cpufreq/cpufreq-resources.gresource.xml
+ cpufreq/help/C/figures/cpufreq-100.png
+ cpufreq/help/C/figures/cpufreq-25.png
+ cpufreq/help/C/figures/cpufreq-50.png
+ cpufreq/help/C/figures/cpufreq-75.png
+ cpufreq/help/C/figures/cpufreq-applet.png
+ cpufreq/help/C/figures/cpufreq-applet-preferences.png
+ cpufreq/help/C/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/C/figures/cpufreq-applet-selector-both.png
+ cpufreq/help/C/figures/cpufreq-applet-selector.png
+ cpufreq/help/C/index.docbook
+ cpufreq/help/cs/figures/cpufreq-applet-preferences.png
+ cpufreq/help/cs/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/da/da.po
+ cpufreq/help/de/de.po
+ cpufreq/help/de/figures/cpufreq-applet-preferences.png
+ cpufreq/help/de/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/de/figures/cpufreq-applet-selector-both.png
+ cpufreq/help/es/figures/cpufreq-applet-preferences.png
+ cpufreq/help/es/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/eu/eu.po
+ cpufreq/help/eu/figures/cpufreq-applet-preferences.png
+ cpufreq/help/fi/figures/cpufreq-applet-preferences.png
+ cpufreq/help/fi/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/fr/figures/cpufreq-applet-preferences.png
+ cpufreq/help/fr/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/fr/figures/cpufreq-applet-selector-both.png
+ cpufreq/help/gl/gl.po
+ cpufreq/help/it/it.po
+ cpufreq/help/Makefile.am
+ cpufreq/help/mate-cpufreq-applet.omf.in
+ cpufreq/help/ms/ms.po
+ cpufreq/help/nl/figures/cpufreq-applet-preferences.png
+ cpufreq/help/nl/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/nl/figures/cpufreq-applet-selector-both.png
+ cpufreq/help/nl/figures/cpufreq-applet-selector.png
+ cpufreq/help/sr/sr.po
+ cpufreq/help/sv/figures/cpufreq-applet-preferences.png
+ cpufreq/help/sv/figures/cpufreq-applet-preferences-smp.png
+ cpufreq/help/sv/sv.po
+ cpufreq/help/tr/tr.po
+ cpufreq/help/uk/figures/cpufreq-applet-preferences.png
+ cpufreq/help/uk/figures/cpufreq-applet-selector.png
+ cpufreq/Makefile.am
+ cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in
+ cpufreq/org.mate.panel.applet.CPUFreqAppletFactory.service.in
+ cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in
+ cpufreq/pixmaps/cpufreq-100.png
+ cpufreq/pixmaps/cpufreq-25.png
+ cpufreq/pixmaps/cpufreq-50.png
+ cpufreq/pixmaps/cpufreq-75.png
+ cpufreq/pixmaps/cpufreq-na.png
+ cpufreq/pixmaps/Makefile.am
+ cpufreq/pixmaps/mate-cpu-frequency-applet.16.png
+ cpufreq/pixmaps/mate-cpu-frequency-applet.22.png
+ cpufreq/pixmaps/mate-cpu-frequency-applet.24.png
+ cpufreq/pixmaps/mate-cpu-frequency-applet.256.png
+ cpufreq/pixmaps/mate-cpu-frequency-applet.32.png
+ cpufreq/pixmaps/mate-cpu-frequency-applet.64.png
+ cpufreq/pixmaps/mate-cpu-frequency-applet.svg
+ cpufreq/README
+ cpufreq/src/cpufreq-selector/cpufreq-selector-service.xml
+ cpufreq/src/cpufreq-selector/Makefile.am
+ cpufreq/src/cpufreq-selector/org.mate.CPUFreqSelector.conf
+ cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in
+ cpufreq/src/cpufreq-selector/org.mate.CPUFreqSelector.service.in
+ cpufreq/src/Makefile.am
+ drivemount/AUTHORS
+ drivemount/data/drivemount-applet-menu.xml
+ drivemount/data/drivemount-resources.gresource.xml
+ drivemount/data/Makefile.am
+ drivemount/data/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in
+ drivemount/data/org.mate.drivemount.gschema.xml.in
+ drivemount/data/org.mate.panel.applet.DriveMountAppletFactory.service.in
+ drivemount/help/ca/figures/drivemount-applet_eject.png
+ drivemount/help/ca/figures/drivemount-applet_example.png
+ drivemount/help/ca/figures/drivemount-applet_mount.png
+ drivemount/help/ca/figures/drivemount-applet_open.png
+ drivemount/help/ca/figures/drivemount-applet_status.png
+ drivemount/help/C/figures/drivemount-applet_eject.png
+ drivemount/help/C/figures/drivemount-applet_example.png
+ drivemount/help/C/figures/drivemount-applet_mount.png
+ drivemount/help/C/figures/drivemount-applet_open.png
+ drivemount/help/C/figures/drivemount-applet_status.png
+ drivemount/help/C/index.docbook
+ drivemount/help/da/da.po
+ drivemount/help/de/de.po
+ drivemount/help/es/figures/drivemount-applet_eject.png
+ drivemount/help/es/figures/drivemount-applet_mount.png
+ drivemount/help/es/figures/drivemount-applet_open.png
+ drivemount/help/es/figures/drivemount-applet_status.png
+ drivemount/help/eu/eu.po
+ drivemount/help/eu/figures/drivemount-applet_eject.png
+ drivemount/help/eu/figures/drivemount-applet_example.png
+ drivemount/help/eu/figures/drivemount-applet_mount.png
+ drivemount/help/eu/figures/drivemount-applet_open.png
+ drivemount/help/eu/figures/drivemount-applet_status.png
+ drivemount/help/fi/figures/drivemount-applet_eject.png
+ drivemount/help/fi/figures/drivemount-applet_mount.png
+ drivemount/help/fi/figures/drivemount-applet_open.png
+ drivemount/help/fi/figures/drivemount-applet_status.png
+ drivemount/help/fr/figures/drivemount-applet_eject.png
+ drivemount/help/fr/figures/drivemount-applet_example.png
+ drivemount/help/fr/figures/drivemount-applet_mount.png
+ drivemount/help/fr/figures/drivemount-applet_open.png
+ drivemount/help/fr/figures/drivemount-applet_status.png
+ drivemount/help/gl/gl.po
+ drivemount/help/it/figures/drivemount-applet_eject.png
+ drivemount/help/it/figures/drivemount-applet_example.png
+ drivemount/help/it/figures/drivemount-applet_mount.png
+ drivemount/help/it/figures/drivemount-applet_open.png
+ drivemount/help/it/figures/drivemount-applet_status.png
+ drivemount/help/it/it.po
+ drivemount/help/Makefile.am
+ drivemount/help/mate-drivemount.omf.in
+ drivemount/help/ms/ms.po
+ drivemount/help/sr/sr.po
+ drivemount/help/sv/figures/drivemount-applet_eject.png
+ drivemount/help/sv/figures/drivemount-applet_mount.png
+ drivemount/help/sv/figures/drivemount-applet_open.png
+ drivemount/help/sv/figures/drivemount-applet_status.png
+ drivemount/help/sv/sv.po
+ drivemount/help/tr/tr.po
+ drivemount/help/uk/figures/drivemount-applet_eject.png
+ drivemount/help/uk/figures/drivemount-applet_example.png
+ drivemount/help/uk/figures/drivemount-applet_mount.png
+ drivemount/help/uk/figures/drivemount-applet_open.png
+ drivemount/help/uk/figures/drivemount-applet_status.png
+ drivemount/Makefile.am
+ drivemount/src/Makefile.am
+ geyes/AUTHORS
+ geyes/data/geyes-applet-menu.xml
+ geyes/data/geyes-resources.gresource.xml
+ geyes/data/Makefile.am
+ geyes/data/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in
+ geyes/data/org.mate.panel.applet.GeyesAppletFactory.service.in
+ geyes/data/org.mate.panel.applet.geyes.gschema.xml.in
+ geyes/data/themes.ui
+ geyes/docs/C/figures/geyes_applet.png
+ geyes/docs/C/index.docbook
+ geyes/docs/da/da.po
+ geyes/docs/de/de.po
+ geyes/docs/eu/eu.po
+ geyes/docs/eu/figures/geyes_applet.png
+ geyes/docs/gl/gl.po
+ geyes/docs/it/figures/geyes_applet.png
+ geyes/docs/it/it.po
+ geyes/docs/Makefile.am
+ geyes/docs/mate-geyes.omf.in
+ geyes/docs/ms/ms.po
+ geyes/docs/sr/sr.po
+ geyes/docs/sv/figures/geyes_applet.png
+ geyes/docs/sv/sv.po
+ geyes/docs/tr/tr.po
+ geyes/docs/uk/figures/geyes_applet.png
+ geyes/docs/zh_CN/figures/geyes_applet.png
+ geyes/docs/zh_HK/figures/geyes_applet.png
+ geyes/docs/zh_TW/figures/geyes_applet.png
+ geyes/icons/16x16/apps/mate-eyes-applet.png
+ geyes/icons/22x22/apps/mate-eyes-applet.png
+ geyes/icons/24x24/apps/mate-eyes-applet.png
+ geyes/icons/256x256/apps/mate-eyes-applet.png
+ geyes/icons/32x32/apps/mate-eyes-applet.png
+ geyes/icons/64x64/apps/mate-eyes-applet.png
+ geyes/icons/Makefile.am
+ geyes/icons/scalable/apps/mate-eyes-applet.svg
+ geyes/Makefile.am
+ geyes/README.themes
+ geyes/src/Makefile.am
+ geyes/themes/Bizarre/Bizarre-eye.png
+ geyes/themes/Bizarre/Bizarre-pupil.png
+ geyes/themes/Bizarre/config
+ geyes/themes/Bloodshot/Bloodshot-eye.png
+ geyes/themes/Bloodshot/Bloodshot-pupil.png
+ geyes/themes/Bloodshot/config
+ geyes/themes/Default/config
+ geyes/themes/Default/Default-eye.png
+ geyes/themes/Default/Default-pupil.png
+ geyes/themes/Default-tiny/config
+ geyes/themes/Default-tiny/Default-tiny-eye.png
+ geyes/themes/Default-tiny/Default-tiny-pupil.png
+ geyes/themes/Digital/config
+ geyes/themes/Digital/Digital-eye.png
+ geyes/themes/Digital/Digital-pupil.png
+ geyes/themes/Horrid/config
+ geyes/themes/Horrid/horrid_eye.png
+ geyes/themes/Horrid/horrid_pupil.png
+ geyes/themes/Makefile.am
+ geyes/themes/Tango/config
+ geyes/themes/Tango/tango-eye.png
+ geyes/themes/Tango/tango-pupil.png
+ .github/FUNDING.yml
+ .github/issue_template.md
+ m4/ac-define-dir.m4
+ Makefile.am
+ makepot
+ man/Makefile.am
+ man/mate-charpick-applet.1
+ man/mate-cpufreq-selector.1
+ man/mate-drivemount-applet.1
+ man/mate-geyes-applet.1
+ man/mate-multiload-applet.1
+ man/mateweather.1
+ mateweather/AUTHORS
+ mateweather/data/Makefile.am
+ mateweather/data/mateweather-applet-menu.xml
+ mateweather/data/mateweather-dialog.ui
+ mateweather/data/mateweather-resources.gresource.xml
+ mateweather/data/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in
+ mateweather/data/org.mate.panel.applet.MateWeatherAppletFactory.service.in
+ mateweather/docs/ca/figures/mateweather-details.png
+ mateweather/docs/ca/figures/mateweather-menu-prefs.png
+ mateweather/docs/ca/figures/mateweather-prefs-general.png
+ mateweather/docs/ca/figures/mateweather-prefs-locations.png
+ mateweather/docs/C/figures/mateweather_applet.png
+ mateweather/docs/C/figures/mateweather-details.png
+ mateweather/docs/C/figures/mateweather-menu-prefs.png
+ mateweather/docs/C/figures/mateweather-prefs-general.png
+ mateweather/docs/C/figures/mateweather-prefs-locations.png
+ mateweather/docs/C/figures/stock_weather-cloudy.png
+ mateweather/docs/C/figures/stock_weather-few-clouds.png
+ mateweather/docs/C/figures/stock_weather-fog.png
+ mateweather/docs/C/figures/stock_weather-night-clear.png
+ mateweather/docs/C/figures/stock_weather-night-few-clouds.png
+ mateweather/docs/C/figures/stock_weather-showers.png
+ mateweather/docs/C/figures/stock_weather-snow.png
+ mateweather/docs/C/figures/stock_weather-storm.png
+ mateweather/docs/C/figures/stock_weather-sunny.png
+ mateweather/docs/C/index.docbook
+ mateweather/docs/cs/figures/mateweather-details.png
+ mateweather/docs/cs/figures/mateweather-menu-prefs.png
+ mateweather/docs/cs/figures/mateweather-prefs-general.png
+ mateweather/docs/cs/figures/mateweather-prefs-locations.png
+ mateweather/docs/da/da.po
+ mateweather/docs/de/de.po
+ mateweather/docs/de/figures/mateweather_applet.png
+ mateweather/docs/de/figures/mateweather-details.png
+ mateweather/docs/de/figures/mateweather-menu-prefs.png
+ mateweather/docs/de/figures/mateweather-prefs-general.png
+ mateweather/docs/de/figures/mateweather-prefs-locations.png
+ mateweather/docs/el/figures/mateweather-details.png
+ mateweather/docs/el/figures/mateweather-menu-prefs.png
+ mateweather/docs/el/figures/mateweather-prefs-general.png
+ mateweather/docs/el/figures/mateweather-prefs-locations.png
+ mateweather/docs/es/figures/mateweather-details.png
+ mateweather/docs/es/figures/mateweather-menu-prefs.png
+ mateweather/docs/es/figures/mateweather-prefs-general.png
+ mateweather/docs/es/figures/mateweather-prefs-locations.png
+ mateweather/docs/eu/eu.po
+ mateweather/docs/eu/figures/mateweather-details.png
+ mateweather/docs/eu/figures/mateweather-menu-prefs.png
+ mateweather/docs/eu/figures/mateweather-prefs-general.png
+ mateweather/docs/eu/figures/mateweather-prefs-locations.png
+ mateweather/docs/fi/figures/mateweather-details.png
+ mateweather/docs/fi/figures/mateweather-menu-prefs.png
+ mateweather/docs/fi/figures/mateweather-prefs-general.png
+ mateweather/docs/fi/figures/mateweather-prefs-locations.png
+ mateweather/docs/fr/figures/mateweather_applet.png
+ mateweather/docs/fr/figures/mateweather-details.png
+ mateweather/docs/fr/figures/mateweather-menu-prefs.png
+ mateweather/docs/fr/figures/mateweather-prefs-general.png
+ mateweather/docs/fr/figures/mateweather-prefs-locations.png
+ mateweather/docs/gl/gl.po
+ mateweather/docs/it/it.po
+ mateweather/docs/Makefile.am
+ mateweather/docs/mateweather.omf.in
+ mateweather/docs/ms/ms.po
+ mateweather/docs/nl/figures/mateweather_applet.png
+ mateweather/docs/nl/figures/mateweather-details.png
+ mateweather/docs/nl/figures/mateweather-menu-prefs.png
+ mateweather/docs/nl/figures/mateweather-prefs-general.png
+ mateweather/docs/nl/figures/mateweather-prefs-locations.png
+ mateweather/docs/pt_BR/figures/mateweather-details.png
+ mateweather/docs/pt_BR/figures/mateweather-menu-prefs.png
+ mateweather/docs/pt_BR/figures/mateweather-prefs-general.png
+ mateweather/docs/pt_BR/figures/mateweather-prefs-locations.png
+ mateweather/docs/ru/figures/mateweather-details.png
+ mateweather/docs/ru/figures/mateweather-menu-prefs.png
+ mateweather/docs/ru/figures/mateweather-prefs-general.png
+ mateweather/docs/ru/figures/mateweather-prefs-locations.png
+ mateweather/docs/sr/sr.po
+ mateweather/docs/sv/figures/mateweather_applet.png
+ mateweather/docs/sv/figures/mateweather-details.png
+ mateweather/docs/sv/figures/mateweather-menu-prefs.png
+ mateweather/docs/sv/figures/mateweather-prefs-general.png
+ mateweather/docs/sv/figures/mateweather-prefs-locations.png
+ mateweather/docs/sv/sv.po
+ mateweather/docs/tr/tr.po
+ mateweather/docs/uk/figures/mateweather-details.png
+ mateweather/docs/uk/figures/mateweather.png
+ mateweather/docs/uk/figures/mateweather-prefs-general.png
+ mateweather/docs/uk/figures/mateweather-prefs-locations.png
+ mateweather/docs/zh_CN/figures/mateweather_applet.png
+ mateweather/Makefile.am
+ mateweather/src/Makefile.am
+ multiload/AUTHORS
+ multiload/data/Makefile.am
+ multiload/data/multiload-applet-menu.xml
+ multiload/data/multiload-resources.gresource.xml
+ multiload/data/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in
+ multiload/data/org.mate.panel.applet.MultiLoadAppletFactory.service.in
+ multiload/data/org.mate.panel.applet.multiload.gschema.xml.in
+ multiload/data/properties.ui
+ multiload/docs/ca/figures/multiload-preferences.png
+ multiload/docs/C/figures/multiload-preferences.png
+ multiload/docs/C/figures/system-monitor-applet_window.png
+ multiload/docs/C/index.docbook
+ multiload/docs/cs/figures/multiload-preferences.png
+ multiload/docs/da/da.po
+ multiload/docs/de/de.po
+ multiload/docs/de/figures/multiload-preferences.png
+ multiload/docs/de/figures/system-monitor-applet_window.png
+ multiload/docs/es/figures/multiload-preferences.png
+ multiload/docs/eu/eu.po
+ multiload/docs/eu/figures/multiload-preferences.png
+ multiload/docs/fi/figures/multiload-preferences.png
+ multiload/docs/fr/figures/multiload-preferences.png
+ multiload/docs/gl/gl.po
+ multiload/docs/it/it.po
+ multiload/docs/ko/figures/multiload-preferences.png
+ multiload/docs/Makefile.am
+ multiload/docs/mate-multiload.omf.in
+ multiload/docs/ms/ms.po
+ multiload/docs/pt_BR/figures/multiload-preferences.png
+ multiload/docs/sr/sr.po
+ multiload/docs/sv/figures/multiload-preferences.png
+ multiload/docs/sv/figures/system-monitor-applet_window.png
+ multiload/docs/sv/sv.po
+ multiload/docs/tr/tr.po
+ multiload/docs/uk/figures/multiload-preferences.png
+ multiload/docs/uk/figures/system-monitor-applet_window.png
+ multiload/docs/zh_CN/figures/system-monitor-applet_window.png
+ multiload/Makefile.am
+ multiload/src/autoscaler.c
+ multiload/src/autoscaler.h
+ multiload/src/global.h
+ multiload/src/linux-proc.h
+ multiload/src/load-graph.c
+ multiload/src/load-graph.h
+ multiload/src/Makefile.am
+ multiload/src/netspeed.c
+ multiload/src/netspeed.h
+ netspeed/AUTHORS
+ netspeed/data/Makefile.am
+ netspeed/data/netspeed-details.ui
+ netspeed/data/netspeed-menu.xml
+ netspeed/data/netspeed-preferences.ui
+ netspeed/data/netspeed-resources.gresource.xml
+ netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in
+ netspeed/data/org.mate.panel.applet.NetspeedAppletFactory.service.in
+ netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in
+ netspeed/help/ca/figures/details.png
+ netspeed/help/ca/figures/settings.png
+ netspeed/help/C/figures/details.png
+ netspeed/help/C/figures/ethernet.png
+ netspeed/help/C/figures/eth_sum_48.png
+ netspeed/help/C/figures/loopback.png
+ netspeed/help/C/figures/netspeed_applet.png
+ netspeed/help/C/figures/plip.png
+ netspeed/help/C/figures/ppp.png
+ netspeed/help/C/figures/settings.png
+ netspeed/help/C/figures/wavelan.png
+ netspeed/help/C/index.docbook
+ netspeed/help/da/da.po
+ netspeed/help/de/de.po
+ netspeed/help/de/figures/details.png
+ netspeed/help/de/figures/eth_sum_48.png
+ netspeed/help/de/figures/settings.png
+ netspeed/help/eu/eu.po
+ netspeed/help/fr/figures/details.png
+ netspeed/help/fr/figures/settings.png
+ netspeed/help/gl/gl.po
+ netspeed/help/it/it.po
+ netspeed/help/Makefile.am
+ netspeed/help/mate_netspeed_applet.omf.in
+ netspeed/help/ms/ms.po
+ netspeed/help/pt_BR/figures/details.png
+ netspeed/help/pt_BR/figures/netspeed_applet.png
+ netspeed/help/pt_BR/figures/settings.png
+ netspeed/help/sr/sr.po
+ netspeed/help/sv/figures/details.png
+ netspeed/help/sv/figures/settings.png
+ netspeed/help/sv/sv.po
+ netspeed/help/tr/tr.po
+ netspeed/icons/16x16/apps/mate-netspeed-applet.png
+ netspeed/icons/16x16/devices/mate-netspeed-plip.png
+ netspeed/icons/22x22/apps/mate-netspeed-applet.png
+ netspeed/icons/22x22/devices/mate-netspeed-plip.png
+ netspeed/icons/24x24/apps/mate-netspeed-applet.png
+ netspeed/icons/24x24/devices/mate-netspeed-plip.png
+ netspeed/icons/24x24/status/mate-netspeed-wireless-100.png
+ netspeed/icons/24x24/status/mate-netspeed-wireless-25.png
+ netspeed/icons/24x24/status/mate-netspeed-wireless-50.png
+ netspeed/icons/24x24/status/mate-netspeed-wireless-75.png
+ netspeed/icons/32x32/apps/mate-netspeed-applet.png
+ netspeed/icons/32x32/devices/mate-netspeed-plip.png
+ netspeed/icons/48x48/apps/mate-netspeed-applet.png
+ netspeed/icons/48x48/devices/mate-netspeed-plip.png
+ netspeed/icons/Makefile.am
+ netspeed/icons/scalable/apps/mate-netspeed-applet.svg
+ netspeed/Makefile.am
+ netspeed/src/ieee80211.h
+ netspeed/src/Makefile.am
+ NEWS
+ po/LINGUAS
+ po/Makevars
+ po/POTFILES.in
+ po/POTFILES.skip
+ README
+ stickynotes/docs/ca/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/ca/figures/stickynote-right-menu-new.png
+ stickynotes/docs/ca/figures/stickynotes_applet.png
+ stickynotes/docs/ca/figures/stickynotes-note-prefs.png
+ stickynotes/docs/ca/figures/stickynotes-prefs.png
+ stickynotes/docs/C/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/C/figures/stickynote-right-menu-new.png
+ stickynotes/docs/C/figures/stickynotes_applet.png
+ stickynotes/docs/C/figures/stickynotes-note-prefs.png
+ stickynotes/docs/C/figures/stickynotes-prefs.png
+ stickynotes/docs/C/index.docbook
+ stickynotes/docs/cs/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/cs/figures/stickynote-right-menu-new.png
+ stickynotes/docs/cs/figures/stickynotes_applet.png
+ stickynotes/docs/cs/figures/stickynotes-note-prefs.png
+ stickynotes/docs/cs/figures/stickynotes-prefs.png
+ stickynotes/docs/da/da.po
+ stickynotes/docs/de/de.po
+ stickynotes/docs/de/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/de/figures/stickynote-right-menu-new.png
+ stickynotes/docs/de/figures/stickynotes_applet.png
+ stickynotes/docs/de/figures/stickynotes-note-prefs.png
+ stickynotes/docs/de/figures/stickynotes-prefs.png
+ stickynotes/docs/es/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/es/figures/stickynote-right-menu-new.png
+ stickynotes/docs/es/figures/stickynotes_applet.png
+ stickynotes/docs/es/figures/stickynotes-note-prefs.png
+ stickynotes/docs/es/figures/stickynotes-prefs.png
+ stickynotes/docs/eu/eu.po
+ stickynotes/docs/eu/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/eu/figures/stickynote-right-menu-new.png
+ stickynotes/docs/eu/figures/stickynotes_applet.png
+ stickynotes/docs/eu/figures/stickynotes-note-prefs.png
+ stickynotes/docs/eu/figures/stickynotes-prefs.png
+ stickynotes/docs/fi/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/fi/figures/stickynote-right-menu-new.png
+ stickynotes/docs/fi/figures/stickynotes_applet.png
+ stickynotes/docs/fi/figures/stickynotes-note-prefs.png
+ stickynotes/docs/fi/figures/stickynotes-prefs.png
+ stickynotes/docs/fr/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/fr/figures/stickynote-right-menu-new.png
+ stickynotes/docs/fr/figures/stickynotes_applet.png
+ stickynotes/docs/fr/figures/stickynotes-note-prefs.png
+ stickynotes/docs/fr/figures/stickynotes-prefs.png
+ stickynotes/docs/gl/gl.po
+ stickynotes/docs/it/it.po
+ stickynotes/docs/Makefile.am
+ stickynotes/docs/mate-stickynotes-applet.omf.in
+ stickynotes/docs/ms/ms.po
+ stickynotes/docs/pt_BR/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/pt_BR/figures/stickynote-right-menu-new.png
+ stickynotes/docs/pt_BR/figures/stickynotes_applet.png
+ stickynotes/docs/pt_BR/figures/stickynotes-note-prefs.png
+ stickynotes/docs/pt_BR/figures/stickynotes-prefs.png
+ stickynotes/docs/ru/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/ru/figures/stickynote-right-menu-new.png
+ stickynotes/docs/ru/figures/stickynotes_applet.png
+ stickynotes/docs/ru/figures/stickynotes-note-prefs.png
+ stickynotes/docs/ru/figures/stickynotes-prefs.png
+ stickynotes/docs/sr/sr.po
+ stickynotes/docs/sv/figures/stickynote-right-menu-lock.png
+ stickynotes/docs/sv/figures/stickynote-right-menu-new.png
+ stickynotes/docs/sv/figures/stickynotes_applet.png
+ stickynotes/docs/sv/figures/stickynotes-note-prefs.png
+ stickynotes/docs/sv/figures/stickynotes-prefs.png
+ stickynotes/docs/sv/sv.po
+ stickynotes/docs/tr/tr.po
+ stickynotes/docs/uk/figures/stickynotes_applet.png
+ stickynotes/docs/uk/figures/stickynotes-note-prefs.png
+ stickynotes/docs/uk/figures/stickynotes-prefs.png
+ stickynotes/docs/zh_CN/figures/stickynotes_applet.png
+ stickynotes/docs/zh_HK/figures/stickynotes_applet.png
+ stickynotes/docs/zh_TW/figures/stickynotes_applet.png
+ stickynotes/Makefile.am
+ stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in
+ stickynotes/org.mate.panel.applet.StickyNotesAppletFactory.service.in
+ stickynotes/org.mate.stickynotes.gschema.xml.in
+ stickynotes/pixmaps/Makefile.am
+ stickynotes/pixmaps/mate-sticky-notes-applet.16.png
+ stickynotes/pixmaps/mate-sticky-notes-applet.22.png
+ stickynotes/pixmaps/mate-sticky-notes-applet.24.png
+ stickynotes/pixmaps/mate-sticky-notes-applet.32.png
+ stickynotes/pixmaps/mate-sticky-notes-applet.svg
+ stickynotes/pixmaps/stickynotes-stock-close.png
+ stickynotes/pixmaps/stickynotes-stock-locked.png
+ stickynotes/pixmaps/stickynotes-stock-resize-se.png
+ stickynotes/pixmaps/stickynotes-stock-resize-sw.png
+ stickynotes/pixmaps/stickynotes-stock-unlocked.png
+ stickynotes/README
+ stickynotes/stickynotes-applet-menu.xml
+ stickynotes/sticky-notes-delete-all.ui
+ stickynotes/sticky-notes-delete.ui
+ stickynotes/sticky-notes-note.ui
+ stickynotes/sticky-notes-preferences.ui
+ stickynotes/sticky-notes-properties.ui
+ stickynotes/sticky-notes-resources.gresource.xml
+ timerapplet/data/Makefile.am
+ timerapplet/data/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in
+ timerapplet/data/org.mate.panel.applet.TimerAppletFactory.service.in
+ timerapplet/data/org.mate.panel.applet.timer.gschema.xml.in
+ timerapplet/data/timerapplet-preferences.ui
+ timerapplet/data/timerapplet-resources.gresource.xml
+ timerapplet/Makefile.am
+ timerapplet/src/Makefile.am
+ trashapplet/docs/ca/figures/trash-applet.png
+ trashapplet/docs/C/figures/trash-applet.png
+ trashapplet/docs/C/index.docbook
+ trashapplet/docs/da/da.po
+ trashapplet/docs/de/de.po
+ trashapplet/docs/de/figures/trash-applet.png
+ trashapplet/docs/el/figures/trash-applet.png
+ trashapplet/docs/es/figures/trash-applet.png
+ trashapplet/docs/eu/eu.po
+ trashapplet/docs/eu/figures/trash-applet.png
+ trashapplet/docs/fi/figures/trash-applet.png
+ trashapplet/docs/fr/figures/trash-applet.png
+ trashapplet/docs/gl/gl.po
+ trashapplet/docs/it/figures/trash-applet.png
+ trashapplet/docs/it/it.po
+ trashapplet/docs/Makefile.am
+ trashapplet/docs/mate-trashapplet.omf.in
+ trashapplet/docs/ms/ms.po
+ trashapplet/docs/nl/figures/trash-applet.png
+ trashapplet/docs/pa/figures/trash-applet.png
+ trashapplet/docs/sr/sr.po
+ trashapplet/docs/sv/figures/trash-applet.png
+ trashapplet/docs/sv/sv.po
+ trashapplet/docs/tr/tr.po
+ trashapplet/docs/uk/figures/trash-applet.png
+ trashapplet/Makefile.am
+ trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in
+ trashapplet/org.mate.panel.applet.TrashAppletFactory.service.in
+ trashapplet/README
+ trashapplet/src/Makefile.am
+ trashapplet/src/xstuff.h
+ trashapplet/trashapplet-empty-progress.ui
+ trashapplet/trashapplet-menu.xml
+ trashapplet/trashapplet-resources.gresource.xml
+ .travis.yml
+ .tx/config
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Assuming license from COPYING file and other code files.
+
+Files: mate-applets.pot
+ po/af.po
+ po/am.po
+ po/ar.po
+ po/as.po
+ po/ast.po
+ po/az.po
+ po/be.po
+ po/bg.po
+ po/bn.po
+ po/bn_IN.po
+ po/br.po
+ po/bs.po
+ po/ca.po
+ po/ca@valencia.po
+ po/cmn.po
+ po/crh.po
+ po/cs.po
+ po/cy.po
+ po/da.po
+ po/de.po
+ po/dz.po
+ po/el.po
+ po/en_AU.po
+ po/en_CA.po
+ po/en_GB.po
+ po/eo.po
+ po/es.po
+ po/es_AR.po
+ po/es_CL.po
+ po/es_CO.po
+ po/es_CR.po
+ po/es_DO.po
+ po/es_EC.po
+ po/es_ES.po
+ po/es_MX.po
+ po/es_NI.po
+ po/es_PA.po
+ po/es_PE.po
+ po/es_PR.po
+ po/es_SV.po
+ po/es_UY.po
+ po/es_VE.po
+ po/et.po
+ po/eu.po
+ po/fa.po
+ po/fi.po
+ po/fr.po
+ po/fr_CA.po
+ po/frp.po
+ po/fur.po
+ po/fy.po
+ po/ga.po
+ po/gl.po
+ po/gu.po
+ po/ha.po
+ po/he.po
+ po/hi.po
+ po/hr.po
+ po/hu.po
+ po/hy.po
+ po/id.po
+ po/ie.po
+ po/ig.po
+ po/is.po
+ po/it.po
+ po/ja.po
+ po/ka.po
+ po/kab.po
+ po/kk.po
+ po/km.po
+ po/kn.po
+ po/ko.po
+ po/ku.po
+ po/ku_IQ.po
+ po/ky.po
+ po/li.po
+ po/lt.po
+ po/lv.po
+ po/mai.po
+ po/mg.po
+ po/mk.po
+ po/ml.po
+ po/mn.po
+ po/mr.po
+ po/ms.po
+ po/nb.po
+ po/nds.po
+ po/ne.po
+ po/nl.po
+ po/nn.po
+ po/nso.po
+ po/oc.po
+ po/or.po
+ po/pa.po
+ po/pl.po
+ po/pms.po
+ po/ps.po
+ po/pt.po
+ po/pt_BR.po
+ po/ro.po
+ po/ru.po
+ po/rw.po
+ po/si.po
+ po/sk.po
+ po/sl.po
+ po/sq.po
+ po/sr.po
+ po/sr@latin.po
+ po/sv.po
+ po/ta.po
+ po/te.po
+ po/th.po
+ po/tk.po
+ po/tr.po
+ po/ug.po
+ po/uk.po
+ po/ur.po
+ po/uz.po
+ po/vi.po
+ po/wa.po
+ po/xh.po
+ po/yo.po
+ po/zh_CN.po
+ po/zh_HK.po
+ po/zh_TW.po
+ po/zu.po
+Copyright: YEAR, MATE Desktop Environment team
+License: GPL-2+
+Comment:
+ Assuming license from COPYING file and other code files.
+
+Files: accessx-status/docs/en_GB/en_GB.po
+ accessx-status/docs/id/id.po
+ accessx-status/docs/lt/lt.po
+ accessx-status/docs/pl/pl.po
+ battstat/docs/en_GB/en_GB.po
+ battstat/docs/id/id.po
+ battstat/docs/lt/lt.po
+ battstat/docs/pl/pl.po
+ charpick/help/en_GB/en_GB.po
+ charpick/help/id/id.po
+ charpick/help/lt/lt.po
+ charpick/help/pl/pl.po
+ cpufreq/help/en_GB/en_GB.po
+ cpufreq/help/id/id.po
+ cpufreq/help/lt/lt.po
+ cpufreq/help/pl/pl.po
+ drivemount/help/en_GB/en_GB.po
+ drivemount/help/id/id.po
+ drivemount/help/lt/lt.po
+ drivemount/help/pl/pl.po
+ geyes/docs/en_GB/en_GB.po
+ geyes/docs/id/id.po
+ geyes/docs/lt/lt.po
+ geyes/docs/pl/pl.po
+ mateweather/docs/en_GB/en_GB.po
+ mateweather/docs/id/id.po
+ mateweather/docs/lt/lt.po
+ mateweather/docs/pl/pl.po
+ multiload/docs/en_GB/en_GB.po
+ multiload/docs/id/id.po
+ multiload/docs/lt/lt.po
+ multiload/docs/pl/pl.po
+ netspeed/help/en_GB/en_GB.po
+ netspeed/help/id/id.po
+ netspeed/help/lt/lt.po
+ netspeed/help/pl/pl.po
+ stickynotes/docs/en_GB/en_GB.po
+ stickynotes/docs/id/id.po
+ stickynotes/docs/lt/lt.po
+ stickynotes/docs/pl/pl.po
+ trashapplet/docs/en_GB/en_GB.po
+ trashapplet/docs/id/id.po
+ trashapplet/docs/lt/lt.po
+ trashapplet/docs/pl/pl.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+ .
+ These files only referenced GFDL unversioned.
+
+Files: cpufreq/src/cpufreq-applet.c
+ cpufreq/src/cpufreq-applet.h
+ cpufreq/src/cpufreq-monitor-cpuinfo.c
+ cpufreq/src/cpufreq-monitor-cpuinfo.h
+ cpufreq/src/cpufreq-monitor-factory.c
+ cpufreq/src/cpufreq-monitor-factory.h
+ cpufreq/src/cpufreq-monitor-libcpufreq.c
+ cpufreq/src/cpufreq-monitor-libcpufreq.h
+ cpufreq/src/cpufreq-monitor-sysfs.c
+ cpufreq/src/cpufreq-monitor-sysfs.h
+ cpufreq/src/cpufreq-monitor.c
+ cpufreq/src/cpufreq-monitor.h
+ cpufreq/src/cpufreq-popup.c
+ cpufreq/src/cpufreq-popup.h
+ cpufreq/src/cpufreq-prefs.c
+ cpufreq/src/cpufreq-prefs.h
+ cpufreq/src/cpufreq-selector.c
+ cpufreq/src/cpufreq-selector.h
+ cpufreq/src/cpufreq-selector/cpufreq-selector-factory.c
+ cpufreq/src/cpufreq-selector/cpufreq-selector-factory.h
+ cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.c
+ cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.h
+ cpufreq/src/cpufreq-selector/cpufreq-selector-service.c
+ cpufreq/src/cpufreq-selector/cpufreq-selector-service.h
+ cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.c
+ cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.h
+ cpufreq/src/cpufreq-selector/cpufreq-selector.c
+ cpufreq/src/cpufreq-selector/cpufreq-selector.h
+ cpufreq/src/cpufreq-selector/main.c
+ cpufreq/src/cpufreq-utils.c
+ cpufreq/src/cpufreq-utils.h
+Copyright: 2004, Carlos Garcia Campos <carlosgc@gnome.org>
+  2006, Carlos Garcia Campos <carlosgc@gnome.org>
+  2008, Carlos Garcia Campos <carlosgc@gnome.org>
+License: GPL-2+
+
+Files: accessx-status/docs/wa/wa.po
+ battstat/docs/he/he.po
+ battstat/docs/wa/wa.po
+ charpick/help/he/he.po
+ charpick/help/wa/wa.po
+ cpufreq/help/wa/wa.po
+ drivemount/help/he/he.po
+ drivemount/help/wa/wa.po
+ geyes/docs/he/he.po
+ geyes/docs/ku_IQ/ku_IQ.po
+ geyes/docs/wa/wa.po
+ mateweather/docs/he/he.po
+ mateweather/docs/wa/wa.po
+ multiload/docs/he/he.po
+ multiload/docs/wa/wa.po
+ netspeed/help/wa/wa.po
+ stickynotes/docs/he/he.po
+ stickynotes/docs/wa/wa.po
+ trashapplet/docs/ps/ps.po
+ trashapplet/docs/wa/wa.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+
+Files: accessx-status/docs/ar/ar.po
+ battstat/docs/ar/ar.po
+ charpick/help/ar/ar.po
+ cpufreq/help/ar/ar.po
+ drivemount/help/ar/ar.po
+ geyes/docs/ar/ar.po
+ mateweather/docs/ar/ar.po
+ multiload/docs/ar/ar.po
+ netspeed/help/ar/ar.po
+ stickynotes/docs/ar/ar.po
+ trashapplet/docs/ar/ar.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/hu/hu.po
+ battstat/docs/hu/hu.po
+ charpick/help/hu/hu.po
+ cpufreq/help/hu/hu.po
+ drivemount/help/hu/hu.po
+ geyes/docs/hu/hu.po
+ mateweather/docs/hu/hu.po
+ multiload/docs/hu/hu.po
+ netspeed/help/hu/hu.po
+ stickynotes/docs/hu/hu.po
+ trashapplet/docs/hu/hu.po
+Copyright: 2019, kely <szekelycsaba76@gmail.com>
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/pt_BR/pt_BR.po
+ battstat/docs/pt_BR/pt_BR.po
+ charpick/help/pt_BR/pt_BR.po
+ cpufreq/help/pt_BR/pt_BR.po
+ drivemount/help/pt_BR/pt_BR.po
+ geyes/docs/pt_BR/pt_BR.po
+ mateweather/docs/pt_BR/pt_BR.po
+ multiload/docs/pt_BR/pt_BR.po
+ netspeed/help/pt_BR/pt_BR.po
+ stickynotes/docs/pt_BR/pt_BR.po
+ trashapplet/docs/pt_BR/pt_BR.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/es_CO/es_CO.po
+ battstat/docs/es_CO/es_CO.po
+ charpick/help/es_CO/es_CO.po
+ cpufreq/help/es_CO/es_CO.po
+ drivemount/help/es_CO/es_CO.po
+ geyes/docs/es_CO/es_CO.po
+ mateweather/docs/es_CO/es_CO.po
+ multiload/docs/es_CO/es_CO.po
+ netspeed/help/es_CO/es_CO.po
+ stickynotes/docs/es_CO/es_CO.po
+ trashapplet/docs/es_CO/es_CO.po
+Copyright: 2018, Sergio Alejandro Bayona Becerra <sergioalejo@gmail.com>
+ 2018, Julian Borrero <julborre@gmail.com>
+License: GFDL-1.1+
+
+Files: accessx-status/docs/es/es.po
+ battstat/docs/es/es.po
+ charpick/help/es/es.po
+ cpufreq/help/es/es.po
+ drivemount/help/es/es.po
+ geyes/docs/es/es.po
+ mateweather/docs/es/es.po
+ multiload/docs/es/es.po
+ netspeed/help/es/es.po
+ stickynotes/docs/es/es.po
+ trashapplet/docs/es/es.po
+Copyright: 2018, Stefano Karapetsas <stefano@karapetsas.com>, 2018
+  2018, Andres Sanchez <blackatze93@gmail.com>, 2018
+  2018, elio <micta2003@hotmail.com>, 2018
+  2018, Wolfgang Ulbrich <mate@raveit.de>, 2018
+  2018, Joel Barrios <darkshram@gmail.com>, 2018
+  2021, Toni Estévez <toni.estevez@gmail.com>, 2021
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/pa/pa.po
+ battstat/docs/pa/pa.po
+ charpick/help/pa/pa.po
+ cpufreq/help/pa/pa.po
+ drivemount/help/pa/pa.po
+ geyes/docs/pa/pa.po
+ mateweather/docs/pa/pa.po
+ multiload/docs/pa/pa.po
+ netspeed/help/pa/pa.po
+ stickynotes/docs/pa/pa.po
+ trashapplet/docs/pa/pa.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/th/th.po
+ battstat/docs/th/th.po
+ charpick/help/th/th.po
+ cpufreq/help/th/th.po
+ drivemount/help/th/th.po
+ geyes/docs/th/th.po
+ mateweather/docs/th/th.po
+ multiload/docs/th/th.po
+ netspeed/help/th/th.po
+ stickynotes/docs/th/th.po
+ trashapplet/docs/th/th.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/ca/ca.po
+ battstat/docs/ca/ca.po
+ charpick/help/ca/ca.po
+ cpufreq/help/ca/ca.po
+ drivemount/help/ca/ca.po
+ geyes/docs/ca/ca.po
+ multiload/docs/ca/ca.po
+ netspeed/help/ca/ca.po
+ stickynotes/docs/ca/ca.po
+ trashapplet/docs/ca/ca.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/zh_CN/zh_CN.po
+ battstat/docs/zh_CN/zh_CN.po
+ charpick/help/zh_CN/zh_CN.po
+ cpufreq/help/zh_CN/zh_CN.po
+ drivemount/help/zh_CN/zh_CN.po
+ geyes/docs/zh_CN/zh_CN.po
+ multiload/docs/zh_CN/zh_CN.po
+ netspeed/help/zh_CN/zh_CN.po
+ stickynotes/docs/zh_CN/zh_CN.po
+ trashapplet/docs/zh_CN/zh_CN.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/cs/cs.po
+ battstat/docs/cs/cs.po
+ charpick/help/cs/cs.po
+ cpufreq/help/cs/cs.po
+ geyes/docs/cs/cs.po
+ mateweather/docs/cs/cs.po
+ multiload/docs/cs/cs.po
+ netspeed/help/cs/cs.po
+ stickynotes/docs/cs/cs.po
+ trashapplet/docs/cs/cs.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: mateweather/src/main.c
+ mateweather/src/mateweather-about.h
+ mateweather/src/mateweather-applet.c
+ mateweather/src/mateweather-applet.h
+ mateweather/src/mateweather-dialog.c
+ mateweather/src/mateweather-dialog.h
+ mateweather/src/mateweather-pref.c
+ mateweather/src/mateweather-pref.h
+ mateweather/src/mateweather.h
+ multiload/src/linux-proc.c
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Assuming same license as found in COPYING file and other code files.
+
+Files: stickynotes/stickynotes.c
+ stickynotes/stickynotes.h
+ stickynotes/stickynotes_applet.c
+ stickynotes/stickynotes_applet.h
+ stickynotes/stickynotes_applet_callbacks.c
+ stickynotes/stickynotes_applet_callbacks.h
+ stickynotes/stickynotes_callbacks.c
+ stickynotes/stickynotes_callbacks.h
+ stickynotes/util.c
+ stickynotes/util.h
+Copyright: 2002-2003, Loban A Rahman
+License: GPL-2+
+
+Files: accessx-status/docs/pt/pt.po
+ battstat/docs/pt/pt.po
+ charpick/help/pt/pt.po
+ cpufreq/help/pt/pt.po
+ drivemount/help/pt/pt.po
+ geyes/docs/pt/pt.po
+ multiload/docs/pt/pt.po
+ netspeed/help/pt/pt.po
+ stickynotes/docs/pt/pt.po
+ trashapplet/docs/pt/pt.po
+Copyright: 2021, Vieira <jvieira33@sapo.pt>
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/es_CL/es_CL.po
+ battstat/docs/es_CL/es_CL.po
+ charpick/help/es_CL/es_CL.po
+ cpufreq/help/es_CL/es_CL.po
+ drivemount/help/es_CL/es_CL.po
+ geyes/docs/es_CL/es_CL.po
+ mateweather/docs/es_CL/es_CL.po
+ multiload/docs/es_CL/es_CL.po
+ stickynotes/docs/es_CL/es_CL.po
+ trashapplet/docs/es_CL/es_CL.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/ko/ko.po
+ charpick/help/ko/ko.po
+ cpufreq/help/ko/ko.po
+ drivemount/help/ko/ko.po
+ geyes/docs/ko/ko.po
+ multiload/docs/ko/ko.po
+ netspeed/help/ko/ko.po
+ stickynotes/docs/ko/ko.po
+ trashapplet/docs/ko/ko.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+ .
+ These files only referenced GFDL unversioned.
+
+Files: accessx-status/docs/sk/sk.po
+ battstat/docs/sk/sk.po
+ cpufreq/help/sk/sk.po
+ drivemount/help/sk/sk.po
+ mateweather/docs/sk/sk.po
+ multiload/docs/sk/sk.po
+ netspeed/help/sk/sk.po
+ stickynotes/docs/sk/sk.po
+ trashapplet/docs/sk/sk.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+ .
+ These files only referenced GFDL unversioned.
+
+Files: accessx-status/docs/fr/fr.po
+ battstat/docs/fr/fr.po
+ charpick/help/fr/fr.po
+ cpufreq/help/fr/fr.po
+ geyes/docs/fr/fr.po
+ mateweather/docs/fr/fr.po
+ multiload/docs/fr/fr.po
+ netspeed/help/fr/fr.po
+ trashapplet/docs/fr/fr.po
+Copyright: 2021, phane PETRUS <stephane.petrus@posteo.net>
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/oc/oc.po
+ battstat/docs/oc/oc.po
+ charpick/help/oc/oc.po
+ drivemount/help/oc/oc.po
+ geyes/docs/oc/oc.po
+ stickynotes/docs/oc/oc.po
+ trashapplet/docs/oc/oc.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: battstat/docs/ca@valencia/ca@valencia.po
+ cpufreq/help/ca@valencia/ca@valencia.po
+ drivemount/help/ca@valencia/ca@valencia.po
+ geyes/docs/ca@valencia/ca@valencia.po
+ mateweather/docs/ca@valencia/ca@valencia.po
+ netspeed/help/ca@valencia/ca@valencia.po
+ stickynotes/docs/ca@valencia/ca@valencia.po
+Copyright: s <joamuran@gmail.com>, 2018
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: battstat/acpi-freebsd.c
+ battstat/acpi-linux.c
+ battstat/acpi-linux.h
+ battstat/battstat-preferences.c
+ battstat/battstat-preferences.h
+ battstat/battstat.h
+Copyright: 2000, Jürgen Pehrson <jp@spektr.eu.org>
+License: GPL-2+
+
+Files: accessx-status/docs/ca@valencia/ca@valencia.po
+ charpick/help/ca@valencia/ca@valencia.po
+ multiload/docs/ca@valencia/ca@valencia.po
+ trashapplet/docs/ca@valencia/ca@valencia.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+ .
+ These files only referenced GFDL unversioned.
+
+Files: po/gnome-copyrights.txt
+ po/jv.po
+ po/mi.po
+ po/yi.po
+Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Assuming license from COPYING file and other code files.
+
+Files: cpufreq/help/oc/oc.po
+ mateweather/docs/oc/oc.po
+ multiload/docs/oc/oc.po
+ netspeed/help/oc/oc.po
+Copyright: 2018, Cedric Valmary <cvalmary@yahoo.fr>
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+ .
+ These files only referenced GFDL unversioned.
+
+Files: drivemount/src/drive-button.h
+ drivemount/src/drive-list.h
+ drivemount/src/drivemount.c
+Copyright: 2004, Canonical Ltd
+License: GPL-2+
+
+Files: netspeed/src/netspeed-preferences.c
+ netspeed/src/netspeed-preferences.h
+ netspeed/src/netspeed.h
+Copyright: 2020, MATE Development Team
+License: GPL-2+
+
+Files: netspeed/src/backend.c
+ netspeed/src/backend.h
+ netspeed/src/netspeed.c
+Copyright: Jörgen Scheibengruber <mfcn@gmx.de>
+  Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-2+
+
+Files: accessx-status/docs/he/he.po
+ cpufreq/help/he/he.po
+ trashapplet/docs/he/he.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+ .
+ These files only referenced GFDL unversioned.
+
+Files: command/src/ma-command.c
+ command/src/ma-command.h
+Copyright: 2018, Alberts Muktupāvels
+License: GPL-2+
+
+Files: drivemount/src/drive-button.c
+ drivemount/src/drive-list.c
+Copyright: 2004, Canonical Ltd
+  2008, Pierre Ossman
+License: GPL-2+
+
+Files: geyes/src/geyes.h
+ geyes/src/themes.c
+Copyright: 1999, Dave Camp <dave@davec.dhs.org>
+License: GPL-2+
+
+Files: battstat/battstat_applet.c
+ battstat/power-management.c
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
+  2002, Free Software Foundation
+  2002-2005, Free Software Foundation
+License: GPL-2+
+
+Files: battstat/battstat-upower.c
+ battstat/battstat-upower.h
+Copyright: 2005, Ryan Lortie <desrt@desrt.ca>
+  2010, Joachim Breitner <mail@joachim-breitner.de>
+License: GPL-2+
+
+Files: trashapplet/src/trash-empty.c
+ trashapplet/src/trash-empty.h
+Copyright: 2008, Ryan Lortie
+License: GPL-2+
+
+Files: command/src/command.c
+ timerapplet/src/timerapplet.c
+Copyright: 2013-2014, Stefano Karapetsas
+  2014, Stefano Karapetsas
+License: GPL-2+
+
+Files: accessx-status/src/applet.c
+ accessx-status/src/applet.h
+Copyright: 2003, Sun Microsystems Inc.
+  2003-2004, Sun Microsystems Inc.
+License: LGPL-2+
+
+Files: multiload/src/main.c
+ multiload/src/properties.c
+Copyright: 1997, The Free Software Foundation
+  2002, The Free Software Foundation
+License: GPL-2+
+Comment:
+ Assuming license from COPYING file and other code files.
+
+Files: m4/as-ac-expand.m4
+Copyright: 2003-2005, Thomas Vander Stichele <thomas at apestaart dot org>
+License: FSF-all-permissive
+
+Files: geyes/docs/fr_CA/fr_CA.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+
+Files: trashapplet/docs/ta/ta.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+
+Files: mateweather/docs/si/si.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+
+Files: mateweather/src/mateweather-about.c
+Copyright: 1999-2005, S. Papadimitriou (and others)
+  2012-2021, MATE developers"),
+License: GPL-2+
+Comment:
+ Assuming GPL-2+ here, although only GPL is mentioned.
+
+Files: geyes/src/geyes.c
+Copyright: 1999, Dave Camp
+License: GPL-2+
+
+Files: battstat/acpi-freebsd.h
+Copyright: 2004, Joe Marcus Clarke <marcus@FreeBSD.org>
+License: GPL-2+
+
+Files: trashapplet/src/trashapplet.c
+Copyright: 2004, Michiel Sikkes <michiel@eyesopened.nl>,
+License: GPL-2+
+
+Files: battstat/apmlib/apmlib.c
+Copyright: 1996-1997, Rickard E. Faith (faith@acm.org)
+License: GPL-2+
+
+Files: battstat/apmlib/apm.h
+Copyright: 1996, Rickard E. Faith (r.faith@ieee.org)
+License: GPL-2+
+
+Files: netspeed/src/nl80211.h
+Copyright: 2006-2010, Johannes Berg <johannes@sipsolutions.net>
+  2008, Colin McCabe <colin@cozybit.com>
+  2008, Jouni Malinen <jouni.malinen@atheros.com>
+  2008, Luis Carlos Cobo <luisca@cozybit.com>
+  2008, Michael Buesch <m@bues.ch>
+  2008, Michael Wu <flamingice@sourmilk.net>
+  2008-2009, Luis R. Rodriguez <lrodriguez@atheros.com>
+  2015-2017, Intel Deutschland GmbH
+  2018-2019, Intel Corporation
+License: ISC
+
+Files: git.mk
+Copyright: 2009, Red Hat, Inc.
+  2010-2013, Behdad Esfahbod
+License: FSF-all-permissive
+
+Files: trashapplet/src/xstuff.c
+Copyright: 2000-2001, Eazel, Inc.
+  2002, Sun Microsystems Inc.
+  1997-2002, Alfredo K. Kojima
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file and other files.
+
+Files: drivemount/help/fr/fr.po
+ stickynotes/docs/fr/fr.po
+Copyright: 2021 Stéphane PETRUS <stephane.petrus@posteo.net>
+  2019, Gerom JACQUIN <chatbada24@laposte.net>
+  and others
+License: GFDL-1.1+
+
+Files: mateweather/docs/pt/pt.po
+Copyright: 2018, Sérgio Marques <smarquespt@gmail.com>
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: mateweather/docs/ca/ca.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: charpick/help/sk/sk.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: geyes/docs/sk/sk.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: drivemount/help/cs/cs.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: mateweather/docs/zh_CN/zh_CN.po
+Copyright: 2020, <mcjoys@163.com>
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: mateweather/docs/ko/ko.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: accessx-status/docs/hy/hy.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: netspeed/help/he/he.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: charpick/help/ja/ja.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: netspeed/help/ja/ja.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: multiload/docs/ja/ja.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: mateweather/docs/ja/ja.po
+Copyright: *No copyright*
+License: GFDL-1.1+
+Comment:
+ Assuming GFDL-1.1+ license here like for the other
+ documentation files.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014-2021, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+                GNU Free Documentation License
+                   Version 1.1, March 2000
+ -
+ Copyright (C) 2000  Free Software Foundation, Inc.
+     51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+ .
+ 0. PREAMBLE
+ .
+ The purpose of this License is to make a manual, textbook, or other
+ written document "free" in the sense of freedom: to assure everyone
+ the effective freedom to copy and redistribute it, with or without
+ modifying it, either commercially or noncommercially.  Secondarily,
+ this License preserves for the author and publisher a way to get
+ credit for their work, while not being considered responsible for
+ modifications made by others.
+ .
+ This License is a kind of "copyleft", which means that derivative
+ works of the document must themselves be free in the same sense.  It
+ complements the GNU General Public License, which is a copyleft
+ license designed for free software.
+ .
+ We have designed this License in order to use it for manuals for free
+ software, because free software needs free documentation: a free
+ program should come with manuals providing the same freedoms that the
+ software does.  But this License is not limited to software manuals;
+ it can be used for any textual work, regardless of subject matter or
+ whether it is published as a printed book.  We recommend this License
+ principally for works whose purpose is instruction or reference.
+ .
+ .
+ 1. APPLICABILITY AND DEFINITIONS
+ .
+ This License applies to any manual or other work that contains a
+ notice placed by the copyright holder saying it can be distributed
+ under the terms of this License.  The "Document", below, refers to any
+ such manual or work.  Any member of the public is a licensee, and is
+ addressed as "you".
+ .
+ A "Modified Version" of the Document means any work containing the
+ Document or a portion of it, either copied verbatim, or with
+ modifications and/or translated into another language.
+ .
+ A "Secondary Section" is a named appendix or a front-matter section of
+ the Document that deals exclusively with the relationship of the
+ publishers or authors of the Document to the Document's overall subject
+ (or to related matters) and contains nothing that could fall directly
+ within that overall subject.  (For example, if the Document is in part a
+ textbook of mathematics, a Secondary Section may not explain any
+ mathematics.)  The relationship could be a matter of historical
+ connection with the subject or with related matters, or of legal,
+ commercial, philosophical, ethical or political position regarding
+ them.
+ .
+ The "Invariant Sections" are certain Secondary Sections whose titles
+ are designated, as being those of Invariant Sections, in the notice
+ that says that the Document is released under this License.
+ .
+ The "Cover Texts" are certain short passages of text that are listed,
+ as Front-Cover Texts or Back-Cover Texts, in the notice that says that
+ the Document is released under this License.
+ .
+ A "Transparent" copy of the Document means a machine-readable copy,
+ represented in a format whose specification is available to the
+ general public, whose contents can be viewed and edited directly and
+ straightforwardly with generic text editors or (for images composed of
+ pixels) generic paint programs or (for drawings) some widely available
+ drawing editor, and that is suitable for input to text formatters or
+ for automatic translation to a variety of formats suitable for input
+ to text formatters.  A copy made in an otherwise Transparent file
+ format whose markup has been designed to thwart or discourage
+ subsequent modification by readers is not Transparent.  A copy that is
+ not "Transparent" is called "Opaque".
+ .
+ Examples of suitable formats for Transparent copies include plain
+ ASCII without markup, Texinfo input format, LaTeX input format, SGML
+ or XML using a publicly available DTD, and standard-conforming simple
+ HTML designed for human modification.  Opaque formats include
+ PostScript, PDF, proprietary formats that can be read and edited only
+ by proprietary word processors, SGML or XML for which the DTD and/or
+ processing tools are not generally available, and the
+ machine-generated HTML produced by some word processors for output
+ purposes only.
+ .
+ The "Title Page" means, for a printed book, the title page itself,
+ plus such following pages as are needed to hold, legibly, the material
+ this License requires to appear in the title page.  For works in
+ formats which do not have any title page as such, "Title Page" means
+ the text near the most prominent appearance of the work's title,
+ preceding the beginning of the body of the text.
+ .
+ .
+ 2. VERBATIM COPYING
+ .
+ You may copy and distribute the Document in any medium, either
+ commercially or noncommercially, provided that this License, the
+ copyright notices, and the license notice saying this License applies
+ to the Document are reproduced in all copies, and that you add no other
+ conditions whatsoever to those of this License.  You may not use
+ technical measures to obstruct or control the reading or further
+ copying of the copies you make or distribute.  However, you may accept
+ compensation in exchange for copies.  If you distribute a large enough
+ number of copies you must also follow the conditions in section 3.
+ .
+ You may also lend copies, under the same conditions stated above, and
+ you may publicly display copies.
+ .
+ .
+ 3. COPYING IN QUANTITY
+ .
+ If you publish printed copies of the Document numbering more than 100,
+ and the Document's license notice requires Cover Texts, you must enclose
+ the copies in covers that carry, clearly and legibly, all these Cover
+ Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
+ the back cover.  Both covers must also clearly and legibly identify
+ you as the publisher of these copies.  The front cover must present
+ the full title with all words of the title equally prominent and
+ visible.  You may add other material on the covers in addition.
+ Copying with changes limited to the covers, as long as they preserve
+ the title of the Document and satisfy these conditions, can be treated
+ as verbatim copying in other respects.
+ .
+ If the required texts for either cover are too voluminous to fit
+ legibly, you should put the first ones listed (as many as fit
+ reasonably) on the actual cover, and continue the rest onto adjacent
+ pages.
+ .
+ If you publish or distribute Opaque copies of the Document numbering
+ more than 100, you must either include a machine-readable Transparent
+ copy along with each Opaque copy, or state in or with each Opaque copy
+ a publicly-accessible computer-network location containing a complete
+ Transparent copy of the Document, free of added material, which the
+ general network-using public has access to download anonymously at no
+ charge using public-standard network protocols.  If you use the latter
+ option, you must take reasonably prudent steps, when you begin
+ distribution of Opaque copies in quantity, to ensure that this
+ Transparent copy will remain thus accessible at the stated location
+ until at least one year after the last time you distribute an Opaque
+ copy (directly or through your agents or retailers) of that edition to
+ the public.
+ .
+ It is requested, but not required, that you contact the authors of the
+ Document well before redistributing any large number of copies, to give
+ them a chance to provide you with an updated version of the Document.
+ .
+ .
+ 4. MODIFICATIONS
+ .
+ You may copy and distribute a Modified Version of the Document under
+ the conditions of sections 2 and 3 above, provided that you release
+ the Modified Version under precisely this License, with the Modified
+ Version filling the role of the Document, thus licensing distribution
+ and modification of the Modified Version to whoever possesses a copy
+ of it.  In addition, you must do these things in the Modified Version:
+ .
+ A. Use in the Title Page (and on the covers, if any) a title distinct
+    from that of the Document, and from those of previous versions
+    (which should, if there were any, be listed in the History section
+    of the Document).  You may use the same title as a previous version
+    if the original publisher of that version gives permission.
+ B. List on the Title Page, as authors, one or more persons or entities
+    responsible for authorship of the modifications in the Modified
+    Version, together with at least five of the principal authors of the
+    Document (all of its principal authors, if it has less than five).
+ C. State on the Title page the name of the publisher of the
+    Modified Version, as the publisher.
+ D. Preserve all the copyright notices of the Document.
+ E. Add an appropriate copyright notice for your modifications
+    adjacent to the other copyright notices.
+ F. Include, immediately after the copyright notices, a license notice
+    giving the public permission to use the Modified Version under the
+    terms of this License, in the form shown in the Addendum below.
+ G. Preserve in that license notice the full lists of Invariant Sections
+    and required Cover Texts given in the Document's license notice.
+ H. Include an unaltered copy of this License.
+ I. Preserve the section entitled "History", and its title, and add to
+    it an item stating at least the title, year, new authors, and
+    publisher of the Modified Version as given on the Title Page.  If
+    there is no section entitled "History" in the Document, create one
+    stating the title, year, authors, and publisher of the Document as
+    given on its Title Page, then add an item describing the Modified
+    Version as stated in the previous sentence.
+ J. Preserve the network location, if any, given in the Document for
+    public access to a Transparent copy of the Document, and likewise
+    the network locations given in the Document for previous versions
+    it was based on.  These may be placed in the "History" section.
+    You may omit a network location for a work that was published at
+    least four years before the Document itself, or if the original
+    publisher of the version it refers to gives permission.
+ K. In any section entitled "Acknowledgements" or "Dedications",
+    preserve the section's title, and preserve in the section all the
+    substance and tone of each of the contributor acknowledgements
+    and/or dedications given therein.
+ L. Preserve all the Invariant Sections of the Document,
+    unaltered in their text and in their titles.  Section numbers
+    or the equivalent are not considered part of the section titles.
+ M. Delete any section entitled "Endorsements".  Such a section
+    may not be included in the Modified Version.
+ N. Do not retitle any existing section as "Endorsements"
+    or to conflict in title with any Invariant Section.
+ .
+ If the Modified Version includes new front-matter sections or
+ appendices that qualify as Secondary Sections and contain no material
+ copied from the Document, you may at your option designate some or all
+ of these sections as invariant.  To do this, add their titles to the
+ list of Invariant Sections in the Modified Version's license notice.
+ These titles must be distinct from any other section titles.
+ .
+ You may add a section entitled "Endorsements", provided it contains
+ nothing but endorsements of your Modified Version by various
+ parties--for example, statements of peer review or that the text has
+ been approved by an organization as the authoritative definition of a
+ standard.
+ .
+ You may add a passage of up to five words as a Front-Cover Text, and a
+ passage of up to 25 words as a Back-Cover Text, to the end of the list
+ of Cover Texts in the Modified Version.  Only one passage of
+ Front-Cover Text and one of Back-Cover Text may be added by (or
+ through arrangements made by) any one entity.  If the Document already
+ includes a cover text for the same cover, previously added by you or
+ by arrangement made by the same entity you are acting on behalf of,
+ you may not add another; but you may replace the old one, on explicit
+ permission from the previous publisher that added the old one.
+ .
+ The author(s) and publisher(s) of the Document do not by this License
+ give permission to use their names for publicity for or to assert or
+ imply endorsement of any Modified Version.
+ .
+ .
+ 5. COMBINING DOCUMENTS
+ .
+ You may combine the Document with other documents released under this
+ License, under the terms defined in section 4 above for modified
+ versions, provided that you include in the combination all of the
+ Invariant Sections of all of the original documents, unmodified, and
+ list them all as Invariant Sections of your combined work in its
+ license notice.
+ .
+ The combined work need only contain one copy of this License, and
+ multiple identical Invariant Sections may be replaced with a single
+ copy.  If there are multiple Invariant Sections with the same name but
+ different contents, make the title of each such section unique by
+ adding at the end of it, in parentheses, the name of the original
+ author or publisher of that section if known, or else a unique number.
+ Make the same adjustment to the section titles in the list of
+ Invariant Sections in the license notice of the combined work.
+ .
+ In the combination, you must combine any sections entitled "History"
+ in the various original documents, forming one section entitled
+ "History"; likewise combine any sections entitled "Acknowledgements",
+ and any sections entitled "Dedications".  You must delete all sections
+ entitled "Endorsements."
+ .
+ .
+ 6. COLLECTIONS OF DOCUMENTS
+ .
+ You may make a collection consisting of the Document and other documents
+ released under this License, and replace the individual copies of this
+ License in the various documents with a single copy that is included in
+ the collection, provided that you follow the rules of this License for
+ verbatim copying of each of the documents in all other respects.
+ .
+ You may extract a single document from such a collection, and distribute
+ it individually under this License, provided you insert a copy of this
+ License into the extracted document, and follow this License in all
+ other respects regarding verbatim copying of that document.
+ .
+ .
+ 7. AGGREGATION WITH INDEPENDENT WORKS
+ .
+ A compilation of the Document or its derivatives with other separate
+ and independent documents or works, in or on a volume of a storage or
+ distribution medium, does not as a whole count as a Modified Version
+ of the Document, provided no compilation copyright is claimed for the
+ compilation.  Such a compilation is called an "aggregate", and this
+ License does not apply to the other self-contained works thus compiled
+ with the Document, on account of their being thus compiled, if they
+ are not themselves derivative works of the Document.
+ .
+ If the Cover Text requirement of section 3 is applicable to these
+ copies of the Document, then if the Document is less than one quarter
+ of the entire aggregate, the Document's Cover Texts may be placed on
+ covers that surround only the Document within the aggregate.
+ Otherwise they must appear on covers around the whole aggregate.
+ .
+ .
+ 8. TRANSLATION
+ .
+ Translation is considered a kind of modification, so you may
+ distribute translations of the Document under the terms of section 4.
+ Replacing Invariant Sections with translations requires special
+ permission from their copyright holders, but you may include
+ translations of some or all Invariant Sections in addition to the
+ original versions of these Invariant Sections.  You may include a
+ translation of this License provided that you also include the
+ original English version of this License.  In case of a disagreement
+ between the translation and the original English version of this
+ License, the original English version will prevail.
+ .
+ .
+ 9. TERMINATION
+ .
+ You may not copy, modify, sublicense, or distribute the Document except
+ as expressly provided for under this License.  Any other attempt to
+ copy, modify, sublicense or distribute the Document is void, and will
+ automatically terminate your rights under this License.  However,
+ parties who have received copies, or rights, from you under this
+ License will not have their licenses terminated so long as such
+ parties remain in full compliance.
+ .
+ .
+ 10. FUTURE REVISIONS OF THIS LICENSE
+ .
+ The Free Software Foundation may publish new, revised versions
+ of the GNU Free Documentation License from time to time.  Such new
+ versions will be similar in spirit to the present version, but may
+ differ in detail to address new problems or concerns.  See
+ https://www.gnu.org/licenses/.
+ .
+ Each version of the License is given a distinguishing version number.
+ If the Document specifies that a particular numbered version of this
+ License "or any later version" applies to it, you have the option of
+ following the terms and conditions either of that specified version or
+ of any later version that has been published (not as a draft) by the
+ Free Software Foundation.  If the Document does not specify a version
+ number of this License, you may choose any version ever published (not
+ as a draft) by the Free Software Foundation.
+ .
+ .
+ ADDENDUM: How to use this License for your documents
+ .
+ To use this License in a document you have written, include a copy of
+ the License in the document and put the following copyright and
+ license notices just after the title page:
+ .
+       Copyright (c)  YEAR  YOUR NAME.
+       Permission is granted to copy, distribute and/or modify this document
+       under the terms of the GNU Free Documentation License, Version 1.1
+       or any later version published by the Free Software Foundation;
+       with the Invariant Sections being LIST THEIR TITLES, with the
+       Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
+       A copy of the license is included in the section entitled "GNU
+       Free Documentation License".
+ .
+ If you have no Invariant Sections, write "with no Invariant Sections"
+ instead of saying which ones are invariant.  If you have no
+ Front-Cover Texts, write "no Front-Cover Texts" instead of
+ "Front-Cover Texts being LIST"; likewise for Back-Cover Texts.
+ .
+ If your document contains nontrivial examples of program code, we
+ recommend releasing these examples in parallel under your choice of
+ free software license, such as the GNU General Public License,
+ to permit their use in free software.
+
+License: CC-BY-SA
+ THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE
+ COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY
+ COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS
+ AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+ .
+ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE
+ TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY
+ BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS
+ CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND
+ CONDITIONS.
+ .
+ 1. Definitions
+ .
+ a. "Adaptation" means a work based upon the Work, or upon the Work and
+    other pre-existing works, such as a translation, adaptation,
+    derivative work, arrangement of music or other alterations of a
+    literary or artistic work, or phonogram or performance and includes
+    cinematographic adaptations or any other form in which the Work may be
+    recast, transformed, or adapted including in any form recognizably
+    derived from the original, except that a work that constitutes a
+    Collection will not be considered an Adaptation for the purpose of
+    this License. For the avoidance of doubt, where the Work is a musical
+    work, performance or phonogram, the synchronization of the Work in
+    timed-relation with a moving image ("synching") will be considered an
+    Adaptation for the purpose of this License.
+ b. "Collection" means a collection of literary or artistic works, such as
+    encyclopedias and anthologies, or performances, phonograms or
+    broadcasts, or other works or subject matter other than works listed
+    in Section 1(f) below, which, by reason of the selection and
+    arrangement of their contents, constitute intellectual creations, in
+    which the Work is included in its entirety in unmodified form along
+    with one or more other contributions, each constituting separate and
+    independent works in themselves, which together are assembled into a
+    collective whole. A work that constitutes a Collection will not be
+    considered an Adaptation (as defined below) for the purposes of this
+    License.
+ c. "Creative Commons Compatible License" means a license that is listed
+    at http://creativecommons.org/compatiblelicenses that has been
+    approved by Creative Commons as being essentially equivalent to this
+    License, including, at a minimum, because that license: (i) contains
+    terms that have the same purpose, meaning and effect as the License
+    Elements of this License; and, (ii) explicitly permits the relicensing
+    of adaptations of works made available under that license under this
+    License or a Creative Commons jurisdiction license with the same
+    License Elements as this License.
+ d. "Distribute" means to make available to the public the original and
+    copies of the Work or Adaptation, as appropriate, through sale or
+    other transfer of ownership.
+ e. "License Elements" means the following high-level license attributes
+    as selected by Licensor and indicated in the title of this License:
+    Attribution, ShareAlike.
+ f. "Licensor" means the individual, individuals, entity or entities that
+    offer(s) the Work under the terms of this License.
+ g. "Original Author" means, in the case of a literary or artistic work,
+    the individual, individuals, entity or entities who created the Work
+    or if no individual or entity can be identified, the publisher; and in
+    addition (i) in the case of a performance the actors, singers,
+    musicians, dancers, and other persons who act, sing, deliver, declaim,
+    play in, interpret or otherwise perform literary or artistic works or
+    expressions of folklore; (ii) in the case of a phonogram the producer
+    being the person or legal entity who first fixes the sounds of a
+    performance or other sounds; and, (iii) in the case of broadcasts, the
+    organization that transmits the broadcast.
+ h. "Work" means the literary and/or artistic work offered under the terms
+    of this License including without limitation any production in the
+    literary, scientific and artistic domain, whatever may be the mode or
+    form of its expression including digital form, such as a book,
+    pamphlet and other writing; a lecture, address, sermon or other work
+    of the same nature; a dramatic or dramatico-musical work; a
+    choreographic work or entertainment in dumb show; a musical
+    composition with or without words; a cinematographic work to which are
+    assimilated works expressed by a process analogous to cinematography;
+    a work of drawing, painting, architecture, sculpture, engraving or
+    lithography; a photographic work to which are assimilated works
+    expressed by a process analogous to photography; a work of applied
+    art; an illustration, map, plan, sketch or three-dimensional work
+    relative to geography, topography, architecture or science; a
+    performance; a broadcast; a phonogram; a compilation of data to the
+    extent it is protected as a copyrightable work; or a work performed by
+    a variety or circus performer to the extent it is not otherwise
+    considered a literary or artistic work.
+ i. "You" means an individual or entity exercising rights under this
+    License who has not previously violated the terms of this License with
+    respect to the Work, or who has received express permission from the
+    Licensor to exercise rights under this License despite a previous
+    violation.
+ j. "Publicly Perform" means to perform public recitations of the Work and
+    to communicate to the public those public recitations, by any means or
+    process, including by wire or wireless means or public digital
+    performances; to make available to the public Works in such a way that
+    members of the public may access these Works from a place and at a
+    place individually chosen by them; to perform the Work to the public
+    by any means or process and the communication to the public of the
+    performances of the Work, including by public digital performance; to
+    broadcast and rebroadcast the Work by any means including signs,
+    sounds or images.
+ k. "Reproduce" means to make copies of the Work by any means including
+    without limitation by sound or visual recordings and the right of
+    fixation and reproducing fixations of the Work, including storage of a
+    protected performance or phonogram in digital form or other electronic
+    medium.
+ .
+ 2. Fair Dealing Rights. Nothing in this License is intended to reduce,
+ limit, or restrict any uses free from copyright or rights arising from
+ limitations or exceptions that are provided for in connection with the
+ copyright protection under copyright law or other applicable laws.
+ .
+ 3. License Grant. Subject to the terms and conditions of this License,
+ Licensor hereby grants You a worldwide, royalty-free, non-exclusive,
+ perpetual (for the duration of the applicable copyright) license to
+ exercise the rights in the Work as stated below:
+ .
+ a. to Reproduce the Work, to incorporate the Work into one or more
+    Collections, and to Reproduce the Work as incorporated in the
+    Collections;
+ b. to create and Reproduce Adaptations provided that any such Adaptation,
+    including any translation in any medium, takes reasonable steps to
+    clearly label, demarcate or otherwise identify that changes were made
+    to the original Work. For example, a translation could be marked "The
+    original work was translated from English to Spanish," or a
+    modification could indicate "The original work has been modified.";
+ c. to Distribute and Publicly Perform the Work including as incorporated
+    in Collections; and,
+ d. to Distribute and Publicly Perform Adaptations.
+ e. For the avoidance of doubt:
+ .
+     i. Non-waivable Compulsory License Schemes. In those jurisdictions in
+        which the right to collect royalties through any statutory or
+        compulsory licensing scheme cannot be waived, the Licensor
+        reserves the exclusive right to collect such royalties for any
+        exercise by You of the rights granted under this License;
+    ii. Waivable Compulsory License Schemes. In those jurisdictions in
+        which the right to collect royalties through any statutory or
+        compulsory licensing scheme can be waived, the Licensor waives the
+        exclusive right to collect such royalties for any exercise by You
+        of the rights granted under this License; and,
+   iii. Voluntary License Schemes. The Licensor waives the right to
+        collect royalties, whether individually or, in the event that the
+        Licensor is a member of a collecting society that administers
+        voluntary licensing schemes, via that society, from any exercise
+        by You of the rights granted under this License.
+ .
+ The above rights may be exercised in all media and formats whether now
+ known or hereafter devised. The above rights include the right to make
+ such modifications as are technically necessary to exercise the rights in
+ other media and formats. Subject to Section 8(f), all rights not expressly
+ granted by Licensor are hereby reserved.
+ .
+ 4. Restrictions. The license granted in Section 3 above is expressly made
+ subject to and limited by the following restrictions:
+ .
+ a. You may Distribute or Publicly Perform the Work only under the terms
+    of this License. You must include a copy of, or the Uniform Resource
+    Identifier (URI) for, this License with every copy of the Work You
+    Distribute or Publicly Perform. You may not offer or impose any terms
+    on the Work that restrict the terms of this License or the ability of
+    the recipient of the Work to exercise the rights granted to that
+    recipient under the terms of the License. You may not sublicense the
+    Work. You must keep intact all notices that refer to this License and
+    to the disclaimer of warranties with every copy of the Work You
+    Distribute or Publicly Perform. When You Distribute or Publicly
+    Perform the Work, You may not impose any effective technological
+    measures on the Work that restrict the ability of a recipient of the
+    Work from You to exercise the rights granted to that recipient under
+    the terms of the License. This Section 4(a) applies to the Work as
+    incorporated in a Collection, but this does not require the Collection
+    apart from the Work itself to be made subject to the terms of this
+    License. If You create a Collection, upon notice from any Licensor You
+    must, to the extent practicable, remove from the Collection any credit
+    as required by Section 4(c), as requested. If You create an
+    Adaptation, upon notice from any Licensor You must, to the extent
+    practicable, remove from the Adaptation any credit as required by
+    Section 4(c), as requested.
+ b. You may Distribute or Publicly Perform an Adaptation only under the
+    terms of: (i) this License; (ii) a later version of this License with
+    the same License Elements as this License; (iii) a Creative Commons
+    jurisdiction license (either this or a later license version) that
+    contains the same License Elements as this License (e.g.,
+    Attribution-ShareAlike 3.0 US)); (iv) a Creative Commons Compatible
+    License. If you license the Adaptation under one of the licenses
+    mentioned in (iv), you must comply with the terms of that license. If
+    you license the Adaptation under the terms of any of the licenses
+    mentioned in (i), (ii) or (iii) (the "Applicable License"), you must
+    comply with the terms of the Applicable License generally and the
+    following provisions: (I) You must include a copy of, or the URI for,
+    the Applicable License with every copy of each Adaptation You
+    Distribute or Publicly Perform; (II) You may not offer or impose any
+    terms on the Adaptation that restrict the terms of the Applicable
+    License or the ability of the recipient of the Adaptation to exercise
+    the rights granted to that recipient under the terms of the Applicable
+    License; (III) You must keep intact all notices that refer to the
+    Applicable License and to the disclaimer of warranties with every copy
+    of the Work as included in the Adaptation You Distribute or Publicly
+    Perform; (IV) when You Distribute or Publicly Perform the Adaptation,
+    You may not impose any effective technological measures on the
+    Adaptation that restrict the ability of a recipient of the Adaptation
+    from You to exercise the rights granted to that recipient under the
+    terms of the Applicable License. This Section 4(b) applies to the
+    Adaptation as incorporated in a Collection, but this does not require
+    the Collection apart from the Adaptation itself to be made subject to
+    the terms of the Applicable License.
+ c. If You Distribute, or Publicly Perform the Work or any Adaptations or
+    Collections, You must, unless a request has been made pursuant to
+    Section 4(a), keep intact all copyright notices for the Work and
+    provide, reasonable to the medium or means You are utilizing: (i) the
+    name of the Original Author (or pseudonym, if applicable) if supplied,
+    and/or if the Original Author and/or Licensor designate another party
+    or parties (e.g., a sponsor institute, publishing entity, journal) for
+    attribution ("Attribution Parties") in Licensor's copyright notice,
+    terms of service or by other reasonable means, the name of such party
+    or parties; (ii) the title of the Work if supplied; (iii) to the
+    extent reasonably practicable, the URI, if any, that Licensor
+    specifies to be associated with the Work, unless such URI does not
+    refer to the copyright notice or licensing information for the Work;
+    and (iv) , consistent with Ssection 3(b), in the case of an
+    Adaptation, a credit identifying the use of the Work in the Adaptation
+    (e.g., "French translation of the Work by Original Author," or
+    "Screenplay based on original Work by Original Author"). The credit
+    required by this Section 4(c) may be implemented in any reasonable
+    manner; provided, however, that in the case of a Adaptation or
+    Collection, at a minimum such credit will appear, if a credit for all
+    contributing authors of the Adaptation or Collection appears, then as
+    part of these credits and in a manner at least as prominent as the
+    credits for the other contributing authors. For the avoidance of
+    doubt, You may only use the credit required by this Section for the
+    purpose of attribution in the manner set out above and, by exercising
+    Your rights under this License, You may not implicitly or explicitly
+    assert or imply any connection with, sponsorship or endorsement by the
+    Original Author, Licensor and/or Attribution Parties, as appropriate,
+    of You or Your use of the Work, without the separate, express prior
+    written permission of the Original Author, Licensor and/or Attribution
+    Parties.
+ d. Except as otherwise agreed in writing by the Licensor or as may be
+    otherwise permitted by applicable law, if You Reproduce, Distribute or
+    Publicly Perform the Work either by itself or as part of any
+    Adaptations or Collections, You must not distort, mutilate, modify or
+    take other derogatory action in relation to the Work which would be
+    prejudicial to the Original Author's honor or reputation. Licensor
+    agrees that in those jurisdictions (e.g. Japan), in which any exercise
+    of the right granted in Section 3(b) of this License (the right to
+    make Adaptations) would be deemed to be a distortion, mutilation,
+    modification or other derogatory action prejudicial to the Original
+    Author's honor and reputation, the Licensor will waive or not assert,
+    as appropriate, this Section, to the fullest extent permitted by the
+    applicable national law, to enable You to reasonably exercise Your
+    right under Section 3(b) of this License (right to make Adaptations)
+    but not otherwise.
+ .
+ 5. Representations, Warranties and Disclaimer
+ .
+ UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING, LICENSOR
+ OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY
+ KIND CONCERNING THE WORK, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE,
+ INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTIBILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, OR THE ABSENCE OF
+ LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS,
+ WHETHER OR NOT DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION
+ OF IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.
+ .
+ 6. Limitation on Liability. EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE
+ LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY FOR
+ ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES
+ ARISING OUT OF THIS LICENSE OR THE USE OF THE WORK, EVEN IF LICENSOR HAS
+ BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+ .
+ 7. Termination
+ .
+ a. This License and the rights granted hereunder will terminate
+    automatically upon any breach by You of the terms of this License.
+    Individuals or entities who have received Adaptations or Collections
+    from You under this License, however, will not have their licenses
+    terminated provided such individuals or entities remain in full
+    compliance with those licenses. Sections 1, 2, 5, 6, 7, and 8 will
+    survive any termination of this License.
+ b. Subject to the above terms and conditions, the license granted here is
+    perpetual (for the duration of the applicable copyright in the Work).
+    Notwithstanding the above, Licensor reserves the right to release the
+    Work under different license terms or to stop distributing the Work at
+    any time; provided, however that any such election will not serve to
+    withdraw this License (or any other license that has been, or is
+    required to be, granted under the terms of this License), and this
+    License will continue in full force and effect unless terminated as
+    stated above.
+ .
+ 8. Miscellaneous
+ .
+ a. Each time You Distribute or Publicly Perform the Work or a Collection,
+    the Licensor offers to the recipient a license to the Work on the same
+    terms and conditions as the license granted to You under this License.
+ b. Each time You Distribute or Publicly Perform an Adaptation, Licensor
+    offers to the recipient a license to the original Work on the same
+    terms and conditions as the license granted to You under this License.
+ c. If any provision of this License is invalid or unenforceable under
+    applicable law, it shall not affect the validity or enforceability of
+    the remainder of the terms of this License, and without further action
+    by the parties to this agreement, such provision shall be reformed to
+    the minimum extent necessary to make such provision valid and
+    enforceable.
+ d. No term or provision of this License shall be deemed waived and no
+    breach consented to unless such waiver or consent shall be in writing
+    and signed by the party to be charged with such waiver or consent.
+ e. This License constitutes the entire agreement between the parties with
+    respect to the Work licensed here. There are no understandings,
+    agreements or representations with respect to the Work not specified
+    here. Licensor shall not be bound by any additional provisions that
+    may appear in any communication from You. This License may not be
+    modified without the mutual written agreement of the Licensor and You.
+ f. The rights granted under, and the subject matter referenced, in this
+    License were drafted utilizing the terminology of the Berne Convention
+    for the Protection of Literary and Artistic Works (as amended on
+    September 28, 1979), the Rome Convention of 1961, the WIPO Copyright
+    Treaty of 1996, the WIPO Performances and Phonograms Treaty of 1996
+    and the Universal Copyright Convention (as revised on July 24, 1971).
+    These rights and subject matter take effect in the relevant
+    jurisdiction in which the License terms are sought to be enforced
+    according to the corresponding provisions of the implementation of
+    those treaty provisions in the applicable national law. If the
+    standard suite of rights granted under applicable copyright law
+    includes additional rights not granted under this License, such
+    additional rights are deemed to be included in the License; this
+    License is not intended to restrict the license of any rights under
+    applicable law.
+
+License: FSF-all-permissive
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.
+
+License: ISC
+ Permission to use, copy, modify, and/or distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

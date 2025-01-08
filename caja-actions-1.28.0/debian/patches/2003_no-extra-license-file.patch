@@ -1,0 +1,15 @@
+Description: Don't ship the COPYING file in the caja-actions .deb package
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Forwarded: not needed, Debian-specific
+
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -78,8 +78,6 @@ dist_pkgdoc_DATA = \
+ 	ChangeLog-2010				\
+ 	ChangeLog-2011				\
+ 	ChangeLog-2012				\
+-	COPYING					\
+-	COPYING-DOCS				\
+ 	INSTALL					\
+ 	MAINTAINERS				\
+ 	NEWS					\

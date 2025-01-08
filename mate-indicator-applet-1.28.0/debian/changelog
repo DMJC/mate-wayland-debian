@@ -1,0 +1,377 @@
+mate-indicator-applet (1.26.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/watch:
+    + Use format version 4.
+  * debian/patches:
+    + Add Forwarded: field to 1001_secondary-activate.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 13 Dec 2021 00:31:24 +0100
+
+mate-indicator-applet (1.24.0-2) unstable; urgency=medium
+
+  * debian/rules:
+    + Use Ayatana Indicators on Ubuntu, too.
+  * debian/control:
+    + Bump DH compat level to version 13.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 11:22:42 +0200
+
+mate-indicator-applet (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/control:
+    + Use libayatana* indicator packages in B-D on Debian. For Ubuntu, a delta
+      of the package must be continuously maintained.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/{rules,control}:
+    + Build with Ubuntu AppIndicators on Ubuntu.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 16:10:02 +0100
+
+mate-indicator-applet (1.22.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/changelog:
+    + Post-upload changelog fix in previous stanza.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 10:09:39 +0200
+
+mate-indicator-applet (1.22.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_resize_indicator_icons_to_fit_panel.patch. Resize indicator
+      icons to fit panel.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Rebase 0001 and 0002.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 08 Aug 2019 13:14:55 +0200
+
+mate-indicator-applet (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 1001_secondary-activate.patch. Add support for indicator object
+      signal: secondary-activate / INDICATOR_OBJECT_SIGNAL_SECONDARY_
+      ACTIVATE. (Closes: #927438).
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 16:45:20 +0200
+
+mate-indicator-applet (1.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop from B-D: libido3-0.1-dev, libindicator3-dev. (Closes: #901243).
+    + White-space clean-up at EOF.
+  * debian/rules:
+    + Build against Ayatana Indicators also on Ubuntu.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 16:35:51 +0200
+
+mate-indicator-applet (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.0-0ubuntu1):
+    + Update copyright attributions.
+  * debian/patches (already in 1.19.0-0ubuntu1):
+    + Drop 2001_AyatanaIndicators-support.patch. Applied upstream.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.0-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+
+  [ Mike Gabriel ]
+  * debian/changelog (already in 1.19.0-0ubuntu1):
+    + white-space cleanup
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 15:40:39 +0100
+
+mate-indicator-applet (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
+
+mate-indicator-applet (1.19.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 25 Jan 2018 21:37:58 +0000
+
+mate-indicator-applet (1.18.1-3) unstable; urgency=medium
+
+  * debian/control:
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+    + Unversionedly depend on Ayatana Indicators and Ubuntu Indicators on
+      Debian and Ubuntu alike.
+  * debian/patches:
+    + Improve 2001_AyatanaIndicators-support.patch. Add AC_ARG_WITHs for
+      choosing a build against Ayatana Indicators or Ubuntu Indicators.
+  * debian/rules:
+    + Use Ubuntu Indicators on Ubuntu, Ayatana Indicators elsewhere.
+      (Finally closes: #880187).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 09 Jan 2018 12:38:55 +0100
+
+mate-indicator-applet (1.18.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 2001_AyatanaIndicators-support.patch. Support building against
+      Ayatana Indicators and Ubuntu Indicators alike.
+  * debian/control:
+    + Alternatively B-D on libido3-0.1-dev (>= 13.10) or
+      libayatana-ido3-0.4-dev.
+      Alternatively B-D on libindicator3-dev (>= 16.10) or
+      libayatana-indicator3-dev.
+      This lets this package build against Ubuntu Indicators in Ubuntu and
+      derivatives, while in Debian and derivatives (except Ubuntu) the new
+      Ayatana Indicators implementation gets used.
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Dec 2017 15:29:57 +0100
+
+mate-indicator-applet (1.18.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 30 Oct 2017 14:11:23 +0100
+
+mate-indicator-applet (1.18.0-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 19:20:37 +0200
+
+mate-indicator-applet (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 04 Oct 2016 10:44:51 +0200
+
+mate-indicator-applet (1.15.1-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
+
+mate-indicator-applet (1.14.1-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Add --libexecdir=/usr/lib/mate-indicator-applet. Avoid non-shared
+      libraries in shared library path.
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add B-D: libido3-0.1-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 21 Jun 2016 12:05:30 +0200
+
+mate-indicator-applet (1.14.0-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+    + Use encrypted URLs for Vcs-*: field.
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev
+    + B-D: libindicator3-dev
+    + Versioned B-D: libmate-panel-applet-dev (>= 1.14)
+    + Versioned B-D: mate-common (>= 1.14)
+  * debian/rules:
+    + Add --with-gtk=3.0
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 May 2016 15:16:06 +0200
+
+mate-indicator-applet (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Drop indicator-0.3 support. (Closes: #788215).
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12) and
+      libmate-panel-applet-dev (>= 1.12).
+    + Drop BDs: gtk-doc-tools, libdbus-glib-1-dev, yelp-tools.
+    + Add BDs: libgtk2.0-dev, libx11-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 12:05:51 +0100
+
+mate-indicator-applet (1.10.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Process with wrap-and-sort.
+
+  [ Mike Gabriel ]
+  * Upload to unstable.
+  * debian/control:
+    + Drop from B-D: libgtk2.0-dev. This plus various other B-D changes applied
+      in m-i-a 1.10.0-1~exp1 fix #788216. (Closes: #788216).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 11:54:46 +0200
+
+mate-indicator-applet (1.10.0-1~exp2) experimental; urgency=medium
+
+  * debian/control:
+    + Drop R (mate-indicator-applets-common).
+    + Fix B (mate-indicator-applets-common). The new -common package
+      breaks mate-applets-indicator (<< 1.9), not (<< 1.8). (Closes:
+      #789444).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Jul 2015 12:05:32 +0200
+
+mate-indicator-applet (1.10.0-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add mate-indicator-applet-common package.
+    + Add mate-indicator-applet-dbg package.
+    + Update build dependencies for upstream release.
+    + Processed with wrap-and-sort
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Martin Wimpress to Uploaders: field.
+    + Versioned B-D: mate-common (>= 1.10).
+    + Improve LONG_DESCRIPTIONs (using upstream project information).
+  * debian/copyright:
+    + Really mention all files.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 13:37:47 +0200
+
+mate-indicator-applet (1.8.0-4) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add a patch to prevent conflicts with indicator-applet. (Closes: #752626)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Jul 2014 15:29:18 +0200
+
+mate-indicator-applet (1.8.0-3) unstable; urgency=low
+
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 11:10:05 +0200
+
+mate-indicator-applet (1.8.0-2) unstable; urgency=low
+
+  * debian/copyright:
+    + COPYING-LIBS contains an LGPL-3(+) license, though it obviously is not
+      in use in this source project (see license information in file headers).
+      Adapting debian/copyright to this unclear license situation for now.
+      -> Reported to upstream as
+      https://github.com/mate-desktop/mate-indicator-applet/issues/5.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 25 Apr 2014 01:07:53 +0200
+
+mate-indicator-applet (1.8.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734932).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Apr 2014 22:19:07 +0200

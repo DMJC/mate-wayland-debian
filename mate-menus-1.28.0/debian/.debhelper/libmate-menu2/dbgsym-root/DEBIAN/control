@@ -1,0 +1,13 @@
+Package: libmate-menu2-dbgsym
+Source: mate-menus
+Version: 1.28.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 144
+Depends: libmate-menu2 (= 1.28.0-1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libmate-menu2
+Build-Ids: 7f5fd32e9ade4ea7263e6e70a0b6b685b6dd9f25

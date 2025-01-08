@@ -1,0 +1,7 @@
+ae463d0135fbe3e9b84d02bf0e55b66c  usr/include/mate-menus/matemenu-tree.h
+e8c26a42a90e9e9b8139698eca2eb173  usr/lib/x86_64-linux-gnu/pkgconfig/libmate-menu.pc
+9909895c5ecb4cef8b92f56976a41796  usr/share/doc/libmate-menu-dev/changelog.Debian.gz
+d26dad59865a87d0c54731fea4c984e4  usr/share/doc/libmate-menu-dev/changelog.gz
+006d10ac8fab11dbdaca3ba6ffb05efe  usr/share/doc/libmate-menu-dev/copyright
+a0c7e1509c35be70044bad027b47e5d2  usr/share/gir-1.0/MateMenu-2.0.gir
+f5a48a9e115dd76ccedf7187a1c8cbac  usr/share/lintian/overrides/libmate-menu-dev

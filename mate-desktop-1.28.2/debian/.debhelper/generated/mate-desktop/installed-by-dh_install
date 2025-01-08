@@ -1,0 +1,4 @@
+debian/tmp/usr/bin/
+debian/tmp/usr/share/applications/mate-about.desktop
+debian/tmp/usr/share/applications/mate-color-select.desktop
+debian/tmp/usr/share/man/

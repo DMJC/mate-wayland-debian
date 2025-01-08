@@ -1,0 +1,5 @@
+debian/tmp/etc/xdg/autostart/
+debian/tmp/usr/share/locale/
+debian/tmp/usr/share/man/
+debian/tmp/usr/share/mate-media/
+debian/tmp/usr/share/sounds/

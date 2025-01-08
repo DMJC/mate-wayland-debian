@@ -1,0 +1,5 @@
+debian/tmp/usr/bin/
+debian/tmp/usr/lib/x86_64-linux-gnu/pluma/plugins/
+debian/tmp/usr/libexec/pluma/pluma-bugreport.sh
+debian/tmp/usr/share/applications/
+debian/tmp/usr/share/man/

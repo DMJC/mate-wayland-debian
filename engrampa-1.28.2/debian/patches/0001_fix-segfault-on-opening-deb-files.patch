@@ -1,0 +1,26 @@
+From bdafd0c2db93e85ed0e7b19fd502e254e5b587ea Mon Sep 17 00:00:00 2001
+From: zhuyaliang <15132211195@163.com>
+Date: Fri, 15 Sep 2023 13:59:17 +0800
+Subject: [PATCH] Fix Segfault on opening .deb files after recent Debian
+ Unstable updates
+
+Fix https://github.com/mate-desktop/engrampa/issues/496
+---
+ src/glib-utils.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+Index: engrampa/src/glib-utils.c
+===================================================================
+--- engrampa.orig/src/glib-utils.c	2024-01-10 21:24:29.347141964 +0100
++++ engrampa/src/glib-utils.c	2024-01-10 21:25:57.846897311 +0100
+@@ -423,6 +423,10 @@
+ 			fields[i] = g_strndup (scan, field_end - scan);
+ 			scan = eat_spaces (field_end);
+ 		}
++		else if (scan != NULL && i == n_fields - 1)
++		{
++			fields[i] = g_strdup (scan);
++		}
+ 	}
+ 
+ 	return fields;

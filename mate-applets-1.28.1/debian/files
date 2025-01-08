@@ -1,0 +1,4 @@
+mate-applets-common_1.28.1-1_all.deb x11 optional
+mate-applets-dbgsym_1.28.1-1_amd64.deb debug optional automatic=yes
+mate-applets_1.28.1-1_amd64.buildinfo x11 optional
+mate-applets_1.28.1-1_amd64.deb x11 optional

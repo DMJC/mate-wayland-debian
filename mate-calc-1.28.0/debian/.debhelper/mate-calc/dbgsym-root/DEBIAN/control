@@ -1,0 +1,12 @@
+Package: mate-calc-dbgsym
+Source: mate-calc
+Version: 1.28.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 482
+Depends: mate-calc (= 1.28.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for mate-calc
+Build-Ids: b0e160215b6ab2c981f078e3a14ecf2e21f117fb fd0d7a3cb2e46ec6968c9952f9b33583b577bf17

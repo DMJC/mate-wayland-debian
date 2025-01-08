@@ -1,0 +1,206 @@
+mate-panel (1.28.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:50:00 +0930
+
+mate-panel (1.28.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:50:00 +0930
+
+mate-panel (1.28.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Carthew <sunweaver@debian.org>  Sat, 12 Oct 2024 10:50:00 +0930
+
+mate-panel (1.27.1-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Drop 0004-tell-dconf-edit-about-relocatable-schemas-1355.patch.
+      Fix many applets crashing when loaded into panel. (Closes: #1039603,
+      #1071989, #1072256).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 31 May 2024 09:55:58 +0200
+
+mate-panel (1.27.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Drop unused Build-Depends: libsoup2.4
+  * Use Build-Depends: dh-sequence-gir to avoid a Lintian error
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 20 May 2024 15:18:10 -0400
+
+mate-panel (1.27.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Rename and update RDA patches. Drop all other patches (applied upstream).
+    + Cherry-pick latest changes from Git development branch (0001 - 0006).
+    + Amend typo in patch header of patch 0004."
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/ folder.
+    + Update copyright attributions.
+  * debian/rules:
+    + Set libexecdir to /usr/libexec/mate-panel.
+  * debian/mate-panel.install:
+    + Adjust to changed libexecdir.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 21 Jun 2023 09:05:45 +0200
+
+mate-panel (1.27.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream snapshot.
+  * debian/patches:
+    + Add 0005_do-not-exceed-workspace-number.patch
+    + Add 0006_only-register-SNI-host-if-SNI-is-enabled.patch (LP: #1766749)
+    + Add 0007_fix-thumbnailing-crash.patch
+    + Add 0008_fix-leak-in-no-background.patch
+    + Add 0010_add-centre-stick.patch
+    + Add 0011_fix-centre-stick.patch
+  * debian/watch:
+    + Also watch uneven (development) releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 23 Sep 2022 10:11:45 +0200
+
+mate-panel (1.26.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Fix several memleaks. (Closes: #982919).
+    - wncklet: The values stored in the wrapper hash table are incorrect.
+      (Closes: #1003698).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 27 Jan 2022 11:56:26 +0100
+
+mate-panel (1.26.1-2) unstable; urgency=medium
+
+  [ Pino Toscano ]
+  * Drop menu-xdg dependency from mate-panel. (Closes: #995967).
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Tue, 14 Dec 2021 13:43:24 +0100
+
+mate-panel (1.26.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add B-D: mate-submodules-source (>= 0.0~git20210623.f3091f9).
+    + Drop transitional pkg 'gir1.2-mate-panel' and drop lintian override for
+      it.
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/rules:
+    + Unpack libegg (mate-submodules) at the beginning of dh_auto_configure.
+  * debian/watch:
+    + Use format version 4.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/{rules,libmate-panel-doc.*}:
+    + Move GTK API documentation to pkg's doc folder.
+  * debian/libmate-panel-doc.doc-base:
+    + Add file. Register API docs with doc-base system.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Dec 2021 18:58:06 +0100
+
+mate-panel (1.24.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Memory leak fixes. (Closes: #966292, #951436).
+  * debian/patches:
+    + Rebase patches.
+    + Drop 0005-enable-apps-in-addto-menu.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Bump DH compat level to version 13.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Aug 2020 21:41:34 +0200
+
+mate-panel (1.24.0-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Limit GTK layer shell / Wayland support to linux-any architectures.
+      (Closes: #951541).
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0005-enable-apps-in-addto-menu.patch. Fix adding application
+      launchers to MATE Panel. (LP: #1863435).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Feb 2020 07:48:58 +0100
+
+mate-panel (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Versioned B-D on libgtk-layer-shell-dev (>= 0.1.0-3~); earlier versions
+      had no dependency on the shared lib bin:pkg.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/patches:
+    + Rebase RDA patches.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D libgtk-layer-shell-dev.
+    + Update Build-Depends: to support MATE Desktop 1.24.
+    + Add B-D autoconf-archive.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 13:13:15 +0100
+
+mate-panel (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0006_Fix-panel-applet-keyboard-focus-trap.patch. Applied upstream.
+    + Drop 0005_fix_panel_resets.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 22:49:53 +0200
+
+mate-panel (1.22.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Rebase patches 0003, 0004, 0005.
+    + Add 0006_Fix-panel-applet-keyboard-focus-trap.patch. (Closes: #933714).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 Aug 2019 18:28:19 +0200
+
+mate-panel (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Add 0005_fix_panel_resets.patch. Fix random panel crashes on reset.
+  * debian/patches:
+    + Rebase 0001_RDA-support-Make-MATE-panel-aware-of-being-run-insid.patch
+    + Rebase 0003_configure.ac-Report-RDA-support-status-in-configurat.patch
+  * debian/control:
+    + Updated for MATE Desktop 1.22
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 18:29:14 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog mate-panel`.

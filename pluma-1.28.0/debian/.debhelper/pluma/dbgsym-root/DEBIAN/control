@@ -1,0 +1,12 @@
+Package: pluma-dbgsym
+Source: pluma
+Version: 1.28.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Installed-Size: 1260
+Depends: pluma (= 1.28.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for pluma
+Build-Ids: 0eda2b5d1f4cd6694043250f37b50322478c2a77 309cce0b9be7ea9d45158fa1e09e0d6d1f28e6a4 51a5c73c7ab4cdfcf451dfc0d4c7ce1fadef172a 5d38ffe56b59241a2df0c2ad561a9ed047753724 6934a2473b1ea717ec2093fc4e9ef2088ceaffb2 6cb1117a11cdb3bf2b7395a1e8474cfc89212644 6d733a6e93a3d11d1f1ed165ba82e8dd03b05b4d 9af5e00d5fc9d7c784145f15ee891433aa944b1c e38a83f0f08524d11071ec051d245158e9f6789f

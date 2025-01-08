@@ -1,0 +1,34 @@
+Source: mate-user-guide
+Section: doc
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
+Build-Depends: autopoint,
+               debhelper-compat (= 13),
+               gettext,
+               intltool,
+               libglib2.0-dev,
+               mate-common (>= 1.18),
+               yelp-tools,
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-user-guide
+Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-user-guide.git
+
+Package: mate-user-guide
+Architecture: all
+Depends: yelp,
+         ${misc:Depends},
+Suggests: mate-desktop-environment,
+Description: User documentation for MATE Desktop Environment
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ This package contains the user guide for MATE Desktop Environment and
+ its main applications.

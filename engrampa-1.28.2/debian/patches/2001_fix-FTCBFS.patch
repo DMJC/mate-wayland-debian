@@ -1,0 +1,44 @@
+Description: engrampa FTCBFS: AC_RUN_IFELSE
+Author: Helmut Grohne <helmut@subdivi.de>
+Abstract:
+ engrampa fails to cross build from source, because it uses a run check
+ to discover the behaviour of file wrt zstd. This has two problems:
+  A) It uses AC_RUN_IFELSE, which breaks cross compilation.
+  B) It checks the version of file used during build. Not the one it is
+     working with.
+ .
+ I'm attaching a patch that makes it simply assume a recent file during
+ cross compilation and we can be done with that. My solution leaves
+ aspect B) unaddressed. Please close this bug even if not solving B).
+ .
+ For solving B), there are a number of options. A simple one is issuing a
+ runtime dependency on libmagic1 (>= 1:5.38). Then you always have the
+ fixed libmagic and nothing to worry about.
+ .
+ This doesn't work upstream however. For upstream there also is a better
+ solution. Instead of checking the behaviour of file at build time, you
+ can check the version of file at runtime. You can simply call
+ magic_version() in the application.
+
+ Quoted from https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=971810
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -197,9 +197,15 @@
+     }
+     return status;]])],
+ 		[zstd_mime_type="application/x-zstd"],
+-		[zstd_mime_type="application/zstd"]
++		[zstd_mime_type="application/zstd"],
++		[zstd_mime_type="cross"]
+ 	)
+-	AC_MSG_RESULT($zstd_mime_type)
++	AS_IF([test "$zstd_mime_type" = "cross"],[
++		zstd_mime_type="application/x-zstd"
++		AC_MSG_RESULT(cross, guessing $zstd_mime_type)
++	],[
++		AC_MSG_RESULT($zstd_mime_type)
++	])
+ 	dnl *******************************************
+ 
+ 	LIBS="$save_LIBS"

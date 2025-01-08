@@ -1,0 +1,206 @@
+Source: pluma-plugins
+Section: x11
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper-compat (= 13),
+               dpkg-dev (>= 1.16.1.1),
+               gettext,
+               gla11y <!nocheck>,
+               iso-codes,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libgtksourceview-4-dev,
+               libpeas-dev (>= 1.14.1),
+               libvte-2.91-dev,
+               pluma-dev (>= 1.26),
+               python3,
+               python3-dbus (>= 0.83.1),
+               python3-gi,
+               python-dbus-dev,
+               mate-common (>= 1.24.0-1~),
+               yelp-tools,
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/pluma-plugins
+Vcs-Git: https://salsa.debian.org/debian-mate-team/pluma-plugins.git
+Homepage: http://www.mate-desktop.org/
+
+Package: pluma-plugins
+Architecture: any
+Depends: pluma-plugin-bookmarks,
+         pluma-plugin-bracketcompletion,
+         pluma-plugin-codecomment,
+         pluma-plugin-quickhighlight,
+         pluma-plugin-smartspaces,
+         pluma-plugin-sourcecodebrowser,
+         pluma-plugin-synctex,
+         pluma-plugin-terminal,
+         pluma-plugin-wordcompletion,
+         ${misc:Depends},
+Enhances: pluma,
+Description: set of plugins for pluma (metapackage)
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ The plugins are now split in separate packages; this metapackage brings all
+ of them but they can be installed separately.
+
+Package: pluma-plugins-common
+Architecture: any
+Depends: ${misc:Depends}
+Enhances: pluma
+Description: common files for pluma-plugins
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This package contains common data files and translations.
+
+Package: pluma-plugin-bookmarks
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         pluma,
+         pluma-plugins-common
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Bookmarks plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin enables easy document navigation with bookmarks.
+
+Package: pluma-plugin-bracketcompletion
+Architecture: any
+Depends: ${misc:Depends},
+         pluma,
+         pluma-plugins-common,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-peas-1.0,
+         python3-gi
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Bracket Completion plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin automatically adds closing brackets.
+
+Package: pluma-plugin-codecomment
+Architecture: any
+Depends: ${misc:Depends},
+         pluma,
+         pluma-plugins-common,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-gtksource-4,
+         python3-gi
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Code Comment plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin enables commenting or uncommenting blocks of code.
+
+Package: pluma-plugin-smartspaces
+Architecture: any
+Depends: ${misc:Depends},
+         pluma,
+         pluma-plugins-common,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-gtksource-4,
+         python3-gi
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Smart Spaces plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin inserts spaces automatically when pressing the tab key.
+
+Package: pluma-plugin-sourcecodebrowser
+Architecture: any
+Depends: ${misc:Depends},
+         pluma,
+         pluma-plugins-common,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-gtksource-4,
+         python3-gi
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Source Code Browser plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin lets you view and navigate functions, variables and namespaces.
+
+Package: pluma-plugin-synctex
+Architecture: any
+Depends: ${misc:Depends},
+         pluma,
+         pluma-plugins-common,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-pango-1.0,
+         gir1.2-peas-1.0,
+         python3-dbus,
+         python3-gi
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: SyncTex plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin synchronizes between LaTex (using pluma) and PDF (using evince).
+
+Package: pluma-plugin-terminal
+Architecture: any
+Depends: ${misc:Depends},
+         pluma,
+         pluma-plugins-common,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-pango-1.0,
+         gir1.2-peas-1.0,
+         gir1.2-vte-2.91,
+         python3-gi
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Terminal plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin embeds a terminal in the bottom pane.
+
+Package: pluma-plugin-wordcompletion
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         pluma,
+         pluma-plugins-common
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Word Completion plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin offers word completion using the completion framework.
+
+Package: pluma-plugin-quickhighlight
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         pluma,
+         pluma-plugins-common
+Enhances: pluma
+Breaks: pluma-plugins (<< 1.26.0)
+Replaces: pluma-plugins (<< 1.26.0)
+Description: Quick Highlight plugin for pluma
+ pluma-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ This plugin highlights every occurrences of selected text.
